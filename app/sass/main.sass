@@ -1,4 +1,147 @@
-@import config
+@import 'config'
+@import 'components'
+@import 'base'
 
-// CUSTOM USER STYLES & IMPORTS
 
+// SITE HEADER
+.header
+	&-top
+		padding: 8px 0
+		background: $lightgray
+		.menu
+			display: flex
+			justify-content: flex-end
+			> li
+				line-height: 16px
+				&:not(:first-child)
+					margin-left: 27px
+				> a
+					color: $black
+					font-size: 12px
+					&:hover
+						color: $accent
+	&-middle
+		padding: 30px 0 25px
+		border-bottom: 1px solid $lightgray
+		.logo
+			display: block
+			width: 100%
+			max-width: 262px
+			height: auto
+		.search-form
+			display: flex
+			align-items: center
+			margin-left: 10px
+			margin-right: 90px
+			&-input
+				margin-bottom: 0
+				border-radius: 24px
+				border: 1px solid #becfd7
+			&-btn
+				flex: 0 0 auto
+				width: 40px
+				margin-left: 24px
+				background-image: url('../images/dest/icons/search.svg')
+				background-repeat: no-repeat
+				background-position: center
+				background-size: 16px
+				font-size: 0 // Hide text
+		.phone
+			padding-left: 24px
+			background-image: url('../images/dest/icons/phone.svg')
+			background-repeat: no-repeat
+			background-position: left 6px
+			background-size: 16px
+			&-link
+				color: $black
+				font-size: 18px
+				&:hover
+					color: $accent
+			&-descr
+				display: block
+				color: #76858c
+				line-height: 1
+		.contacts
+			margin-left: 36px
+			&-link
+				color: $black
+				font-size: 18px
+				&:hover
+					color: $accent
+	&-bottom
+		padding: 16px 0
+		.catalog-btn
+			padding-left: 42px
+			background-image: url('../images/dest/icons/catalog.svg')
+			background-repeat: no-repeat
+			background-position: 16px center
+			background-size: 16px
+			font-weight: 600
+		.nav
+			display: flex
+			justify-content: space-between
+			> li
+				> a
+					color: $black
+					font-size: 14px
+					font-weight: 600
+					&:hover
+						color: $accent
+		.parts-btn
+			display: flex
+			align-items: center
+			.burger
+				display: flex
+				flex-direction: column
+				justify-content: space-between
+				height: 12px
+				span
+					display: block
+					width: 12px
+					height: 2px
+					background: $darkblue
+					transition: .35s ease
+			> span
+				display: inline-block
+				margin-left: 10px
+				transition: .35s ease
+			&:hover
+				.burger
+					> span
+						background: $accent
+				> span
+					color: $accent
+
+
+// SECTION: "Heroes"
+.heroes
+	&-slider
+		padding-left: 130px
+		padding-right: 100px
+		border-radius: 240px
+		background-color: $lightgray
+		.slick-arrow
+			position: absolute
+			z-index: 1
+			top: 50%
+			transform: translateY(-50%)
+		.slick-prev
+			left: 0
+		.slick-next
+			right: 0
+	&-slide
+		outline: none
+	&-slide-inner
+		display: flex
+		flex-wrap: wrap
+		align-items: center
+		height: 425px
+		.content
+			.title
+				margin-bottom: 0
+				color: #000
+				font-size: 32px
+				font-weight: 700
+				line-height: 40px
+			.btn
+				margin-top: 40px

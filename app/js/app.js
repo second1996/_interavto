@@ -1,5 +1,12 @@
-document.addEventListener("DOMContentLoaded", function() {
+// document.addEventListener("DOMContentLoaded", function() {
 
-	// Custom JS
+// 	// Custom JS
 
+// });
+
+
+jQuery(document).ready(function($) {
+	$('.heroes-slider').slick({
+		infinite: false,
+	});
 });

@@ -4,28 +4,119 @@
 <head>
 
 	<meta charset="utf-8">
-	<title>OptimizedHTML 5</title>
-	<meta name="description" content="Startup HTML template OptimizedHTML 5">
+	<title>Смазочная компания Интеравто</title>
+	<meta name="description" content="Смазочная компания Интеравто производит качественные высокотемпературные пасты, пищевые смазки, покрытия и ингибиторы коррозии для отечественной промышленности.">
 	<meta name="viewport" content="width=device-width">
 	<link rel="icon" href="images/favicon.png">
 	<meta property="og:image" content="images/dest/preview.jpg">
 	<link rel="stylesheet" href="css/app.min.css">
+	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 
 </head>
 
 <body>
 
-	<!-- CUSTOM HTML -->
+	<!-- Site header -->
+	<header class="header">
+		<div class="header-top">
+			<div class="container">
+				<ul class="menu">
+					<li><a href="#">Сотрудничество</a></li>
+					<li><a href="#">Стать дилером</a></li>
+					<li><a href="#">Личный кабинет</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="header-middle">
+			<div class="container">
+				<div class="row">
+					<div class="col-auto">
+						<img class="logo" src="images/dest/logotype.svg" alt="Смазочная компания Интеравто">
+					</div>
+					<div class="col">
+						<form action="" method="POST" class="search-form">
+							<input type="text" class="search-form-input form-control" placeholder="Поиск по каталогу продукции" required>
+							<button type="submit" class="search-form-btn btn btn-dark">Найти</button>
+						</form>
+					</div>
+					<div class="col-auto d-flex">
+						<div class="phone">
+							<a href="tel:+74995464545" class="phone-link" title="Позвонить">+7 499 546 45 45</a>
+							<span class="phone-descr">Пн-Пт 9:00-18:00</span>
+						</div>
+						<div class="contacts">
+							<a href="page-contacts.html" class="contacts-link">Контакты</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="header-bottom">
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-auto">
+						<a href="page-catalog.html" class="catalog-btn btn btn-primary">Каталог</a>
+					</div>
+					<div class="col">
+						<ul class="nav" role="nav">
+							<li><a href="#">О компании</a></li>
+							<li><a href="#">Отраслевые решения</a></li>
+							<li><a href="#">Техническая информация</a></li>
+							<li><a href="#">Области применения</a></li>
+							<li><a href="#">Трибология</a></li>
+							<li><a href="#">Статьи</a></li>
+						</ul>
+					</div>
+					<div class="col-auto">
+						<button class="parts-btn btn btn-transparent" tabindex="0">
+							<div class="burger">
+								<span></span>
+								<span></span>
+								<span></span>
+							</div>
+							<span>Все разделы</span>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
 
-	<div class="container" style="max-width: 700px; margin: auto">
+	<div class="container">
 
-		<img src="images/dest/preview.jpg" alt="Start HTML5 Template" width="100%"><br><br>
-		<h2>Welcome to startup HTML template OptimizedHTML 5!</h2>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam reprehenderit nulla alias expedita a qui, pariatur doloremque ipsa fugit laboriosam odio iure recusandae laborum delectus praesentium magni reiciendis voluptatem. Sed.</p>
+		<!-- Section: Heroes -->
+		<section class="heroes">
+			<div class="heroes-slider">
+				<div class="heroes-slide">
+					<div class="heroes-slide-inner">
+						<div class="content">
+							<h2 class="title">Термостойкие и графитовые смазки в ассортименте</h2>
+							<a href="#" class="btn btn-dark btn-icon-arrow">Подробнее</a>
+						</div>
+						<div class="image">
+							<img src="images/dest/slide-photo-01.png" alt="Термостойкие и графитовые смазки в ассортименте">
+						</div>
+					</div>
+				</div><!-- /.heroes-slide -->
+				<div class="heroes-slide">
+					<div class="heroes-slide-inner">
+						<div class="content">
+							<h2 class="title">Термостойкие и графитовые смазки в ассортименте</h2>
+							<a href="#" class="btn btn-dark btn-icon-arrow">Подробнее</a>
+						</div>
+						<div class="picture">
+							<img src="images/dest/slide-photo-01.png" alt="Термостойкие и графитовые смазки в ассортименте">
+						</div>
+					</div>
+				</div><!-- /.heroes-slide -->
+			</div>
+		</section>
 
 	</div>
 
+
 	<script src="js/app.min.js"></script>
+	<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
 </body>
 </html>

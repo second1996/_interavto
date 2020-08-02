@@ -1,7 +1,7 @@
 // USER VARIABLES SECTION
-
 $accent: #ff6c02
 $darkblue: #25373f
+$lightblue: #becfd7
 $lightgray: #eff3f6
 $black: #1e2021
 $white: #fff
@@ -16,20 +16,21 @@ $gutter: $grid-gutter-width
 $container-max-widths: (sm: 540px, md: 720px, lg: 960px, xl: 1208px)
 
 // IMPORT SECTION
+@import 'node_modules/bootstrap/scss/bootstrap-reboot.scss'
+@import 'node_modules/bootstrap/scss/mixins/_breakpoints.scss'
+@import 'node_modules/bootstrap/scss/bootstrap-grid.scss'
+// @import 'node_modules/bootstrap/scss/utilities/_sizing.scss'
+@import 'node_modules/bootstrap/scss/_nav.scss'
+@import 'node_modules/bootstrap/scss/_transitions.scss'
 
-@import 'node_modules/bootstrap/scss/bootstrap-reboot.scss' // Bootstrap Reboot collection
-@import 'node_modules/bootstrap/scss/mixins/_breakpoints.scss' // Bootstrap Breakpoints mixin
-@import 'node_modules/bootstrap/scss/bootstrap-grid.scss' // Optional Bootstrap Grid
-// @import 'node_modules/bootstrap/scss/utilities/_sizing.scss' // Optional Bootstrap Utilites
 
 // FONTS LOAD SECTION
-
 @mixin font($fname, $fstyle, $fweight, $furl)
 	@font-face
 		font-family: $fname
 		font-style: $fstyle
 		font-weight: $fweight
-		// font-display: swap // Uncomment to initially display system fonts
+		// font-display: swap // Display system fonts
 		src: local($fname), url($furl) format('woff2')
 
 @include font('Open Sans', normal, 200, '../fonts/opensans-light.woff2')

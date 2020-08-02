@@ -7,6 +7,9 @@
 
 jQuery(document).ready(function($) {
 	$('.heroes-slider').slick({
-		infinite: false,
+		// autoplay: true,
+		// autoplaySpeed: 3000,
+		// infinite: false,
+		dots: true,
 	});
 });

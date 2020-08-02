@@ -36,7 +36,7 @@
 			&-input
 				margin-bottom: 0
 				border-radius: 24px
-				border: 1px solid #becfd7
+				border: 1px solid $lightblue
 			&-btn
 				flex: 0 0 auto
 				width: 40px
@@ -115,28 +115,62 @@
 
 // SECTION: "Heroes"
 .heroes
+	margin-top: 40px
 	&-slider
-		padding-left: 130px
-		padding-right: 100px
+		overflow: hidden
+		height: 425px
 		border-radius: 240px
 		background-color: $lightgray
 		.slick-arrow
 			position: absolute
 			z-index: 1
 			top: 50%
-			transform: translateY(-50%)
+			width: 40px
+			height: 40px
+			margin-top: -20px
+			background: $white url('../images/dest/icons/arrow-dark.svg') no-repeat center/16px
+			font-size: 0px
+			&:hover
+				opacity: 0.75
+			&.slick-disabled
+				cursor: default
+				opacity: 0.15
 		.slick-prev
-			left: 0
+			left: 32px
 		.slick-next
-			right: 0
+			right: 32px
+			transform: rotate(180deg)
+		.slick-dots
+			position: absolute
+			z-index: 1
+			display: flex
+			left: 50%
+			bottom: 32px
+			transform: translateX(-50%)
+			> li
+				margin: 0 8px
+				&.slick-active
+					> button
+						box-shadow: 0 0 0 3px $lightblue
+				> button
+					width: 5px
+					height: 5px
+					padding: 0
+					background-color: $lightblue
+					font-size: 0
 	&-slide
 		outline: none
 	&-slide-inner
 		display: flex
-		flex-wrap: wrap
 		align-items: center
+		justify-content: space-between
 		height: 425px
+		padding-left: 130px
+		padding-right: 100px
 		.content
+			flex-basis: 370px
+			width: 100%
+			max-width: 370px
 			.title
 				margin-bottom: 0
 				color: #000
@@ -145,3 +179,78 @@
 				line-height: 40px
 			.btn
 				margin-top: 40px
+		.picture
+			flex: 0 0 550px
+			width: 100%
+			max-width: 550px
+			text-align: center
+			img
+				display: inline-block
+
+
+// Section: Categories
+.s-categories
+	.nav
+		justify-content: center
+		&-tabs
+			border-color: $lightgray
+		&-link
+			margin: 0 32px
+			padding: 0 0 20px 0
+			border-radius: 0
+			border: none
+			border-bottom: 1px solid $trsp
+			color: #76858c
+			font-size: 12px
+			font-weight: 700
+			text-transform: uppercase
+			&.active
+				border-color: $accent
+				color: $black
+	.categories-list
+		margin-top: 64px
+		&-item
+			margin-bottom: 24px
+		&-link
+			display: flex
+			// transition: none
+			&:hover
+				.picture
+					border-color: $accent
+					background-color: $accent
+					.icon
+						stroke: $white
+				.title
+					color: $accent
+			.picture
+				flex: 0 0 auto
+				display: flex
+				align-items: center
+				justify-content: center
+				width: 40px
+				height: 40px
+				border-radius: 50%
+				border: 1px solid $lightgray
+				background-color: $white
+				transition: .35s ease
+				.icon
+					stroke: $accent
+					font-size: 24px
+			.title
+				display: inline-flex
+				width: 100%
+				justify-content: space-between
+				margin-left: 16px
+				padding-top: 8px
+				transition: .35s ease
+				span
+					display: inline-block
+					padding-right: 8px
+					color: $black
+					font-size: 18px
+					line-height: 24px
+				.icon
+					flex: 0 0 auto
+					margin-top: 5px
+					fill: $lightblue
+					font-size: 16px

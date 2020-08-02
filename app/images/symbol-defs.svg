@@ -1,0 +1,40 @@
+<svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+<symbol id="icon-beverage" viewBox="0 0 17 17">
+<path fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.4167" d="M9.917 4.958v2.125l1.417 1.417v6.375h-5.667v-6.375l1.417-1.417v-2.125M9.917 4.958v-2.833h-2.833v2.833M9.917 4.958h-2.833"></path>
+</symbol>
+<symbol id="icon-bumaga" viewBox="0 0 17 17">
+<path fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.4167" d="M2.833 9.917l5.667 2.833 6.021-2.833M4.25 7.083l4.25 2.125 4.25-2.125-4.25-2.125-4.25 2.125z"></path>
+</symbol>
+<symbol id="icon-chemical" viewBox="0 0 17 17">
+<path fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.4167" d="M4.722 9.917l2.361-3.542v-3.542h2.833v3.542l2.361 3.542M4.722 9.917l-1.889 2.833v1.417h11.333v-1.417l-1.889-2.833M4.722 9.917h7.555"></path>
+</symbol>
+<symbol id="icon-food" viewBox="0 0 17 17">
+<path fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.4167" d="M9.917 14.875h-6.375v-8.5l1.417-1.771v-2.479h3.187v2.479l1.771 1.771v4.25M9.917 14.875v-4.25M9.917 14.875h3.542v-4.25h-3.542"></path>
+</symbol>
+<symbol id="icon-meat" viewBox="0 0 17 17">
+<path fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.4167" d="M4.604 6.375l-0.354-2.833s0.647 0.717 1.063 1.062 1.063 0.708 1.063 0.708 1.352-0.369 2.235-0.354c0.799 0.014 2.015 0.354 2.015 0.354s0.647-0.363 1.063-0.708 1.063-1.062 1.063-1.062l-0.354 2.833 1.771 0.708s-0.363 0.717-0.708 1.062-1.063 0.708-1.063 0.708l-1.063 2.125s0.286 1.141 0 1.771c-0.243 0.534-1.063 1.063-1.063 1.063s-0.964 1.063-1.771 1.063-1.771-1.063-1.771-1.063-0.82-0.528-1.063-1.063c-0.286-0.63 0-1.771 0-1.771l-1.063-2.125s-0.717-0.363-1.062-0.708-0.708-1.062-0.708-1.062l1.771-0.708z"></path>
+</symbol>
+<symbol id="icon-metallurg" viewBox="0 0 17 17">
+<path fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.4167" d="M8.5 2.833v11.333M8.5 2.833h4.25M8.5 2.833h-4.25M8.5 14.167h4.25M8.5 14.167h-4.25"></path>
+</symbol>
+<symbol id="icon-polimer" viewBox="0 0 17 17">
+<path fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.4167" d="M7.083 5.313c0 0.978-0.793 1.771-1.771 1.771s-1.771-0.793-1.771-1.771v0c0-0.978 0.793-1.771 1.771-1.771s1.771 0.793 1.771 1.771v0zM13.458 5.313c0 0.978-0.793 1.771-1.771 1.771s-1.771-0.793-1.771-1.771v0c0-0.978 0.793-1.771 1.771-1.771s1.771 0.793 1.771 1.771v0zM13.458 11.688c0 0.978-0.793 1.771-1.771 1.771s-1.771-0.793-1.771-1.771v0c0-0.978 0.793-1.771 1.771-1.771s1.771 0.793 1.771 1.771v0zM7.083 11.688c0 0.978-0.793 1.771-1.771 1.771s-1.771-0.793-1.771-1.771v0c0-0.978 0.793-1.771 1.771-1.771s1.771 0.793 1.771 1.771v0z"></path>
+</symbol>
+<symbol id="icon-stroimaterial" viewBox="0 0 17 17">
+<path fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.4167" d="M2.125 8.5h6.375M2.125 8.5v4.958h6.375M2.125 8.5l5.86-4.958h6.89M8.5 8.5v4.958M8.5 8.5l6.375-4.958M8.5 13.458l6.375-5.313v-4.604"></path>
+</symbol>
+<symbol id="icon-tree" viewBox="0 0 17 17">
+<path fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.4167" d="M14.875 8.5c0 3.521-2.854 6.375-6.375 6.375s-6.375-2.854-6.375-6.375v0c0-3.521 2.854-6.375 6.375-6.375s6.375 2.854 6.375 6.375v0z"></path>
+<path fill="#fff" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.4167" d="M7.792 2.125h6.021l-11.688 11.688v-6.021c0-3.13 2.537-5.667 5.667-5.667v0z"></path>
+<path fill="none" d="M9.917 8.5c0 0.782-0.634 1.417-1.417 1.417s-1.417-0.634-1.417-1.417c0-0.782 0.634-1.417 1.417-1.417s1.417 0.634 1.417 1.417z"></path>
+</symbol>
+<symbol id="icon-vata" viewBox="0 0 17 17">
+<path fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.4167" d="M11.286 5.147l0.089 0.479 0.479 0.089c1.324 0.256 2.311 1.406 2.311 2.786s-0.986 2.53-2.293 2.783l-0.018 0.003-0.479 0.089-0.089 0.479c-0.256 1.324-1.406 2.311-2.786 2.311s-2.53-0.986-2.783-2.293l-0.003-0.018-0.089-0.479-0.479-0.089c-1.324-0.256-2.311-1.406-2.311-2.786s0.986-2.53 2.293-2.783l0.018-0.003 0.479-0.089 0.089-0.479c0.256-1.324 1.406-2.311 2.786-2.311s2.53 0.986 2.783 2.293l0.003 0.018z"></path>
+</symbol>
+<symbol id="icon-arrow" viewBox="0 0 17 17">
+<path d="M5.578 3.992l1.502-1.502 6.011 6.011-1.502 1.502-6.011-6.011z"></path>
+<path d="M7.080 14.511l-1.502-1.503 6.011-6.009 1.501 1.502-6.011 6.011z"></path>
+</symbol>
+</defs>
+</svg>

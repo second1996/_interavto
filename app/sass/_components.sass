@@ -15,6 +15,9 @@
 	transition: .35s ease
 	&:hover
 		color: inherit
+	.icon
+		margin-left: 10px
+		font-size: 16px
 	&-primary
 		background-color: $accent
 		color: $white
@@ -36,15 +39,32 @@
 		background-repeat: no-repeat
 		background-position: right 16px center
 		background-size: 16px
+	&-outline
+		border: 1px solid #e0e6ec
+		&:hover
+			border-color: $accent
+			color: $accent
 
 
 // Form
 .form
+	&-group
+		display: flex
+		align-items: center
+		justify-content: space-between
+		&:not(:first-child)
+			margin-top: 24px
+		.form-control
+			margin-bottom: 0
+	&-label
+		margin-bottom: 0
+		cursor: pointer
 	&-control,
 	&-textarea
 		appearance: none
 		display: block
 		width: 100%
+		max-width: 340px
 		margin-bottom: 20px
 		color: $darkblue
 		font-family: $font
@@ -62,3 +82,13 @@
 	&-textarea
 		resize: none
 		padding: 8px 16px
+
+// Dots marker
+.dots
+	display: block
+	width: 24px
+	height: 24px
+	background-repeat: no-repeat
+	background-size: 100%
+	&--orange
+		background-image: url('../images/dest/icons/dots-orange.svg')

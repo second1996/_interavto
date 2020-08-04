@@ -188,7 +188,7 @@
 				display: inline-block
 
 
-// Section: Categories
+// SECTION: Categories
 .s-categories
 	.nav
 		justify-content: center
@@ -264,7 +264,7 @@
 					transition: .35s ease
 
 
-// Section: Our Products
+// SECTION: Our Products
 .s-products
 	.section-descr
 		max-width: 272px
@@ -311,7 +311,7 @@
 					color: $accent
 
 
-// Section: CTA
+// SECTION: CTA
 .s-cta
 	padding: 40px 0 40px 56px
 	&-form
@@ -342,8 +342,67 @@
 			background-color: $lightblue
 
 
-// Section: About Us
+// SECTION: About Us
 .s-about
 	&-group
 		&:not(:first-child)
 			margin-top: 50px
+
+
+// SITE FOOTER
+.footer
+	background: $lightgray
+	&-wrapper
+		padding-top: 30px
+		padding-bottom: 60px
+		.phone
+			display: inline-flex
+			flex-direction: column
+			margin-bottom: 20px
+			padding-left: 24px
+			background-image: url('../images/dest/icons/phone.svg')
+			background-repeat: no-repeat
+			background-position: left 6px
+			background-size: 16px
+			line-height: 32px
+			&-link
+				color: $black
+				font-size: 24px
+				&:hover
+					color: $accent
+		.email
+			display: inline-flex
+			flex-direction: column
+			margin-bottom: 20px
+			padding-left: 24px
+			background-image: url('../images/dest/icons/mail.svg')
+			background-repeat: no-repeat
+			background-position: left 5px
+			background-size: 16px
+			line-height: 24px
+			&-link
+				color: $black
+				font-size: 18px
+				&:hover
+					color: $accent
+		.adress
+			display: inline-flex
+			flex-direction: column
+			margin-bottom: 20px
+			line-height: 24px
+			&-title
+				padding-left: 24px
+				color: $darkgray
+				font-size: 14px
+			&-location
+				padding-left: 24px
+				color: $black
+				font-size: 14px
+				background-image: url('../images/dest/icons/place.svg')
+				background-repeat: no-repeat
+				background-position: left 3px
+				background-size: 16px
+	&-copyright
+		padding: 12px 0
+		span, p
+			color: #25373f

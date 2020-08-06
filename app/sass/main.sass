@@ -33,6 +33,8 @@
 			align-items: center
 			margin-left: 10px
 			margin-right: 90px
+			+media-breakpoint-down(lg)
+				margin: 0
 			&-input
 				margin-bottom: 0
 				border-radius: 24px
@@ -116,11 +118,17 @@
 // SECTION: "Heroes"
 .heroes
 	margin-top: 40px
+	+media-breakpoint-down(md)
+		background-color: $lightgray
 	&-slider
 		overflow: hidden
 		height: 425px
 		border-radius: 240px
 		background-color: $lightgray
+		+media-breakpoint-down(md)
+			height: 350px
+			border-radius: 0
+			background-color: $trsp
 		.slick-arrow
 			position: absolute
 			z-index: 1
@@ -130,6 +138,9 @@
 			margin-top: -20px
 			background: $white url('../images/dest/icons/arrow-dark.svg') no-repeat center/16px
 			font-size: 0px
+			+media-breakpoint-down(md)
+				top: auto
+				bottom: 18px
 			&:hover
 				opacity: 0.75
 			&.slick-disabled
@@ -137,9 +148,13 @@
 				opacity: 0.15
 		.slick-prev
 			left: 32px
+			+media-breakpoint-down(md)
+				left: 0
 		.slick-next
 			right: 32px
 			transform: rotate(180deg)
+			+media-breakpoint-down(md)
+				right: 0
 		.slick-dots
 			position: absolute
 			z-index: 1
@@ -165,27 +180,36 @@
 		align-items: center
 		justify-content: space-between
 		height: 425px
-		padding-left: 130px
-		padding-right: 100px
+		padding: 60px 80px 60px 130px
+		+media-breakpoint-down(md)
+			height: 350px
+			padding: 40px 0 75px
 		.content
-			flex-basis: 370px
+			flex-basis: 360px
 			width: 100%
-			max-width: 370px
+			max-width: 360px
 			.title
 				margin-bottom: 0
 				color: #000
 				font-size: 32px
 				font-weight: 700
-				line-height: 40px
+				+media-breakpoint-down(md)
+					font-size: 28px
 			.btn
 				margin-top: 40px
 		.image
-			flex: 0 0 550px
 			width: 100%
+			height: 100%
 			max-width: 550px
+			max-height: 250px
 			text-align: center
+			+media-breakpoint-down(md)
+				max-width: 350px
 			img
 				display: inline-block
+				width: 100%
+				height: 100%
+				object-fit: contain
 
 
 // SECTION: Categories
@@ -209,6 +233,8 @@
 				color: $black
 	.tab-content
 		margin-top: 64px
+		+media-breakpoint-down(lg)
+			margin-top: 32px
 	.categories-list
 		&-item
 			margin-bottom: 24px
@@ -268,6 +294,18 @@
 .s-products
 	.section-descr
 		max-width: 272px
+		+media-breakpoint-down(md)
+			max-width: 100%
+	&-buttons
+		.catalog-link
+			margin-top: 35px
+		+media-breakpoint-down(md)
+			display: flex
+			align-items: center
+			justify-content: space-between
+			margin-bottom: 40px
+			.catalog-link
+				margin-top: 0
 	&-list
 		&-item
 			display: block
@@ -304,6 +342,8 @@
 				font-weight: 400
 				line-height: 24px
 				transition: color .35s ease
+				+media-breakpoint-down(lg)
+					font-size: 16px
 			&:hover
 				.image::before
 					opacity: 1
@@ -351,6 +391,7 @@
 
 // SITE FOOTER
 .footer
+	margin-top: 120px
 	background: $lightgray
 	&-wrapper
 		padding-top: 30px

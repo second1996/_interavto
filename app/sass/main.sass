@@ -355,6 +355,11 @@
 	&-wrapper
 		padding-top: 30px
 		padding-bottom: 60px
+	&-logo
+		> a
+			display: inline-block
+	&-contacts
+		margin-top: 30px
 		.phone
 			display: inline-flex
 			flex-direction: column
@@ -388,8 +393,9 @@
 		.adress
 			display: inline-flex
 			flex-direction: column
-			margin-bottom: 20px
 			line-height: 24px
+			&:not(:last-child)
+				margin-bottom: 20px
 			&-title
 				padding-left: 24px
 				color: $darkgray
@@ -402,7 +408,42 @@
 				background-repeat: no-repeat
 				background-position: left 3px
 				background-size: 16px
+		.navigation
+			display: flex
+			&-list
+				flex: 0 0 50%
+				max-width: 50%
+				&:not(:first-child)
+					padding-left: 20px
+				> li
+					margin-bottom: 8px
+					> a
+						color: $black
+						font-size: 14px
+						font-weight: 400
+						&:hover
+							color: $accent
+		.social
+			display: flex
+			flex-wrap: wrap
+			align-items: center
+			> a
+				display: flex
+				align-items: center
+				justify-content: center
+				width: 32px
+				height: 32px
+				margin-bottom: 12px
+				border-radius: 50%
+				background-color: $darkblue
+				color: $white
+				font-size: 16px
+				&:not(:last-child)
+					margin-right: 12px
+				&:hover
+					background-color: $accent
 	&-copyright
 		padding: 12px 0
+		border-top: 1px solid $white
 		span, p
 			color: #25373f

@@ -95,6 +95,14 @@ jQuery(document).ready(function($) {
 		// autoplaySpeed: 3000,
 		// infinite: false,
 		dots: true,
-	});
+	})
+
+	// Toggle Search form
+	$('.mobile-action .search-btn').on('click', function() {
+		$('.search-form').addClass('is-active')
+	})
+	$('.search-form .search-form-close').on('click', function() {
+		$('.search-form').removeClass('is-active')
+	})
 
 });

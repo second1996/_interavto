@@ -18,7 +18,7 @@
 
 	<!-- Site Header -->
 	<header class="header">
-		<div class="header-top">
+		<div class="header-top d-none d-md-block">
 			<div class="container">
 				<ul class="menu">
 					<li><a href="#">Сотрудничество</a></li>
@@ -29,17 +29,69 @@
 		</div>
 		<div class="header-middle">
 			<div class="container">
-				<div class="row">
+				<div class="row align-items-center">
 					<div class="col-auto">
-						<img class="logo" src="images/dest/logotype.svg" alt="Смазочная компания Интеравто">
+						<a href="index.html">
+							<img class="logo" src="images/dest/logotype.svg" alt="Смазочная компания Интеравто">
+						</a>
 					</div>
-					<div class="col">
+					<div class="col" style="position: static;">
 						<form action="" method="POST" class="search-form">
 							<input type="text" class="search-form-input form-control" placeholder="Поиск по каталогу" required>
-							<button type="submit" class="search-form-btn btn btn-dark">Найти</button>
+							<button type="submit" class="search-form-btn btn btn-dark">
+								<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M6.5 9C7.88071 9 9 7.88071 9 6.5C9 5.11929 7.88071 4 6.5 4C5.11929 4 4 5.11929 4 6.5C4 7.88071 5.11929 9 6.5 9ZM6.5 11C8.98528 11 11 8.98528 11 6.5C11 4.01472 8.98528 2 6.5 2C4.01472 2 2 4.01472 2 6.5C2 8.98528 4.01472 11 6.5 11Z" />
+									<path d="M8 9.41421L9.41421 8L13.996 12.5818L12.5818 13.996L8 9.41421Z" />
+								</svg>
+							</button>
+							<span class="search-form-close d-block d-md-none">
+								<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M8.00008 6.58586L11.293 3.29297L12.7072 4.70718L9.41429 8.00008L12.7072 11.293L11.293 12.7072L8.00008 9.41429L4.70718 12.7072L3.29297 11.293L6.58586 8.00008L3.29297 4.70718L4.70718 3.29297L8.00008 6.58586Z" />
+								</svg>
+							</span>
 						</form>
+						<div class="mobile-action d-flex d-md-none">
+							<div class="search">
+								<button class="search-btn">
+									<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M6.5 9C7.88071 9 9 7.88071 9 6.5C9 5.11929 7.88071 4 6.5 4C5.11929 4 4 5.11929 4 6.5C4 7.88071 5.11929 9 6.5 9ZM6.5 11C8.98528 11 11 8.98528 11 6.5C11 4.01472 8.98528 2 6.5 2C4.01472 2 2 4.01472 2 6.5C2 8.98528 4.01472 11 6.5 11Z" />
+										<path d="M8 9.41421L9.41421 8L13.996 12.5818L12.5818 13.996L8 9.41421Z" />
+									</svg>
+								</button>
+							</div>
+							<div class="burger">
+								<button class="burger-btn">
+									<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M2 2H14V4H2V2Z" />
+										<path d="M2 7H14V9H2V7Z" />
+										<path d="M2 12H14V14H2V12Z" />
+									</svg>
+								</button>
+							</div>
+						</div>
 					</div>
-					<div class="col-auto d-flex">
+					<!-- <div class="col-auto d-block d-md-none">
+						<div class="mobile-action">
+							<div class="search">
+								<button class="search-btn">
+									<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M6.5 9C7.88071 9 9 7.88071 9 6.5C9 5.11929 7.88071 4 6.5 4C5.11929 4 4 5.11929 4 6.5C4 7.88071 5.11929 9 6.5 9ZM6.5 11C8.98528 11 11 8.98528 11 6.5C11 4.01472 8.98528 2 6.5 2C4.01472 2 2 4.01472 2 6.5C2 8.98528 4.01472 11 6.5 11Z" />
+										<path d="M8 9.41421L9.41421 8L13.996 12.5818L12.5818 13.996L8 9.41421Z" />
+									</svg>
+								</button>
+							</div>
+							<div class="burger">
+								<button class="burger-btn">
+									<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M2 2H14V4H2V2Z" />
+										<path d="M2 7H14V9H2V7Z" />
+										<path d="M2 12H14V14H2V12Z" />
+									</svg>
+								</button>
+							</div>
+						</div>
+					</div> -->
+					<div class="col-auto d-none d-md-flex">
 						<div class="phone">
 							<a href="tel:+74995464545" class="phone-link" title="Позвонить">+7 499 546 45 45</a>
 							<span class="phone-descr">Пн-Пт 9:00-18:00</span>
@@ -51,7 +103,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="header-bottom">
+		<div class="header-bottom d-none d-md-block">
 			<div class="container">
 				<div class="row align-items-center">
 					<div class="header-bottom-catalog col-auto">
@@ -82,34 +134,34 @@
 			<div class="heroes-slider">
 				<div class="heroes-slide">
 					<div class="heroes-slide-inner">
-						<div class="content">
+						<div class="content order-1 order-md-0">
 							<h2 class="title">Термостойкие и графитовые смазки в ассортименте</h2>
 							<a href="#" class="btn btn-dark btn-icon-arrow">Подробнее</a>
 						</div>
-						<div class="image">
+						<div class="image order-0 order-md-1">
 							<img src="images/dest/slide-photo-01.png" alt="Термостойкие и графитовые смазки в ассортименте">
 						</div>
 					</div>
 				</div><!-- /.heroes-slide -->
 				<div class="heroes-slide">
 					<div class="heroes-slide-inner">
-						<div class="content">
-							<h2 class="title">Синяя пластичная смазка ROXOL LK-222</h2>
+						<div class="content order-1 order-md-0">
+							<h2 class="title">Красная пластичная смазка ROXOL LK-222</h2>
 							<a href="#" class="btn btn-dark btn-icon-arrow">Подробнее</a>
 						</div>
-						<div class="image">
-							<img src="images/dest/slide-photo-01.png" alt="Синяя пластичная смазка ROXOL LK-222">
+						<div class="image order-0 order-md-1">
+							<img src="https://farbex.ua/wp-content/uploads/2019/12/structure.png" alt="Синяя пластичная смазка ROXOL LK-222">
 						</div>
 					</div>
 				</div><!-- /.heroes-slide -->
 				<div class="heroes-slide">
 					<div class="heroes-slide-inner">
-						<div class="content">
-							<h2 class="title">ROXOL LIX EP</h2>
+						<div class="content order-1 order-md-0">
+							<h2 class="title">Структурная латексная краска Farbex</h2>
 							<a href="#" class="btn btn-dark btn-icon-arrow">Подробнее</a>
 						</div>
-						<div class="image">
-							<img src="images/dest/product-01.png" alt="ROXOL LIX EP">
+						<div class="image order-0 order-md-1">
+							<img src="https://farbex.ua/wp-content/uploads/2019/12/structure.png" alt="ROXOL LIX EP">
 						</div>
 					</div>
 				</div><!-- /.heroes-slide -->

@@ -85,40 +85,97 @@
 			background-position: 16px center
 			background-size: 16px
 			font-weight: 600
-		.nav
-			display: flex
-			justify-content: space-between
-			> li
-				> a
-					color: $black
-					font-size: 14px
-					font-weight: 600
-					&:hover
-						color: $accent
-		.parts-btn
-			display: flex
-			align-items: center
-			.burger
+		&-catalog
+			padding-right: 0
+		.header-menu
+			position: relative
+			&:not(.--jsfied)
+				overflow-x: auto
+				-webkit-overflow-scrolling: touch
+				-ms-overflow-style: none // Internet Explorer 10+
+				scrollbar-width: none // Firefox
+				&::-webkit-scrollbar
+					display: none
+			.--hidden
+				display: none
+			a,
+			button
+				width: 100%
+				height: 100%
+				display: block
+				font-size: 1em
+				line-height: 1.2
+				text-align: center
+				color: $black
+				background-color: transparent
+			// primary
+			&-primary
 				display: flex
-				flex-direction: column
-				justify-content: space-between
-				height: 12px
-				span
-					display: block
-					width: 12px
-					height: 2px
-					background: $darkblue
-					transition: .35s ease
-			> span
-				display: inline-block
-				margin-left: 10px
-				transition: .35s ease
-			&:hover
-				.burger
-					> span
-						background: $accent
-				> span
-					color: $accent
+				> li
+					flex-grow: 1
+					> a,
+					> button
+						white-space: nowrap
+						padding: 0 16px
+						&:hover, &:active
+							color: $accent
+				.more
+					.btn
+						padding-right: 0
+						transition: none
+						> svg
+							vertical-align: baseline
+							fill: $darkblue
+							transition: fill .35s ease, transform .25s ease
+						> span
+							display: inline-block
+							vertical-align: top
+							margin-left: 4px
+							transition: .35s ease
+						&:hover
+							> svg
+								fill: $accent
+							> span
+								color: $accent
+			&.--show-secondary .header-menu-primary
+				.more
+					.btn
+						> svg
+							fill: $accent
+							transform: rotate(90deg)
+						> span
+							color: $accent
+			// secondary
+			.-secondary
+				position: absolute
+				top: 100%
+				right: 0
+				z-index: 19
+				display: none
+				max-width: 100%
+				min-width: 100px
+				margin-top: 16px
+				padding: 10px
+				background-color: $white
+				box-shadow: 0px 0px 10px rgba(37, 55, 63, 0.1)
+				animation: nav-secondary 0.2s
+				a
+					padding: 0.6em
+					text-align: left
+					&:hover,
+					&:active
+						color: $accent
+			&.--show-secondary .-secondary
+				display: block
+
+		// keyframes
+		@keyframes nav-secondary
+			0%
+				opacity: 0
+				transform: translateY(-1em)
+			100%
+				opacity: 1
+				transform: translateY(0)
 
 
 // SECTION: "Heroes"

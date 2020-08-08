@@ -14,6 +14,7 @@ let paths = {
 			'node_modules/slick-carousel/slick/slick.min.js',
 			'node_modules/bootstrap/js/dist/util.js',
 			'node_modules/bootstrap/js/dist/tab.js',
+			baseDir + '/libs/FooTable-2.0.3/js/footable.js',
 			baseDir + '/js/app.js'
 		],
 		dest: baseDir + '/js',

@@ -105,4 +105,14 @@ jQuery(document).ready(function($) {
 		$('.search-form').removeClass('is-active')
 	})
 
+	// Toggle Mobile menu
+	$('.mobile-action .burger-btn').on('click', function() {
+		$('body').addClass('m-menu--opened')
+		$('.m-menu').addClass('is-active')
+	})
+	$('.m-menu-header .close').on('click', function() {
+		$('body').removeClass('m-menu--opened')
+		$('.m-menu').removeClass('is-active')
+	})
+
 });

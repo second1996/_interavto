@@ -1,26 +1,46 @@
 // Mobile menu
 .m-menu
-	// display: none
+	visibility: hidden
 	position: fixed
 	top: 0
 	left: 0
 	right: 0
+	bottom: 0
 	z-index: 1099
-	background-color: $white
+	height: 100%
+	opacity: 0
+	transition: .2s ease
+	&.is-active
+		visibility: visible
+		opacity: 1
+	&-wrapper
+		overflow-y: scroll
+		position: relative
+		z-index: 1
+		height: 100%
+		background-color: $white
 	&-header
+		position: fixed
+		top: 0
+		left: 0
+		right: 0
+		z-index: 1
+		background-color: $white
 		border-bottom: 1px solid $lightgray
 		> .container
 			height: 60px
 		.title
 			font-size: 12px
 			font-weight: 700
+			line-height: 1
 			text-transform: uppercase
 		.close
-			padding: 2px
+			padding: 5px 2px 5px 5px
 			> svg
 				fill: $darkblue
-	&-wrapper
-		padding: 24px 0
+	&-main
+		margin-top: 64px
+		padding: 24px 0 42px
 	&-catalog
 		.btn-catalog
 			width: 100%
@@ -28,6 +48,7 @@
 		margin-top: 24px
 		&-list
 			> li
+				padding-right: 2px
 				display: block
 				&:not(:first-child)
 					margin-top: 16px
@@ -42,19 +63,23 @@
 		margin-top: 24px
 		border-top: 1px solid $lightgray
 		.phone
+			display: inline-flex
+			flex-direction: column
 			margin-top: 16px
-			padding-left: 24px
-			background-image: url('../images/dest/icons/phone.svg')
-			background-repeat: no-repeat
-			background-position: left 6px
-			background-size: 16px
 			&-link
+				margin-bottom: 6px
+				padding-left: 24px
+				background-image: url('../images/dest/icons/phone.svg')
+				background-repeat: no-repeat
+				background-position: left center
+				background-size: 16px
 				color: $black
 				font-size: 18px
+				line-height: 1
 				&:hover
 					color: $accent
 			&-descr
-				display: block
+				padding-left: 24px
 				color: #76858c
 				line-height: 1
 		.contacts
@@ -63,7 +88,9 @@
 			border-top: 1px solid $lightgray
 			&-link
 				display: flex
+				align-items: center
 				justify-content: space-between
+				padding-right: 2px
 				color: $black
 				font-size: 18px
 				&:hover
@@ -98,6 +125,7 @@
 .btn, button
 	display: inline-block
 	vertical-align: middle
+	height: 40px
 	padding: 0 16px
 	border-radius: 24px
 	border: 0
@@ -142,7 +170,7 @@
 			border-color: $accent
 			color: $accent
 	&-catalog
-		display: inline-flex
+		display: flex
 		align-items: center
 		justify-content: center
 		.icon

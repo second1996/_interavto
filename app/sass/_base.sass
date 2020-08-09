@@ -1,3 +1,30 @@
+// GENERAL DOCUMENT STYLES
+::placeholder
+	color: $darkgray
+
+::selection
+	background-color: $accent
+	color: $white
+
+input, textarea
+	outline: none
+	// &:focus:required:invalid
+	// 	border-color: red
+	// &:required:valid
+	// 	border-color: green
+
+body
+	overflow-x: hidden
+	position: relative
+	min-width: 320px
+	color: $black
+	font-size: $fontsize
+	font-family: $font
+	line-height: 1.65
+	&.m-menu--opened
+		overflow: hidden
+
+
 // Margin
 .mt-35
 	margin-top: 35px

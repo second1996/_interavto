@@ -40,27 +40,3 @@ $container-max-widths: (sm: 540px, md: 720px, lg: 960px, xl: 1208px)
 @include font('Open Sans', normal, 600, '../fonts/opensans-semibold.woff2')
 @include font('Open Sans', normal, 700, '../fonts/opensans-bold.woff2')
 @include font('Open Sans', normal, 900, '../fonts/opensans-extrabold.woff2')
-
-// GENERAL DOCUMENT STYLES
-::placeholder
-	color: $darkgray
-
-::selection
-	background-color: $accent
-	color: $white
-
-input, textarea
-	outline: none
-	// &:focus:required:invalid
-	// 	border-color: red
-	// &:required:valid
-	// 	border-color: green
-
-body
-	overflow-x: hidden
-	position: relative
-	min-width: 320px
-	color: $black
-	font-size: $fontsize
-	font-family: $font
-	line-height: 1.65

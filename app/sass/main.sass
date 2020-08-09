@@ -259,7 +259,7 @@
 			font-size: 0px
 			+media-breakpoint-down(md)
 				top: auto
-				bottom: 18px
+				bottom: 22px
 			&:hover
 				opacity: 0.75
 			&.slick-disabled
@@ -348,11 +348,20 @@
 // SECTION: Categories
 .s-categories
 	.nav
-		justify-content: center
 		&-tabs
+			flex-wrap: nowrap
+			justify-content: center
 			border-color: $lightgray
-		&-link
+			+media-breakpoint-down(xs)
+				justify-content: flex-start
+		&-item
 			margin: 0 32px
+			+media-breakpoint-down(xs)
+				flex-basis: 92px
+				max-width: 92px
+				margin-left: 0
+				margin-right: 32px
+		&-link
 			padding: 0 0 20px 0
 			border-radius: 0
 			border: none
@@ -361,6 +370,8 @@
 			font-size: 12px
 			font-weight: 700
 			text-transform: uppercase
+			+media-breakpoint-down(xs)
+				padding-bottom: 16px
 			&.active
 				border-color: $accent
 				color: $black
@@ -434,6 +445,9 @@
 	&-buttons
 		.catalog-link
 			margin-top: 35px
+			.btn
+				display: flex
+				align-items: center
 		+media-breakpoint-down(md)
 			display: flex
 			align-items: center
@@ -503,12 +517,20 @@
 			margin-top: 20px
 		+media-breakpoint-down(sm)
 			margin-top: 60px
+		+media-breakpoint-down(xs)
+			.form-control
+				flex-basis: 65%
+			.form-label
+				flex-basis: 35%
 		.form-submit
 			width: 100%
 			max-width: 340px
 			margin-top: 40px
 			+media-breakpoint-down(lg)
 				max-width: 70%
+			+media-breakpoint-down(xs)
+				max-width: 65%
+				margin-top: 32px
 	&-descr
 		display: flex
 		.dots
@@ -545,7 +567,6 @@
 				height: 200px
 			+media-breakpoint-down(md)
 				width: 100vw
-			
 
 
 // SECTION: About Us
@@ -561,9 +582,13 @@
 .footer
 	margin-top: 120px
 	background: $lightgray
+	+media-breakpoint-down(lg)
+		margin-top: 80px
+	+media-breakpoint-down(sm)
+		margin-top: 60px
 	&-wrapper
 		padding-top: 30px
-		padding-bottom: 60px
+		padding-bottom: 40px
 	&-logo
 		> a
 			display: inline-block
@@ -576,12 +601,23 @@
 			padding-left: 24px
 			background-image: url('../images/dest/icons/phone.svg')
 			background-repeat: no-repeat
-			background-position: left 6px
+			background-position: left 4px
 			background-size: 16px
-			line-height: 32px
+			line-height: 1
+			+media-breakpoint-down(sm)
+				background-position-y: 0
+			+media-breakpoint-down(xs)
+				padding-top: 26px
+				padding-left: 0
+				background-position-y: 0
 			&-link
+				margin-bottom: 6px
 				color: $black
 				font-size: 24px
+				+media-breakpoint-down(sm)
+					font-size: 18px
+				+media-breakpoint-down(xs)
+					font-size: 14px
 				&:hover
 					color: $accent
 		.email
@@ -591,24 +627,36 @@
 			padding-left: 24px
 			background-image: url('../images/dest/icons/mail.svg')
 			background-repeat: no-repeat
-			background-position: left 5px
+			background-position: left 3px
 			background-size: 16px
-			line-height: 24px
+			line-height: 1
+			+media-breakpoint-down(xs)
+				padding-top: 24px
+				padding-left: 0
+				background-position-y: 0
 			&-link
 				color: $black
 				font-size: 18px
+				+media-breakpoint-down(xs)
+					font-size: 14px
 				&:hover
 					color: $accent
 		.adress
 			display: inline-flex
 			flex-direction: column
+			margin-bottom: 20px
 			line-height: 24px
-			&:not(:last-child)
-				margin-bottom: 20px
 			&-title
 				padding-left: 24px
 				color: $darkgray
 				font-size: 14px
+				+media-breakpoint-down(xs)
+					padding-top: 24px
+					padding-left: 0
+					background-image: url('../images/dest/icons/place.svg')
+					background-repeat: no-repeat
+					background-position: left 0
+					background-size: 16px
 			&-location
 				padding-left: 24px
 				color: $black
@@ -617,28 +665,18 @@
 				background-repeat: no-repeat
 				background-position: left 3px
 				background-size: 16px
+				+media-breakpoint-down(xs)
+					padding-left: 0
+					background: none
 		.navigation
-			display: flex
-			+media-breakpoint-down(md)
-				flex-wrap: wrap
-			&-list
-				flex: 0 0 50%
-				max-width: 50%
-				+media-breakpoint-down(md)
-					flex: 0 0 100%
-					max-width: 100%
-				&:nth-child(2)
-					padding-left: 20px
-					+media-breakpoint-down(md)
-						padding-left: 0
-				> li
-					margin-bottom: 8px
-					> a
-						color: $black
-						font-size: 14px
-						font-weight: 400
-						&:hover
-							color: $accent
+			> li
+				margin-bottom: 8px
+				> a
+					color: $black
+					font-size: 14px
+					font-weight: 400
+					&:hover
+						color: $accent
 		.social
 			display: flex
 			flex-wrap: wrap

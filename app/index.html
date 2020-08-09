@@ -20,7 +20,7 @@
 	<header class="header">
 		<div class="header-top d-none d-md-block">
 			<div class="container">
-				<ul class="menu">
+				<ul class="links">
 					<li><a href="#">Сотрудничество</a></li>
 					<li><a href="#">Стать дилером</a></li>
 					<li><a href="#">Личный кабинет</a></li>
@@ -107,7 +107,10 @@
 			<div class="container">
 				<div class="row align-items-center">
 					<div class="header-bottom-catalog col-auto">
-						<a href="page-catalog.html" class="catalog-btn btn btn-primary">Каталог</a>
+						<a href="page-catalog.html" class="btn btn-primary btn-catalog">
+							<svg class="icon icon-catalog"><use xlink:href="images/symbol-defs.svg#icon-catalog"></use></svg>
+							<span>Каталог</span>
+						</a>
 					</div>
 					<div class="header-bottom-nav col">
 						<div class="header-menu">
@@ -835,6 +838,57 @@
 			</div>
 		</div>
 	</footer>
+
+	<div class="m-menu">
+		<div class="m-menu-header">
+			<div class="container d-flex align-items-center justify-content-between">
+				<div class="title">Меню</div>
+				<span class="close">
+					<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path fill-rule="evenodd" clip-rule="evenodd" d="M8.00008 6.58586L11.293 3.29297L12.7072 4.70718L9.41429 8.00008L12.7072 11.293L11.293 12.7072L8.00008 9.41429L4.70718 12.7072L3.29297 11.293L6.58586 8.00008L3.29297 4.70718L4.70718 3.29297L8.00008 6.58586Z" />
+					</svg>
+				</span>
+			</div>
+		</div>
+		<div class="m-menu-wrapper">
+			<div class="container">
+				<div class="m-menu-catalog">
+					<a href="page-catalog.html" class="btn btn-primary btn-catalog">
+						<svg class="icon icon-catalog"><use xlink:href="images/symbol-defs.svg#icon-catalog"></use></svg>
+						<span>Каталог</span>
+					</a>
+				</div>
+				<div class="m-menu-nav">
+					<ul class="m-menu-nav-list" role="navigation">
+						<li><a href="#" class="link-arrow">О компании</a></li>
+						<li><a href="#" class="link-arrow">Отраслевые решения</a></li>
+						<li><a href="#" class="link-arrow">Техническая информация</a></li>
+						<li><a href="#" class="link-arrow">Области применения</a></li>
+						<li><a href="#" class="link-arrow">Трибология</a></li>
+						<li><a href="#" class="link-arrow">Статьи</a></li>
+						<li><a href="#" class="link-arrow">Новости</a></li>
+						<li><a href="#" class="link-arrow">Таблица аналогов</a></li>
+					</ul>
+				</div>
+				<div class="m-menu-info">
+					<div class="phone">
+						<a href="tel:+74995464545" class="phone-link" title="Позвонить">+7 499 546 45 45</a>
+						<span class="phone-descr">Пн-Пт 9:00-18:00</span>
+					</div>
+					<div class="contacts">
+						<a href="page-contacts.html" class="contacts-link link-arrow">Контакты</a>
+					</div>
+				</div>
+				<div class="m-menu-links">
+					<ul class="links">
+						<li><a href="#">Сотрудничество</a></li>
+						<li><a href="#">Стать дилером</a></li>
+						<li><a href="#">Личный кабинет</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
 
 	<script src="js/app.min.js"></script>
 	<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>

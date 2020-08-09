@@ -1,3 +1,99 @@
+// Mobile menu
+.m-menu
+	// display: none
+	position: fixed
+	top: 0
+	left: 0
+	right: 0
+	z-index: 1099
+	background-color: $white
+	&-header
+		border-bottom: 1px solid $lightgray
+		> .container
+			height: 60px
+		.title
+			font-size: 12px
+			font-weight: 700
+			text-transform: uppercase
+		.close
+			padding: 2px
+			> svg
+				fill: $darkblue
+	&-wrapper
+		padding: 24px 0
+	&-catalog
+		.btn-catalog
+			width: 100%
+	&-nav
+		margin-top: 24px
+		&-list
+			> li
+				display: block
+				&:not(:first-child)
+					margin-top: 16px
+				> a
+					display: flex
+					justify-content: space-between
+					color: $black
+					font-weight: 600
+					&:hover
+						color: $orange
+	&-info
+		margin-top: 24px
+		border-top: 1px solid $lightgray
+		.phone
+			margin-top: 16px
+			padding-left: 24px
+			background-image: url('../images/dest/icons/phone.svg')
+			background-repeat: no-repeat
+			background-position: left 6px
+			background-size: 16px
+			&-link
+				color: $black
+				font-size: 18px
+				&:hover
+					color: $accent
+			&-descr
+				display: block
+				color: #76858c
+				line-height: 1
+		.contacts
+			margin-top: 16px
+			padding-top: 16px
+			border-top: 1px solid $lightgray
+			&-link
+				display: flex
+				justify-content: space-between
+				color: $black
+				font-size: 18px
+				&:hover
+					color: $accent
+	&-links
+		margin-top: 16px
+		padding-top: 24px
+		border-top: 1px solid $lightgray
+		.links
+			> li
+				&:not(:first-child)
+					margin-top: 24px
+				> a
+					color: $black
+					&:hover
+						color: $accent
+
+
+// Links
+.link-arrow
+	&::after
+		content: ''
+		display: inline-block
+		vertical-align: middle
+		width: 16px
+		height: 16px
+		background: url('../images/dest/icons/arrow-dark.svg') no-repeat center/cover
+		transform: rotate(180deg)
+
+
 // Button
 .btn, button
 	display: inline-block
@@ -45,6 +141,16 @@
 		&:hover
 			border-color: $accent
 			color: $accent
+	&-catalog
+		display: inline-flex
+		align-items: center
+		justify-content: center
+		.icon
+			margin-left: 0
+		> span
+			margin-left: 10px
+			font-weight: 600
+
 
 
 // Form

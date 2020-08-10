@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function() {
+// document.addEventListener("DOMContentLoaded", function() {
 	// Adaptive menu
 	const container = document.querySelector('.header-menu')
 	const primary = container.querySelector('.header-menu-primary')
@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function() {
 	// insert "more" button and duplicate the list
 	primary.insertAdjacentHTML('beforeend', `
 		<li class="more">
-			<button class="btn btn-transparent" aria-haspopup="true" aria-expanded="false">
+			<button class="btn btn-more" aria-haspopup="true" aria-expanded="false">
 				<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
 					<path d="M2 2H14V4H2V2Z" />
 					<path d="M2 7H14V9H2V7Z" />
@@ -84,7 +84,7 @@ document.addEventListener("DOMContentLoaded", function() {
 		moreBtn.setAttribute('aria-expanded', false)
 	})
 
-});
+// });
 
 
 jQuery(document).ready(function($) {

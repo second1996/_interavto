@@ -1,0 +1,41 @@
+@import '../helpers/helpers'
+
+.form
+	&-group
+		display: flex
+		align-items: center
+		justify-content: space-between
+		&:not(:first-child)
+			margin-top: 24px
+		.form-control
+			flex: 0 0 70%
+			margin-bottom: 0
+		.form-label
+			flex: 0 0 30%
+	&-label
+		margin-bottom: 0
+		cursor: pointer
+	&-control,
+	&-textarea
+		appearance: none
+		display: block
+		width: 100%
+		max-width: 340px
+		margin-bottom: 20px
+		color: $darkblue
+		font-family: $font
+		font-size: 14px
+		font-weight: 400
+		border-radius: 4px
+		border: 0
+		background-color: $white
+		background-clip: padding-box
+		color: $black
+		transition: border-color .3s ease-in-out, box-shadow .3s ease-in-out
+	&-control
+		height: 40px
+		padding: 0 16px
+		line-height: 40px
+	&-textarea
+		resize: none
+		padding: 8px 16px

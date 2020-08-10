@@ -15,14 +15,14 @@ let paths = {
 			'node_modules/slick-carousel/slick/slick.min.js',
 			'node_modules/bootstrap/js/dist/util.js',
 			'node_modules/bootstrap/js/dist/tab.js',
-			baseDir + '/libs/FooTable-2.0.3/js/footable.js',
+			// baseDir + '/libs/FooTable-2.0.3/js/footable.js',
 			baseDir + '/js/app.js'
 		],
 		dest: baseDir + '/js',
 	},
 
 	styles: {
-		src:  baseDir + '/' + preprocessor + '/main.*',
+		src:  baseDir + '/' + preprocessor + '/**/*.sass',
 		dest: baseDir + '/css',
 	},
 
@@ -79,9 +79,9 @@ function scripts() {
 function styles() {
 	return src(paths.styles.src)
 	.pipe(eval(preprocessor)())
-	.pipe(concat(paths.cssOutputName))
+	// .pipe(concat(paths.cssOutputName))
 	.pipe(autoprefixer({ overrideBrowserslist: ['last 10 versions'], grid: true }))
-	.pipe(cleancss( {level: { 1: { specialComments: 0 } },/* format: 'beautify' */ }))
+	.pipe(cleancss( {level: { 1: { specialComments: 0 } }, format: 'beautify' }))
 	.pipe(dest(paths.styles.dest))
 	.pipe(browserSync.stream())
 }

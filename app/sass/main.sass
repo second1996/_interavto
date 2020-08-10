@@ -247,6 +247,7 @@
 		margin-top: -72px
 		padding-bottom: 80px
 		box-shadow: 0px 0px 30px rgba(37, 55, 63, 0.2)
+		background-color: $white
 		visibility: hidden
 		opacity: 0
 		transform: translateY(-20px)
@@ -256,7 +257,6 @@
 			max-height: 400px
 			margin-top: -60px
 			padding-bottom: 20px
-			background-color: $white
 			&::after
 				content: ''
 				position: absolute
@@ -266,7 +266,7 @@
 				right: 0
 				z-index: 10
 				bottom: 20px
-				height: 30px
+				height: 20px
 				background: linear-gradient(to top, rgba($white, 1) 0%, rgba($white, 0.25) 100%)
 		&.is-active
 			visibility: visible
@@ -788,6 +788,8 @@
 			align-items: center
 			+media-breakpoint-down(md)
 				margin-top: 30px
+			+media-breakpoint-down(sm)
+				margin-top: 16px
 			> a
 				display: flex
 				align-items: center

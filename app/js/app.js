@@ -118,10 +118,8 @@ jQuery(document).ready(function($) {
 	})
 	$('#header-search-form .search-form-input').on('click', function(e) {
 		searchBlock.addClass('is-active')
-		$('body').addClass('m-menu--opened')
 		$('body').append('<div class="header-search-backdrop"></div>')
 		$('.header-search-backdrop').click(function() {
-			$('body').removeClass('m-menu--opened')
 			searchBlock.removeClass('is-active')
 			$(this).remove()
 		})

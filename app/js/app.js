@@ -1,4 +1,4 @@
-// document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function() {
 	// Adaptive menu
 	const container = document.querySelector('.header-menu')
 	const primary = container.querySelector('.header-menu-primary')
@@ -84,7 +84,7 @@
 		moreBtn.setAttribute('aria-expanded', false)
 	})
 
-// });
+});
 
 
 jQuery(document).ready(function($) {

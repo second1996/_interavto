@@ -154,9 +154,6 @@
 				display: none
 			a:not(.btn-catalog),
 			button
-				display: block
-				width: 100%
-				height: 100%
 				background-color: $trsp
 				color: $black
 				font-size: 14px
@@ -168,21 +165,30 @@
 				position: relative
 				display: flex
 				align-items: center
+				justify-content: space-between
 				margin-right: 114px
+				padding-right: 32px
+				+media-breakpoint-down(md)
+					margin-right: 100px
+					padding-right: 40px
 				> li
-					flex-grow: 1
 					&:first-child
 						max-width: 114px
 						margin-right: 16px
-					> a:not(.btn-catalog),
+						+media-breakpoint-down(md)
+							margin-right: 0
+					> a:not(.btn-catalog)
+						padding: 0 9px
 						white-space: nowrap
-						padding: 0 16px
-						&:hover, &:active
+						&:hover,
+						&:active
 							color: $accent
 					&.more
 						position: absolute
 						left: 100%
 						white-space: nowrap
+						+media-breakpoint-down(md)
+							margin-left: -12px
 						> li
 							white-space: normal
 			&.--show-secondary .header-menu-primary
@@ -201,18 +207,22 @@
 				z-index: 19
 				display: none
 				max-width: 100%
-				min-width: 100px
-				margin-top: 16px
-				padding: 10px
+				min-width: 230px
+				margin-top: 12px
+				padding: 15px 20px
 				background-color: $white
 				box-shadow: 0px 0px 10px rgba(37, 55, 63, 0.1)
 				animation: nav-secondary 0.2s
-				a
-					padding: 0.6em
-					text-align: left
-					&:hover,
-					&:active
-						color: $accent
+				> li
+					white-space: normal
+					&:not(:last-child)
+						margin-bottom: 20px
+					> a
+						display: block
+						text-align: left
+						&:hover,
+						&:active
+							color: $accent
 			&.--show-secondary .-secondary
 				display: block
 		// keyframes

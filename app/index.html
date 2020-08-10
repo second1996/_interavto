@@ -35,8 +35,8 @@
 							<img class="logo" src="images/dest/logotype.svg" alt="Смазочная компания Интеравто">
 						</a>
 					</div>
-					<div class="col" style="position: static;">
-						<form action="" method="POST" class="search-form">
+					<div class="col">
+						<form action="" method="GET" id="header-search-form" class="search-form">
 							<input type="text" class="search-form-input form-control" placeholder="Поиск по каталогу" required>
 							<button type="submit" class="search-form-btn btn btn-dark">
 								<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -70,27 +70,6 @@
 							</div>
 						</div>
 					</div>
-					<!-- <div class="col-auto d-block d-md-none">
-						<div class="mobile-action">
-							<div class="search">
-								<button class="search-btn">
-									<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path fill-rule="evenodd" clip-rule="evenodd" d="M6.5 9C7.88071 9 9 7.88071 9 6.5C9 5.11929 7.88071 4 6.5 4C5.11929 4 4 5.11929 4 6.5C4 7.88071 5.11929 9 6.5 9ZM6.5 11C8.98528 11 11 8.98528 11 6.5C11 4.01472 8.98528 2 6.5 2C4.01472 2 2 4.01472 2 6.5C2 8.98528 4.01472 11 6.5 11Z" />
-										<path d="M8 9.41421L9.41421 8L13.996 12.5818L12.5818 13.996L8 9.41421Z" />
-									</svg>
-								</button>
-							</div>
-							<div class="burger">
-								<button class="burger-btn">
-									<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path d="M2 2H14V4H2V2Z" />
-										<path d="M2 7H14V9H2V7Z" />
-										<path d="M2 12H14V14H2V12Z" />
-									</svg>
-								</button>
-							</div>
-						</div>
-					</div> -->
 					<div class="col-auto d-none d-md-flex">
 						<div class="phone">
 							<a href="tel:+74995464545" class="phone-link" title="Позвонить">+7 499 546 45 45</a>
@@ -124,6 +103,71 @@
 								<li><a href="#">Новости</a></li>
 								<li><a href="#">Таблица аналогов</a></li>
 							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="header-search">
+			<div class="header-search-inner">
+				<div class="container">
+					<div class="row justify-content-center">
+						<div class="col-md-4 col-lg-3">
+							<div class="header-search-sections">
+								<div class="header-search-title">Разделы</div>
+								<ul class="header-search-list header-search-list--bolder">
+									<li>
+										<a href="#">Высокотемпературные смазки</a>
+									</li>
+									<li>
+										<a href="#">Пасты приработочные</a>
+									</li>
+									<li>
+										<a href="#">Аэрозольные смазки</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-md-4 col-lg-3">
+							<div class="header-search-goods">
+								<div class="header-search-title">Товары</div>
+								<ul class="header-search-list">
+									<li>
+										<a href="#">Смазка ПФМС-4С ТУ 6-02-917-79</a>
+									</li>
+									<li>
+										<a href="#">Тефлоновая смазка ROXOL FPG-250</a>
+									</li>
+									<li>
+										<a href="#">Перфторполиэфирная смазка ROXOL PFP-280</a>
+									</li>
+									<li>
+										<a href="#">Медная паста ROXOL Cu-650</a>
+									</li>
+									<li>
+										<a href="#">Медная паста ROXOL-1240</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-md-4 col-lg-3">
+							<div class="header-search-articles">
+								<div class="header-search-title">Статьи</div>
+								<ul class="header-search-list">
+									<li>
+										<a href="#">Как выбрать смазку для цепей?</a>
+									</li>
+									<li>
+										<a href="#">Консистентная смазка OKS-404: как подобрать достойную отечественную альтернативу</a>
+									</li>
+									<li>
+										<a href="#">Основы выбора термостойких смазок для обслуживания арматуры энергетического комплекса</a>
+									</li>
+									<li>
+										<a href="#">Основы выбора термостойких смазок для обслуживания арматуры энергетического комплекса</a>
+									</li>
+								</ul>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -247,7 +291,7 @@
 									<svg class="icon icon-meat"><use xlink:href="images/symbol-defs.svg#icon-meat"></use></svg>
 								</div>
 								<div class="title">
-									<span>Молочная и мясоперерабатывающая отрасли</span>
+									<span>Молочная и мясоперерабатывающая отрасли</span>
 									<svg class="icon icon-arrow"><use xlink:href="images/symbol-defs.svg#icon-arrow"></use></svg>
 								</div>
 							</a>
@@ -395,7 +439,7 @@
 							<div class="dots dots--orange"></div>
 							<div class="catalog-link">
 								<a href="#" class="btn btn-outline">
-									<span>Перейти в каталог</span>
+									<span>Перейти в каталог продукции</span>
 									<svg class="icon icon-catalog"><use xlink:href="images/symbol-defs.svg#icon-catalog"></use></svg>
 								</a>
 							</div>
@@ -408,7 +452,7 @@
 							<a href="#" class="s-products-list-item">
 								<figure class="image">
 									<img src="images/dest/icons/products/high-temperature.svg" alt="" class="image-icon">
-									<img src="https://mskz.kz/wp-content/uploads/2019/10/21-2.png" alt="" class="image-photo">
+									<img class="image-photo lazy" data-src="images/dest/products/product-1.jpg" alt="">
 								</figure>
 								<h4 class="title">Высоко-температурные смазки</h4>
 							</a>
@@ -417,7 +461,7 @@
 							<a href="#" class="s-products-list-item">
 								<figure class="image">
 									<img src="images/dest/icons/products/past.svg" alt="" class="image-icon">
-									<img src="https://tehsintez.com/wp-content/uploads/2019/06/%D0%92%D0%9D%D0%98%D0%98-%D0%9D%D0%9F-232-2.jpg" alt="" class="image-photo">
+									<img class="image-photo lazy" data-src="images/dest/products/product-2.jpg" alt="">
 								</figure>
 								<h4 class="title">Пасты приработочные</h4>
 							</a>
@@ -426,7 +470,7 @@
 								<a href="#" class="s-products-list-item">
 								<figure class="image">
 									<img src="images/dest/icons/products/high-temperature.svg" alt="" class="image-icon">
-									<img src="https://tehsintez.com/wp-content/uploads/2019/06/%D0%92%D0%9D%D0%98%D0%98-%D0%9D%D0%9F-232-2.jpg" alt="" class="image-photo">
+									<img class="image-photo lazy" data-src="images/dest/products/product-3.jpg" alt="">
 								</figure>
 								<h4 class="title">Аэрозольные смазки</h4>
 							</a>
@@ -435,7 +479,7 @@
 								<a href="#" class="s-products-list-item">
 								<figure class="image">
 									<img src="images/dest/icons/products/oil.svg" alt="" class="image-icon">
-									<img src="https://tehsintez.com/wp-content/uploads/2019/06/%D0%92%D0%9D%D0%98%D0%98-%D0%9D%D0%9F-232-2.jpg" alt="" class="image-photo">
+									<img class="image-photo lazy" data-src="images/dest/products/product-4.jpg" alt="">
 								</figure>
 								<h4 class="title">Масла</h4>
 							</a>
@@ -444,7 +488,7 @@
 								<a href="#" class="s-products-list-item">
 								<figure class="image">
 									<img src="images/dest/icons/products/syntethic.svg" alt="" class="image-icon">
-									<img src="https://www.klueber.ru/ecomaXL/get_blob.php?name=2_-_vnutr.jpg&max_w=320" alt="" class="image-photo">
+									<img class="image-photo lazy" data-src="images/dest/products/product-5.jpg" alt="">
 								</figure>
 								<h4 class="title">Смазки на синтетических маслах</h4>
 							</a>
@@ -453,7 +497,7 @@
 								<a href="#" class="s-products-list-item">
 								<figure class="image">
 									<img src="images/dest/icons/products/low-temperature.svg" alt="" class="image-icon">
-									<img src="https://tehsintez.com/wp-content/uploads/2019/06/%D0%92%D0%9D%D0%98%D0%98-%D0%9D%D0%9F-232-2.jpg" alt="" class="image-photo">
+									<img class="image-photo lazy" data-src="images/dest/products/product-6.jpg" alt="">
 								</figure>
 								<h4 class="title">Морозостойкие смазки</h4>
 							</a>
@@ -462,7 +506,7 @@
 								<a href="#" class="s-products-list-item">
 								<figure class="image">
 									<img src="images/dest/icons/products/food.svg" alt="" class="image-icon">
-									<img src="https://tehsintez.com/wp-content/uploads/2019/06/%D0%92%D0%9D%D0%98%D0%98-%D0%9D%D0%9F-232-2.jpg" alt="" class="image-photo">
+									<img class="image-photo lazy" data-src="images/dest/products/product-7.jpg" alt="">
 								</figure>
 								<h4 class="title">Пищевые смазки</h4>
 							</a>
@@ -471,7 +515,7 @@
 								<a href="#" class="s-products-list-item">
 								<figure class="image">
 									<img src="images/dest/icons/products/perftor.svg" alt="" class="image-icon">
-									<img src="https://tehsintez.com/wp-content/uploads/2019/06/%D0%92%D0%9D%D0%98%D0%98-%D0%9D%D0%9F-232-2.jpg" alt="" class="image-photo">
+									<img class="image-photo lazy" data-src="images/dest/products/product-8.jpg" alt="">
 								</figure>
 								<h4 class="title">Перфтор-полиэфирные смазки</h4>
 							</a>
@@ -480,7 +524,7 @@
 								<a href="#" class="s-products-list-item">
 								<figure class="image">
 									<img src="images/dest/icons/products/rezba.svg" alt="" class="image-icon">
-									<img src="https://tehsintez.com/wp-content/uploads/2019/06/%D0%92%D0%9D%D0%98%D0%98-%D0%9D%D0%9F-232-2.jpg" alt="" class="image-photo">
+									<img class="image-photo lazy" data-src="images/dest/products/product-9.jpg" alt="">
 								</figure>
 								<h4 class="title">Резьбовые смазки</h4>
 							</a>
@@ -489,7 +533,7 @@
 								<a href="#" class="s-products-list-item">
 								<figure class="image">
 									<img src="images/dest/icons/products/oil.svg" alt="" class="image-icon">
-									<img src="https://tehsintez.com/wp-content/uploads/2019/06/%D0%92%D0%9D%D0%98%D0%98-%D0%9D%D0%9F-232-2.jpg" alt="" class="image-photo">
+									<img class="image-photo lazy" data-src="images/dest/products/product-10.jpg" alt="">
 								</figure>
 								<h4 class="title">Многоцелевые смазки</h4>
 							</a>
@@ -498,7 +542,7 @@
 								<a href="#" class="s-products-list-item">
 								<figure class="image">
 									<img src="images/dest/icons/products/electricity.svg" alt="" class="image-icon">
-									<img src="https://tehsintez.com/wp-content/uploads/2019/06/%D0%92%D0%9D%D0%98%D0%98-%D0%9D%D0%9F-232-2.jpg" alt="" class="image-photo">
+									<img class="image-photo lazy" data-src="images/dest/products/product-11.jpg" alt="">
 								</figure>
 								<h4 class="title">Электро-проводящие</h4>
 							</a>
@@ -507,7 +551,7 @@
 								<a href="#" class="s-products-list-item">
 								<figure class="image">
 									<img src="images/dest/icons/products/powder.svg" alt="" class="image-icon">
-									<img src="https://tehsintez.com/wp-content/uploads/2019/06/%D0%92%D0%9D%D0%98%D0%98-%D0%9D%D0%9F-232-2.jpg" alt="" class="image-photo">
+									<img class="image-photo lazy" data-src="images/dest/products/product-12.jpg" alt="">
 								</figure>
 								<h4 class="title">Сухие смазки</h4>
 							</a>
@@ -516,7 +560,7 @@
 								<a href="#" class="s-products-list-item">
 								<figure class="image">
 									<img src="images/dest/icons/products/silicon.svg" alt="" class="image-icon">
-									<img src="https://tehsintez.com/wp-content/uploads/2019/06/%D0%92%D0%9D%D0%98%D0%98-%D0%9D%D0%9F-232-2.jpg" alt="" class="image-photo">
+									<img class="image-photo lazy" data-src="images/dest/products/product-13.jpg" alt="">
 								</figure>
 								<h4 class="title">Силиконовые смазки</h4>
 							</a>
@@ -525,7 +569,7 @@
 								<a href="#" class="s-products-list-item">
 								<figure class="image">
 									<img src="images/dest/icons/products/graphit.svg" alt="" class="image-icon">
-									<img src="https://tehsintez.com/wp-content/uploads/2019/06/%D0%92%D0%9D%D0%98%D0%98-%D0%9D%D0%9F-232-2.jpg" alt="" class="image-photo">
+									<img class="image-photo lazy" data-src="images/dest/products/product-14.jpg" alt="">
 								</figure>
 								<h4 class="title">Графитные смазки</h4>
 							</a>
@@ -534,7 +578,7 @@
 								<a href="#" class="s-products-list-item">
 								<figure class="image">
 									<img src="images/dest/icons/products/tverd.svg" alt="" class="image-icon">
-									<img src="https://tehsintez.com/wp-content/uploads/2019/06/%D0%92%D0%9D%D0%98%D0%98-%D0%9D%D0%9F-232-2.jpg" alt="" class="image-photo">
+									<img class="image-photo lazy" data-src="images/dest/products/product-15.jpg" alt="">
 								</figure>
 								<h4 class="title">Твердосмазочные покрытия</h4>
 							</a>
@@ -586,7 +630,7 @@
 					</div>
 					<div class="col-md-5 order-0 order-md-1">
 						<div class="s-cta-expert">
-							<img src="images/dest/expert.png" alt="" class="photo">
+							<img class="photo lazy" data-src="images/dest/expert.png" alt="">
 							<div class="figure"></div>
 						</div>
 					</div>
@@ -603,7 +647,7 @@
 				<div class="col-xl-6">
 					<div class="card">
 						<div class="card-photo rounded-right">
-							<img src="images/dest/advantages-1.png" alt="">
+							<img class="lazy" data-src="images/dest/advantages-1.png" alt="">
 							<div class="dots dots--orange dots-top-right"></div>
 						</div>
 						<div class="card-meta">
@@ -615,7 +659,7 @@
 				<div class="col-sm-6 col-xl-3">
 					<div class="card">
 						<div class="card-photo rounded-right">
-							<img src="images/dest/advantages-2.png" alt="">
+							<img class="lazy" data-src="images/dest/advantages-2.png" alt="">
 							<div class="dots dots--orange dots-bottom-right"></div>
 						</div>
 						<div class="card-meta">
@@ -627,7 +671,7 @@
 				<div class="col-sm-6 col-xl-3">
 					<div class="card">
 						<div class="card-photo rounded-left">
-							<img src="images/dest/advantages-3.png" alt="">
+							<img class="lazy" data-src="images/dest/advantages-3.png" alt="">
 							<div class="dots dots--orange dots-top-left"></div>
 						</div>
 						<div class="card-meta">
@@ -706,7 +750,7 @@
 							<div class="card card--news">
 								<div class="card-photo rounded-right">
 									<a href="#">
-										<img src="images/dest/advantages-3.png" alt="">
+										<img class="lazy" data-src="images/dest/news-photo-1.jpg" alt="">
 									</a>
 									<div class="dots dots--gray dots-top-right"></div>
 								</div>
@@ -721,7 +765,7 @@
 							<div class="card card--news">
 								<div class="card-photo rounded-right">
 									<a href="#">
-										<img src="images/dest/advantages-1.png" alt="">
+										<img class="lazy" data-src="images/dest/news-photo-2.jpg" alt="">
 									</a>
 									<div class="dots dots--gray dots-top-right"></div>
 								</div>
@@ -736,7 +780,7 @@
 							<div class="card card--news">
 								<div class="card-photo rounded-right">
 									<a href="#">
-										<img src="images/dest/advantages-2.png" alt="">
+										<img class="lazy" data-src="images/dest/news-photo-3.jpg" alt="">
 									</a>
 									<div class="dots dots--gray dots-top-right"></div>
 								</div>
@@ -751,7 +795,7 @@
 							<div class="card card--news">
 								<div class="card-photo rounded-right">
 									<a href="#">
-										<img src="images/dest/advantages-3.png" alt="">
+										<img class="lazy" data-src="images/dest/news-photo-4.jpg" alt="">
 									</a>
 									<div class="dots dots--gray dots-top-right"></div>
 								</div>

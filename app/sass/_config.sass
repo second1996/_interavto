@@ -1,4 +1,6 @@
-// USER VARIABLES SECTION
+/* ==========================================================================
+   Variables
+   ========================================================================== */
 $accent: #ff6c02
 $darkblue: #25373f
 $lightblue: #becfd7
@@ -11,12 +13,19 @@ $system: -apple-system, BlinkMacSystemFont, Arial, sans-serif // System Font Fam
 $font: 'Open Sans', sans-serif
 $fontsize: 14px
 
-// Bootstrap compatible gutter variable => $gutter
+
+/* ==========================================================================
+   Bootstrap settings
+   ========================================================================== */
 $grid-gutter-width: 40px
 $gutter: $grid-gutter-width
 $container-max-widths: (sm: 540px, md: 720px, lg: 960px, xl: 1208px)
+$grid-breakpoints: (xxs: 0, xs: 375px, sm: 576px, md: 768px, lg: 992px, xl: 1200px,)
 
-// IMPORT SECTION
+
+/* ==========================================================================
+   Import sections
+   ========================================================================== */
 @import 'node_modules/bootstrap/scss/bootstrap-reboot.scss'
 @import 'node_modules/bootstrap/scss/mixins/_breakpoints.scss'
 @import 'node_modules/bootstrap/scss/bootstrap-grid.scss'
@@ -26,7 +35,9 @@ $container-max-widths: (sm: 540px, md: 720px, lg: 960px, xl: 1208px)
 @import '../libs/FooTable-2.0.3/css/footable.core.min'
 
 
-// FONTS LOAD SECTION
+/* ==========================================================================
+   Fonts load
+   ========================================================================== */
 @mixin font($fname, $fstyle, $fweight, $furl)
 	@font-face
 		font-family: $fname

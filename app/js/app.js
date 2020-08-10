@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-
+	// Adaptive menu
 	const container = document.querySelector('.header-menu')
 	const primary = container.querySelector('.header-menu-primary')
 	const primaryItems = container.querySelectorAll('.header-menu-primary > li:not(.more)')
@@ -88,6 +88,15 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 jQuery(document).ready(function($) {
+
+	// LazyLoad
+	var lazyLoadInstance = new LazyLoad({
+    elements_selector: ".lazy",
+    // callback_loaded: function(element) {
+    //   console.log("👍 LOADED", element);
+    //   $(element).siblings('.lazy-spin').remove();
+    // },
+  });
 	
 	// Home slider
 	$('.heroes-slider').slick({
@@ -98,11 +107,24 @@ jQuery(document).ready(function($) {
 	})
 
 	// Toggle Search form
+	var searchBlock = $('.header-search')
+
 	$('.mobile-action .search-btn').on('click', function() {
-		$('.search-form').addClass('is-active')
+		$('#header-search-form').addClass('is-active')
 	})
-	$('.search-form .search-form-close').on('click', function() {
-		$('.search-form').removeClass('is-active')
+	$('#header-search-form .search-form-close').on('click', function() {
+		$('#header-search-form').removeClass('is-active')
+		searchBlock.removeClass('is-active')
+	})
+	$('#header-search-form .search-form-input').on('click', function(e) {
+		searchBlock.addClass('is-active')
+		$('body').addClass('m-menu--opened')
+		$('body').append('<div class="header-search-backdrop"></div>')
+		$('.header-search-backdrop').click(function() {
+			$('body').removeClass('m-menu--opened')
+			searchBlock.removeClass('is-active')
+			$(this).remove()
+		})
 	})
 
 	// Toggle Mobile menu

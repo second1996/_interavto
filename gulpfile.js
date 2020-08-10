@@ -11,6 +11,7 @@ let paths = {
 	scripts: {
 		src: [
 			'node_modules/jquery/dist/jquery.min.js',
+			'node_modules/vanilla-lazyload/dist/lazyload.min.js',
 			'node_modules/slick-carousel/slick/slick.min.js',
 			'node_modules/bootstrap/js/dist/util.js',
 			'node_modules/bootstrap/js/dist/tab.js',

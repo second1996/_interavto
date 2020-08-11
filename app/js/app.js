@@ -113,12 +113,17 @@ jQuery(document).ready(function($) {
   })
 	
 	// Home slider
-	$('.heroes-slider').slick({
-		// autoplay: true,
-		// autoplaySpeed: 3000,
-		// infinite: false,
-		dots: true,
-	})
+	if( $.fn.slick ) {
+		$('.heroes-slider').slick({
+			// autoplay: true,
+			// autoplaySpeed: 3000,
+			infinite: false,
+			dots: true,
+		})
+	}
+	// $('.heroes-slide').on('beforeChange', function(event, slick, currentSlide, nextSlide){
+	// 	lazyLoadInstance.update();
+	// });
 
 	// Toggle Search form
 	var searchBlock = $('.header-search')

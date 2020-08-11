@@ -1,3 +1,6 @@
+.row-items > [class*=col] {
+  margin-bottom: 40px
+}
 *,
 ::after,
 ::before {

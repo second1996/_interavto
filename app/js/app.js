@@ -134,10 +134,13 @@ jQuery(document).ready(function($) {
 	$('#header-search-form .search-form-close').on('click', function() {
 		$('#header-search-form').removeClass('is-active')
 		searchBlock.removeClass('is-active')
+		$('.header-search-backdrop').remove()
 	})
-	$('#header-search-form .search-form-input').on('click', function(e) {
+	$('#header-search-form .search-form-input').on('click', function() {
 		searchBlock.addClass('is-active')
-		$('body').append('<div class="header-search-backdrop"></div>')
+		if( !$('.header-search-backdrop').length ) {
+			$('body').append('<div class="header-search-backdrop"></div>')
+		}
 		$('.header-search-backdrop').click(function() {
 			searchBlock.removeClass('is-active')
 			$(this).remove()
@@ -146,12 +149,35 @@ jQuery(document).ready(function($) {
 
 	// Toggle Mobile menu
 	$('.mobile-action .burger-btn').on('click', function() {
-		$('body').addClass('m-menu--opened')
+		$('body').addClass('disable-scroll')
 		$('.m-menu').addClass('is-active')
 	})
 	$('.m-menu-header .close').on('click', function() {
-		$('body').removeClass('m-menu--opened')
+		$('body').removeClass('disable-scroll')
 		$('.m-menu').removeClass('is-active')
+	})
+
+	// Toggle Product filter
+	$('#product-filter .filter-trigger').on('click', function() {
+		$('body').addClass('disable-scroll')
+		$('.filter-wrapper').addClass('is-active')
+		if( !$('.modal-backdrop').length ) {
+			$('body').append('<div class="modal-backdrop fade"></div>')
+			$('.modal-backdrop').delay(20).queue(function () {
+				$(this).addClass('show')
+				$(this).dequeue()
+			})
+			$('.modal-backdrop').click(function() {
+				$(this).remove()
+				$('body').removeClass('disable-scroll')
+				$('.filter-wrapper').removeClass('is-active')
+			})
+		}
+	})
+	$('#product-filter .filter-header .close').on('click', function() {
+		$('body').removeClass('disable-scroll')
+		$('.filter-wrapper').removeClass('is-active')
+		$('.modal-backdrop').remove()
 	})
 
 })

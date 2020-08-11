@@ -1,11 +1,20 @@
 @import '../helpers/helpers'
 @import '../components/breadcrumbs'
+@import '../components/pagination'
 @import 'aside'
+@import 'article'
 
 .main
 	&-header
 		margin-bottom: 40px
 		.title
 			margin-top: 32px
+		+media-breakpoint-down(sm)
+			margin-bottom: 32px
+			.title
+				margin-top: 16px
+	&-sidebar
+		position: static
 	&-body
-		
+	&-seo
+		margin-top: 120px

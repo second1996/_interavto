@@ -10,13 +10,8 @@ let paths = {
 
 	scripts: {
 		src: [
-			'node_modules/jquery/dist/jquery.min.js',
-			'node_modules/vanilla-lazyload/dist/lazyload.min.js',
-			'node_modules/slick-carousel/slick/slick.min.js',
 			'node_modules/bootstrap/js/dist/util.js',
 			'node_modules/bootstrap/js/dist/tab.js',
-			// baseDir + '/libs/FooTable-2.0.3/js/footable.js',
-			baseDir + '/js/app.js'
 		],
 		dest: baseDir + '/js',
 	},
@@ -39,7 +34,7 @@ let paths = {
 	},
 
 	cssOutputName: 'app.min.css',
-	jsOutputName:  'app.min.js',
+	jsOutputName:  'bootstrap.min.js',
 
 }
 

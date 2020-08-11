@@ -8,10 +8,13 @@
 		align-items: center
 		> li
 			&:not(:last-child)::after
-				content: '—'
+				content: ''
 				display: inline-block
+				vertical-align: middle
+				width: 12px
+				height: 1px
 				margin: 0 16px
-				color: $darkgray
+				background-color: $darkgray
 				font-size: 12px
 			> a
 				font-size: 12px

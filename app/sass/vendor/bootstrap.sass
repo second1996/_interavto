@@ -8,3 +8,18 @@
 @import 'node_modules/bootstrap/scss/bootstrap-grid.scss'
 @import 'node_modules/bootstrap/scss/_nav.scss'
 @import 'node_modules/bootstrap/scss/_transitions.scss'
+
+.row-items
+	> [class*="col"]
+		margin-bottom: 40px
+
+.no-xs-gutters
+	+media-breakpoint-down(xs)
+		margin-right: 0
+		margin-left: 0
+		margin-bottom: 40px
+		> .col,
+		> [class*="col-"]
+			margin: -1px 0 0 -1px
+			padding-right: 0
+			padding-left: 0

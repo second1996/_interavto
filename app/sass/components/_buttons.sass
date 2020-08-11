@@ -33,6 +33,14 @@
 		&:hover
 			background-color: $accent
 			color: $white
+	&-white
+		border: 1px solid $lightgray
+		background-color: $white
+		color: $black
+		&:hover
+			border-color: $accent
+			background-color: $white
+			color: $accent
 	&-transparent
 		padding: 0
 		line-height: 1
@@ -48,7 +56,8 @@
 			border-color: $accent
 			color: $accent
 	&-catalog,
-	&-filter
+	&-filter,
+	&-clear
 		display: flex
 		align-items: center
 		justify-content: center

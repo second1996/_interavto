@@ -18,6 +18,9 @@
 		color: $darkgray
 		font-size: 16px
 		line-height: 1
+		+media-breakpoint-down(xs)
+			width: 36px
+			height: 36px
 		&:hover
 			color: inherit
 			background-color: $lightgray
@@ -43,7 +46,13 @@
 		font-size: 14px
 		font-weight: 600
 		line-height: 1
+		+media-breakpoint-down(xs)
+			width: 36px
+			height: 36px
 		&--current
 			pointer-events: none
 			background-color: $darkblue
 			color: $white
+		&--dots
+			+media-breakpoint-down(xs)
+				display: none

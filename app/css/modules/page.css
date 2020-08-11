@@ -1,10 +1,4 @@
 @charset "UTF-8";
-.row-items > [class*=col] {
-  margin-bottom: 40px
-}
-.row-items > [class*=col] {
-  margin-bottom: 40px
-}
 .breadcrumbs {
   margin-top: 8px
 }
@@ -35,9 +29,6 @@
 .breadcrumbs-list > li > span {
   font-size: 12px;
   color: #76858c
-}
-.row-items > [class*=col] {
-  margin-bottom: 40px
 }
 .pagination {
   display: -webkit-box;
@@ -71,6 +62,12 @@
   color: #76858c;
   font-size: 16px;
   line-height: 1
+}
+@media (max-width:575.98px) {
+  .pagination-button {
+    width: 36px;
+    height: 36px
+  }
 }
 .pagination-button:hover {
   color: inherit;
@@ -117,13 +114,21 @@
   font-weight: 600;
   line-height: 1
 }
+@media (max-width:575.98px) {
+  .pagination-item {
+    width: 36px;
+    height: 36px
+  }
+}
 .pagination-item--current {
   pointer-events: none;
   background-color: #25373f;
   color: #fff
 }
-.row-items > [class*=col] {
-  margin-bottom: 40px
+@media (max-width:575.98px) {
+  .pagination-item--dots {
+    display: none
+  }
 }
 .sidebar {
   width: 100%;
@@ -142,6 +147,53 @@
 @media (max-width:575.98px) {
   .sidebar {
     margin-bottom: 24px
+  }
+}
+.sidebar .filter-trigger {
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center
+}
+.sidebar .filter-trigger-item:not(:last-child) {
+  margin-right: 24px
+}
+@media (max-width:575.98px) {
+  .sidebar .filter-trigger-item:not(:last-child) {
+    margin-right: 16px
+  }
+}
+.sidebar .filter-trigger--open .btn:hover .active-filters {
+  background-color: #fff
+}
+.sidebar .filter-trigger--open .active-filters {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  margin-left: 12px;
+  border-radius: 6px;
+  background-color: #ff6c02;
+  -webkit-transition: background-color .3s ease;
+  -o-transition: background-color .3s ease;
+  transition: background-color .3s ease
+}
+.sidebar .filter-trigger--clear {
+  display: none
+}
+.sidebar .filter-trigger--clear.is-shown {
+  display: block
+}
+@media (max-width:575.98px) {
+  .sidebar .filter-trigger--clear .btn {
+    width: 40px;
+    padding: 0
+  }
+  .sidebar .filter-trigger--clear .btn .icon {
+    margin-right: 0
+  }
+  .sidebar .filter-trigger--clear .btn > span {
+    display: none
   }
 }
 @media (max-width:991.98px) {
@@ -259,9 +311,6 @@
 .sidebar .filter-body {
   margin-top: 16px
 }
-.row-items > [class*=col] {
-  margin-bottom: 40px
-}
 article blockquote,
 article h1,
 article h2,
@@ -292,6 +341,18 @@ article ul {
 .main-sidebar {
   position: static
 }
+@media (max-width:575.98px) {
+  .main-products {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 2px
+  }
+}
 .main-seo {
   margin-top: 120px
+}
+@media (max-width:1199.98px) {
+  .main-seo {
+    margin-top: 80px
+  }
 }

@@ -89,9 +89,13 @@ document.addEventListener("DOMContentLoaded", function() {
 
 })
 
+
 // jQuery
 jQuery(document).ready(function($) {
 
+	/**
+	 * Preloader
+	 */
 	var preloader = $('.preloader')
 	preloader
 	.delay(500).queue(function () {
@@ -103,16 +107,22 @@ jQuery(document).ready(function($) {
 		$(this).dequeue()
 	})
 
-	// LazyLoad
+
+	/**
+	 * LazyLoad initialization
+	 */
 	var lazyLoadInstance = new LazyLoad({
-    elements_selector: ".lazy",
-    // callback_loaded: function(element) {
-    //   console.log("👍 LOADED", element);
-    //   $(element).siblings('.lazy-spin').remove();
-    // },
-  })
-	
-	// Home slider
+		elements_selector: ".lazy",
+		// callback_loaded: function(element) {
+		//   console.log("👍 LOADED", element);
+		//   $(element).siblings('.lazy-spin').remove();
+		// },
+	})
+
+
+	/**
+	 * Home slider
+	 */
 	if( $.fn.slick ) {
 		$('.heroes-slider').slick({
 			// autoplay: true,
@@ -125,7 +135,10 @@ jQuery(document).ready(function($) {
 	// 	lazyLoadInstance.update();
 	// });
 
-	// Toggle Search form
+
+	/**
+	 * Toggle Search form
+	 */
 	var searchBlock = $('.header-search')
 
 	$('.mobile-action .search-btn').on('click', function() {
@@ -147,7 +160,10 @@ jQuery(document).ready(function($) {
 		})
 	})
 
-	// Toggle Mobile menu
+
+	/**
+	 * Toggle Mobile menu
+	 */
 	$('.mobile-action .burger-btn').on('click', function() {
 		$('body').addClass('disable-scroll')
 		$('.m-menu').addClass('is-active')
@@ -157,8 +173,11 @@ jQuery(document).ready(function($) {
 		$('.m-menu').removeClass('is-active')
 	})
 
-	// Toggle Product filter
-	$('#product-filter .filter-trigger').on('click', function() {
+
+	/**
+	 * Toggle Product filter
+	 */
+	$('#product-filter-open').on('click', function() {
 		$('body').addClass('disable-scroll')
 		$('.filter-wrapper').addClass('is-active')
 		if( !$('.modal-backdrop').length ) {
@@ -179,5 +198,36 @@ jQuery(document).ready(function($) {
 		$('.filter-wrapper').removeClass('is-active')
 		$('.modal-backdrop').remove()
 	})
+	$('#product-filter input[type="checkbox"]').on('click', function() {
+		checkFilters()
+	})
+	// Toggle '.active-filters' & '.filter-trigger--clear' when input checkbox length > 1
+	function checkFilters() {
+		var filterInputs = $('#product-filter input[type="checkbox"]:checked')
+		console.log(filterInputs)
+		if( filterInputs.length > 0 ) {
+			if ( !$('#product-filter-open .active-filters').length ) {
+				$('#product-filter-open').append('<span class="active-filters"></span>')
+			}
+			if ( !$('.filter-trigger--clear').hasClass('is-shown') ) {
+				$('.filter-trigger--clear').addClass('is-shown')
+			}
+		} else {
+			$('#product-filter-open .active-filters').remove()
+			$('.filter-trigger--clear').removeClass('is-shown')
+		}
+	}
+	// Clear filter input checkboxs
+	$('#product-filter-clear').on('click', function() {
+		$('.filter-trigger--clear').removeClass('is-shown')
+		clearFilters()
+	})
+	function clearFilters() {
+		var filterInputs = $('#product-filter input[type="checkbox"]:checked')
+		$('#product-filter-open .active-filters').remove()
+		$.each(filterInputs, function(index, element) {
+			$(element).prop('checked', false)
+		})
+	}
 
 })

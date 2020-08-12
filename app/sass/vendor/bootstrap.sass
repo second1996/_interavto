@@ -10,8 +10,19 @@
 @import 'node_modules/bootstrap/scss/_transitions.scss'
 
 .row-items
-	> [class*="col"]
+	> .col,
+	> [class*="col-"]
 		margin-bottom: 40px
+		+media-breakpoint-down(lg)
+			margin-bottom: 32px
+.row
+	+media-breakpoint-down(lg)
+		margin-left: -16px
+		margin-right: -16px
+		> .col,
+		> [class*="col-"]
+			padding-left: 16px
+			padding-right: 16px
 
 .no-xs-gutters
 	+media-breakpoint-down(xs)

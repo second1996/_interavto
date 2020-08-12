@@ -91,7 +91,7 @@
 						<div class="header-menu">
 							<ul class="header-menu-primary" role="navigation">
 								<li class="cc_cursor">
-									<a href="page-catalog.html" class="btn btn-primary btn-catalog">
+									<a href="page-catalog.html" class="btn btn-primary btn-catalog btn-icon-left">
 										<svg class="icon icon-catalog"><use xlink:href="images/symbol-defs.svg#icon-catalog"></use></svg>
 										<span>Каталог</span>
 									</a>
@@ -184,174 +184,291 @@
 				<div class="breadcrumbs">
 					<ul class="breadcrumbs-list">
 						<li><a href="index.html">Главная</a></li>
-						<li><span>Каталог</span></li>
+						<li><a href="page-catalog.html">Каталог</a></li>
+						<li><a href="page-catalog.html">Полимочевинные смазки</a></li>
+						<li><span>Полимочевинная смазка Roxol PU SYNT</span></li>
 					</ul>
 				</div>
-				<h1 class="title text-xl">Каталог продукции</h1>
+				<h1 class="title text-xl">Полимочевинная смазка Roxol PU SYNT</h1>
 			</div>
 		</div>
 
-		<div class="main-body">
+		<div class="main-body product">
 			<div class="container">
 				<div class="row">
-					<!-- Main: Sidebar -->
-					<div class="main-sidebar col-12 col-lg-auto">
-						<aside class="sidebar">
-							<div class="filter" id="product-filter">
-								<div class="filter-trigger d-flex d-lg-none">
-									<div class="filter-trigger-item filter-trigger--open">
-										<button class="btn btn-dark btn-filter btn-icon-left" id="product-filter-open">
-											<svg class="icon icon-filter"><use xlink:href="images/symbol-defs.svg#icon-filter"></use></svg>
-											<span>Категории</span>
-										</button>
-									</div>
-									<div class="filter-trigger-item filter-trigger--clear">
-										<button class="btn btn-white btn-clear" id="product-filter-clear">
-											<svg class="icon icon-cross"><use xlink:href="images/symbol-defs.svg#icon-cross"></use></svg>
-											<span>Сбросить фильтр</span>
-										</button>
-									</div>
+					<!-- Product Photo -->
+					<div class="col-lg-5">
+						<div class="product-slider">
+							<div class="product-slide">
+								<div class="photo">
+									<img class="lazy" data-src="https://roxol.ru/sitefiles/fx/570x508/Items/26.jpg" alt="">
 								</div>
-								<div class="filter-wrapper">
-									<div class="filter-header d-block d-lg-none">
-										<div class="container d-flex align-items-center justify-content-between">
-											<div class="title">
-												<svg class="icon icon-filter"><use xlink:href="images/symbol-defs.svg#icon-filter"></use></svg>
-												<span>Категории</span>
-											</div>
-											<span class="close">
-												<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path fill-rule="evenodd" clip-rule="evenodd" d="M8.00008 6.58586L11.293 3.29297L12.7072 4.70718L9.41429 8.00008L12.7072 11.293L11.293 12.7072L8.00008 9.41429L4.70718 12.7072L3.29297 11.293L6.58586 8.00008L3.29297 4.70718L4.70718 3.29297L8.00008 6.58586Z" />
-												</svg>
-											</span>
-										</div>
-									</div>
-									<div class="filter-list">
-										<div class="filter-item">
-											<div class="filter-title" id="filter-heading-1">
-												<button class="filter-btn text-xxs w-bold text-uppercase" data-toggle="collapse" data-target="#filter-collapse-1" aria-expanded="true" aria-controls="filter-collapse-1">
-													<span>Высокотемпературные смазки</span>
-													<svg class="icon icon-arrow"><use xlink:href="images/symbol-defs.svg#icon-arrow"></use></svg>
-												</button>
-											</div>
-											<div id="filter-collapse-1" class="collapse show" aria-labelledby="filter-heading-1">
-												<div class="filter-body">
-													<div class="form-checkbox">
-														<input type="checkbox" name="highttemp[]" id="highttemp-1" >
-														<label for="highttemp-1">Все</label>
-													</div>
-													<div class="form-checkbox">
-														<input type="checkbox" name="highttemp[]" id="highttemp-2">
-														<label for="highttemp-2">Кальциевые</label>
-													</div>
-													<div class="form-checkbox">
-														<input type="checkbox" name="highttemp[]" id="highttemp-3">
-														<label for="highttemp-3">Полимочевинные</label>
-													</div>
-													<div class="form-checkbox">
-														<input type="checkbox" name="highttemp[]" id="highttemp-4">
-														<label for="highttemp-4">Водостойкие</label>
-													</div>
-												</div>
-											</div>
-										</div><!-- /.filter-item -->
-										<div class="filter-item">
-											<div class="filter-title" id="filter-heading-2">
-												<button class="filter-btn text-xxs w-bold text-uppercase" data-toggle="collapse" data-target="#filter-collapse-2" aria-expanded="false" aria-controls="filter-collapse-2">
-													<span>Пасты приработочные</span>
-													<svg class="icon icon-arrow"><use xlink:href="images/symbol-defs.svg#icon-arrow"></use></svg>
-												</button>
-											</div>
-											<div id="filter-collapse-2" class="collapse" aria-labelledby="filter-heading-2">
-												<div class="filter-body">
-													<div class="form-checkbox">
-														<input type="checkbox" name="pasta[]" id="pasta-1">
-														<label for="pasta-1">Все</label>
-													</div>
-													<div class="form-checkbox">
-														<input type="checkbox" name="pasta[]" id="pasta-2">
-														<label for="pasta-2">Многофункциональная смазка</label>
-													</div>
-													<div class="form-checkbox">
-														<input type="checkbox" name="pasta[]" id="pasta-3">
-														<label for="pasta-3">Шрус</label>
-													</div>
-													<div class="form-checkbox">
-														<input type="checkbox" name="pasta[]" id="pasta-4">
-														<label for="pasta-4">Эрна-РС</label>
-													</div>
-													<div class="form-checkbox">
-														<input type="checkbox" name="pasta[]" id="pasta-5">
-														<label for="pasta-5">Эрна-МФ</label>
-													</div>
-													<div class="form-checkbox">
-														<input type="checkbox" name="pasta[]" id="pasta-6">
-														<label for="pasta-6">Паста разделительная</label>
-													</div>
-												</div>
-											</div>
-										</div><!-- /.filter-item -->
-										<div class="filter-item">
-											<div class="filter-title" id="filter-heading-3">
-												<button class="filter-btn text-xxs w-bold text-uppercase" data-toggle="collapse" data-target="#filter-collapse-3" aria-expanded="false" aria-controls="filter-collapse-3">
-													<span>Аэрозольные смазки</span>
-													<svg class="icon icon-arrow"><use xlink:href="images/symbol-defs.svg#icon-arrow"></use></svg>
-												</button>
-											</div>
-											<div id="filter-collapse-3" class="collapse" aria-labelledby="filter-heading-3">
-												<div class="filter-body">
-													<div class="form-checkbox">
-														<input type="checkbox" name="" id="">
-														<label for="">Все</label>
-													</div>
-												</div>
-											</div>
-										</div><!-- /.filter-item -->
-										<div class="filter-item">
-											<div class="filter-title" id="filter-heading-4">
-												<button class="filter-btn text-xxs w-bold text-uppercase" data-toggle="collapse" data-target="#filter-collapse-4" aria-expanded="false" aria-controls="filter-collapse-4">
-													<span>Масла</span>
-													<svg class="icon icon-arrow"><use xlink:href="images/symbol-defs.svg#icon-arrow"></use></svg>
-												</button>
-											</div>
-											<div id="filter-collapse-4" class="collapse" aria-labelledby="filter-heading-4">
-												<div class="filter-body">
-													<div class="form-checkbox">
-														<input type="checkbox" name="" id="">
-														<label for="">Все</label>
-													</div>
-												</div>
-											</div>
-										</div><!-- /.filter-item -->
-										<div class="filter-item">
-											<div class="filter-title" id="filter-heading-5">
-												<button class="filter-btn text-xxs w-bold text-uppercase" data-toggle="collapse" data-target="#filter-collapse-5" aria-expanded="false" aria-controls="filter-collapse-5">
-													<span>Смазки на синтетических маслах</span>
-													<svg class="icon icon-arrow"><use xlink:href="images/symbol-defs.svg#icon-arrow"></use></svg>
-												</button>
-											</div>
-											<div id="filter-collapse-5" class="collapse" aria-labelledby="filter-heading-5">
-												<div class="filter-body">
-													<div class="form-checkbox">
-														<input type="checkbox" name="" id="">
-														<label for="">Все</label>
-													</div>
-												</div>
-											</div>
-										</div><!-- /.filter-item -->
-									</div><!-- /.filter-list -->
-								</div><!-- /.filter-wrapper -->
-							</div><!-- /.filter -->
-						</aside>
+							</div>
+							<div class="product-slide">
+								<div class="photo">
+									<img class="lazy" data-src="images/dest/slide-photo-02.png" alt="">
+								</div>
+							</div>
+							<div class="product-slide">
+								<div class="photo">
+									<img class="lazy" data-src="images/dest/slide-photo-01.png" alt="">
+								</div>
+							</div>
+						</div><!-- /.product-slider -->
+						<div class="product-order">
+							<div class="product-order-photo">
+								<img class="lazy" data-src="images/dest/product-big-1.png" alt="">
+							</div>
+							<div class="product-order-meta">
+								<h5 class="title text-xxs w-bold text-uppercase">Заказ бесплатного образца</h5>
+								<p class="descr">Бесплатный образец предоставляется только для юридических лиц</p>
+								<button class="btn btn-white btn-icon-right">
+									<span>Получить бесплатный образец</span>
+									<svg class="icon icon-arrow"><use xlink:href="images/symbol-defs.svg#icon-arrow"></use></svg>
+								</button>
+							</div>
+						</div><!-- /.product-order -->
 					</div><!-- /.col -->
-					<!-- Main: Content-->
-					<div class="main-products col-12 col-lg">
-						<div class="content">
+					<!-- Product Info -->
+					<div class="col-lg-7">
+						<div class="product-info">
+							<table class="table product-info-table">
+								<tr>
+									<td width="50%">Внешний вид</td>
+									<td width="50%">Однородная мягкая мазь гладкой текстуры</td>
+								</tr>
+								<tr>
+									<td width="50%">Соответствие классификациям NLGI</td>
+									<td width="50%">3</td>
+								</tr>
+								<tr>
+									<td width="50%">Цвет</td>
+									<td width="50%">От белого до серого</td>
+								</tr>
+								<tr>
+									<td width="50%">Загуститель</td>
+									<td width="50%">Неорганический</td>
+								</tr>
+								<tr>
+									<td width="50%">Пенетрация при температуре 25°С, 10-1мм, в пределах</td>
+									<td width="50%">220-250</td>
+								</tr>
+								<tr>
+									<td width="50%">Коррозионное воздействие на металлы при температуре 100°С</td>
+									<td width="50%">Выдерживает</td>
+								</tr>
+								<tr>
+									<td width="50%">Диапазон рабочих температур</td>
+									<td width="50%">-45 до 150°С</td>
+								</tr>
+								<tr>
+									<td width="50%">Предел прочности при сдвиге, Па: при 20°С в пределах</td>
+									<td width="50%">280-750</td>
+								</tr>
+								<tr>
+									<td width="50%">Коллоидная стабильность, % выделившегося масла, не более</td>
+									<td width="50%">10</td>
+								</tr>
+								<tr>
+									<td width="50%">Вязкость при 0°С и среднем градиенте скорости деформации 10с-1, Па·с, не более</td>
+									<td width="50%">250</td>
+								</tr>
+							</table>
+							<div class="product-info-buttons">
+								<a href="#" class="btn btn-white btn-icon-left" download>
+									<svg class="icon icon-download"><use xlink:href="images/symbol-defs.svg#icon-download"></use></svg>
+									<span>Скачать техническое описание</span>
+								</a>
+								<button class="btn btn-primary btn-icon-right">
+									<span>Заказать</span>
+									<svg class="icon icon-arrow"><use xlink:href="images/symbol-defs.svg#icon-arrow"></use></svg>
+								</button>
+							</div>
+						</div>
+					</div><!-- /.col -->
+					<!-- Product Description -->
+					<div class="col-12">
+						<article class="product-descr">
+							<div class="product-descr-section">
+								<div class="row">
+									<div class="col-lg-5">
+										<h4 class="title text-lg w-regular">Описание</h4>
+									</div>
+									<div class="col-lg-7">
+										<p>Синтетическая смазка с однородной мазеподобной консистенцией. Отличается великолепными показателями морозостойкости и хорошим антифрикционным эффектом. Основное предназначение — техническое обслуживание механических передач, закрытых редукторов и электрических приводов.</p>
+										<p>ТОМФЛОН ЭПЦ10 — современный и более эффективный аналог ВНИИНП-286, Эра, Циатим-203 и достойная альтернатива импортной смазке AEROSHELL Grease 33 MS.</p>
+									</div>
+								</div>
+							</div><!-- /.product-descr-section -->
+							<div class="product-descr-section">
+								<div class="row">
+									<div class="col-lg-5">
+										<h4 class="title text-lg w-regular">Краткая характеристика</h4>
+									</div>
+									<div class="col-lg-7">
+										<p>Дисперсной базой смазочного материала является смесь из полиальфаолефинового и кремнийорганического масла, для коллоидной стабилизации которой использовался сложный комплекс из Li-мыла 12-оксистеариновой кислоты и ультрадисперсного ПТФЭ. Добавление присадок позволило улучшить эксплуатационные характеристики конечного продукта.</p>
+										<p>Синтетическая основа в сочетании с синергетическим взаимодействием всех компонентов обеспечила смазке:</p>
+										<ul>
+											<li>работоспособность в широком интервале низких и высоких температур (рабочий интервал от — 60 до +180˚С);</li>
+											<li>отличные антизадирные и противоизносные свойства;</li>
+											<li>высокую температуру каплепадения (> 215 ˚С);</li>
+											<li>низкий коэффициент трения;</li>
+											<li>минимальную испаряемость.</li>
+										</ul>
+										<p>Несмотря на великолепные эксплуатационные характеристики, ТОМФЛОН ЭПЦ10 отличается удовлетворительной коллоидной стабильностью.</p>
+									</div>
+								</div>
+							</div><!-- /.product-descr-section -->
+							<div class="product-descr-section">
+								<div class="row">
+									<div class="col-lg-5">
+										<h4 class="title text-lg w-regular">Особенности</h4>
+									</div>
+									<div class="col-lg-7">
+										<p>Смазка водостойкая, отличается высокой адгезией к металлическим поверхностям и способностью. Морозостойкость, механическая стабильность и формирование прочной, ультратонкой защитной пленки позволяет использовать материал в условиях Крайнего Севера и при контакте с химически агрессивными средами, включая сероводород, углекислоту, щелочи и морскую воду.</p>
+										<p>Продукт прост в применении и может использоваться как консервационная смазка, прекрасно предупреждает ржавление черных металлов и дает стойкий и продолжительный антикоррозионный эффект. При этом смазочный материал:</p>
+										<ul>
+											<li>не спекается и не утрачивает своих эксплуатационных свойств даже при критическом снижении температур;</li>
+											<li>способствует значительной минимизации потерь в механических передачах;</li>
+											<li>не влияет на изменение крутящего и пускового момента.</li>
+										</ul>
+									</div>
+								</div>
+							</div><!-- /.product-descr-section -->
+							<div class="product-descr-section">
+								<div class="row">
+									<div class="col-lg-5">
+										<h4 class="title text-lg w-regular">Применение</h4>
+									</div>
+									<div class="col-lg-7">
+										<p>Вышеописанные свойства ТОМФЛОН ЭПЦ10 позволяют использовать смазочный продукт для обслуживания:</p>
+										<ul>
+											<li>опор скольжения;</li>
+											<li>подшипников качения;</li>
+											<li>всех типов редукторов, включая волновые модификации и функционирующие с высокими нагрузками;</li>
+											<li>силовых приводов наземных механизмов, работающие со значительными оборотами и усилием до 10 000 Нм;</li>
+											<li>подвижных сопряжений летательных аппаратов;</li>
+											<li>винтовых пар.</li>
+										</ul>
+									</div>
+								</div>
+							</div><!-- /.product-descr-section -->
+							<div class="product-descr-section">
+								<div class="row">
+									<div class="col-lg-5">
+										<h4 class="title text-lg w-regular">Техника безопасности</h4>
+									</div>
+									<div class="col-lg-7">
+										<p>Смазочный материал не содержит агрессивных компонентов, таких как цинк и свинец, что обеспечивает его нетоксичность и относит к IV (безопасной) группе. При применении соблюдать общеотраслевые нормы и регламенты.</p>
+										<p>Чтобы уточнить другие характеристики смазки и купить ТОМФЛОН ЭПЦ10, свяжитесь с менеджерами компании INDUSTRIAL MATERIALS по контактным телефонам или оставьте заявку на сайте.</p>
+									</div>
+								</div>
+							</div><!-- /.product-descr-section -->
+						</article><!-- /.product-descr -->
+					</div><!-- /.col -->
+					<!-- Product Reviews-->
+					<div class="col-12">
+						<div class="product-reviews">
+							<h2 class="section-title">Отзывы</h2>
+							<div class="row row-items">
+								<div class="col-6 col-lg-3">
+									<div class="card card--review">
+										<div class="card-icon">
+											<svg class="icon icon-document"><use xlink:href="images/symbol-defs.svg#icon-document"></use></svg>
+										</div>
+										<div class="card-meta">
+											<div class="title">Отзыв о смазке ROXOL S-280 генерального директора ООО «ПРОГРЕСС» Тимакова В. А.</div>
+										</div>
+										<a href="#" class="card-link"></a>
+									</div>
+								</div><!-- /.col -->
+								<div class="col-6 col-lg-3">
+									<div class="card card--review">
+										<div class="card-icon">
+											<svg class="icon icon-document"><use xlink:href="images/symbol-defs.svg#icon-document"></use></svg>
+										</div>
+										<div class="card-meta">
+											<div class="title">Отзыв о смазке ROXOL S-280 генерального директора ООО «ПРОГРЕСС» Тимакова В. А.</div>
+										</div>
+										<a href="#" class="card-link"></a>
+									</div>
+								</div><!-- /.col -->
+								<div class="col-6 col-lg-3">
+									<div class="card card--review">
+										<div class="card-icon">
+											<svg class="icon icon-document"><use xlink:href="images/symbol-defs.svg#icon-document"></use></svg>
+										</div>
+										<div class="card-meta">
+											<div class="title">Отзыв о смазке ROXOL S-280 генерального директора ООО «ПРОГРЕСС» Тимакова В. А.</div>
+										</div>
+										<a href="#" class="card-link"></a>
+									</div>
+								</div><!-- /.col -->
+							</div><!-- /.row -->
+						</div><!-- /.product-reviews -->
+					</div><!-- /.col -->
+					<!-- Product Articles-->
+					<div class="col-12">
+						<div class="product-reviews">
+							<h2 class="section-title">Статьи по теме</h2>
+							<div class="row row-items">
+								<div class="col-6 col-lg-3">
+									<div class="card card--news">
+										<div class="card-photo rounded-right">
+											<a href="#">
+												<img class="lazy" data-src="images/dest/article-1.jpg" alt="">
+											</a>
+											<div class="dots dots--gray dots-top-right"></div>
+										</div>
+										<div class="card-meta">
+											<h4 class="title text-md w-regular">
+												<a href="#">Пластичные смазки: состав и классификация</a>
+											</h4>
+										</div>
+									</div>
+								</div><!-- /.col -->
+								<div class="col-6 col-lg-3">
+									<div class="card card--news">
+										<div class="card-photo rounded-right">
+											<a href="#">
+												<img class="lazy" data-src="images/dest/article-2.jpg" alt="">
+											</a>
+											<div class="dots dots--gray dots-top-right"></div>
+										</div>
+										<div class="card-meta">
+											<h4 class="title text-md w-regular">
+												<a href="#">Антифрикционные твердосмазочные покрытия и сухие смазки</a>
+											</h4>
+										</div>
+									</div>
+								</div><!-- /.col -->
+								<div class="col-6 col-lg-3">
+									<div class="card card--news">
+										<div class="card-photo rounded-right">
+											<a href="#">
+												<img class="lazy" data-src="images/dest/article-3.jpg" alt="">
+											</a>
+											<div class="dots dots--gray dots-top-right"></div>
+										</div>
+										<div class="card-meta">
+											<h4 class="title text-md w-regular">
+												<a href="#">Управление смазочными процессами</a>
+											</h4>
+										</div>
+									</div>
+								</div><!-- /.col -->
+							</div><!-- /.row -->
+						</div><!-- /.product-reviews -->
+					</div><!-- /.col -->
+					<!-- Product Seller -->
+					<div class="col-12">
+						<div class="product-seller">
+							<h2 class="section-title">C этим товаром покупают</h2>
 							<div class="row row-items no-xs-gutters">
-								<div class="col-6 col-xl-4">
+								<div class="col-6 col-lg-3">
 									<div class="card card--product">
 										<div class="card-photo">
-											<img class="lazy" data-src="images/dest/product-1.png" alt="">
+											<img class="lazy" data-src="images/dest/slide-photo-01.png" alt="">
 										</div>
 										<div class="card-meta">
 											<div class="badge text-xxs">−60...+600 °C</div>
@@ -360,8 +477,8 @@
 										</div>
 										<a href="page-product.html" class="card-link"></a>
 									</div>
-								</div>
-								<div class="col-6 col-xl-4">
+								</div><!-- /.col -->
+								<div class="col-6 col-lg-3">
 									<div class="card card--product">
 										<div class="card-photo">
 											<img class="lazy" data-src="images/dest/product-2.png" alt="">
@@ -373,11 +490,11 @@
 										</div>
 										<a href="page-product.html" class="card-link"></a>
 									</div>
-								</div>
-								<div class="col-6 col-xl-4">
+								</div><!-- /.col -->
+								<div class="col-6 col-lg-3">
 									<div class="card card--product">
 										<div class="card-photo">
-											<img class="lazy" data-src="images/dest/product-1.png" alt="">
+											<img class="lazy" data-src="images/dest/slide-photo-02.png" alt="">
 										</div>
 										<div class="card-meta">
 											<div class="badge text-xxs">−58...+485 °C</div>
@@ -386,8 +503,8 @@
 										</div>
 										<a href="page-product.html" class="card-link"></a>
 									</div>
-								</div>
-								<div class="col-6 col-xl-4">
+								</div><!-- /.col -->
+								<div class="col-6 col-lg-3">
 									<div class="card card--product">
 										<div class="card-photo">
 											<img class="lazy" data-src="images/dest/product-1.png" alt="">
@@ -399,8 +516,8 @@
 										</div>
 										<a href="page-product.html" class="card-link"></a>
 									</div>
-								</div>
-								<div class="col-6 col-xl-4">
+								</div><!-- /.col -->
+								<div class="col-6 col-lg-3">
 									<div class="card card--product">
 										<div class="card-photo">
 											<img class="lazy" data-src="images/dest/product-2.png" alt="">
@@ -412,8 +529,8 @@
 										</div>
 										<a href="page-product.html" class="card-link"></a>
 									</div>
-								</div>
-								<div class="col-6 col-xl-4">
+								</div><!-- /.col -->
+								<div class="col-6 col-lg-3">
 									<div class="card card--product">
 										<div class="card-photo">
 											<img class="lazy" data-src="images/dest/product-1.png" alt="">
@@ -425,8 +542,8 @@
 										</div>
 										<a href="page-product.html" class="card-link"></a>
 									</div>
-								</div>
-								<div class="col-6 col-xl-4">
+								</div><!-- /.col -->
+								<div class="col-6 col-lg-3">
 									<div class="card card--product">
 										<div class="card-photo">
 											<img class="lazy" data-src="images/dest/product-1.png" alt="">
@@ -438,8 +555,8 @@
 										</div>
 										<a href="page-product.html" class="card-link"></a>
 									</div>
-								</div>
-								<div class="col-6 col-xl-4">
+								</div><!-- /.col -->
+								<div class="col-6 col-lg-3">
 									<div class="card card--product">
 										<div class="card-photo">
 											<img class="lazy" data-src="images/dest/product-2.png" alt="">
@@ -451,79 +568,10 @@
 										</div>
 										<a href="page-product.html" class="card-link"></a>
 									</div>
-								</div>
-								<div class="col-6 col-xl-4">
-									<div class="card card--product">
-										<div class="card-photo">
-											<img class="lazy" data-src="images/dest/product-1.png" alt="">
-										</div>
-										<div class="card-meta">
-											<div class="badge text-xxs">−58...+485 °C</div>
-											<div class="title text-xxs w-bold text-uppercase">Roxol-GL</div>
-											<div class="excerpt text-xxs">Roxol-GL – консистентная смазка нового поколения, обладающая электропроводящими свойствами</div>
-										</div>
-										<a href="page-product.html" class="card-link"></a>
-									</div>
-								</div>
-								<div class="col-6 col-xl-4">
-									<div class="card card--product">
-										<div class="card-photo">
-											<img class="lazy" data-src="images/dest/product-1.png" alt="">
-										</div>
-										<div class="card-meta">
-											<div class="badge text-xxs">−60...+600 °C</div>
-											<div class="title text-xxs w-bold text-uppercase">Смазка ROXOL FLPG-275</div>
-											<div class="excerpt text-xxs">Синтетическая пластичная смазка на сонове синтетического масла загущенного гидроксистеаратом лития</div>
-										</div>
-										<a href="page-product.html" class="card-link"></a>
-									</div>
-								</div>
-								<div class="col-6 col-xl-4">
-									<div class="card card--product">
-										<div class="card-photo">
-											<img class="lazy" data-src="images/dest/product-2.png" alt="">
-										</div>
-										<div class="card-meta">
-											<div class="badge text-xxs">−50...+520 °C</div>
-											<div class="title text-xxs w-bold text-uppercase">Синяя пластичная смазка ROXOL LK-222</div>
-											<div class="excerpt text-xxs">Универсальная многоцелевая смазка синего цвета на основе полусинтетического масла и комплексного литиевого загустителя разработана для замены импортных...</div>
-										</div>
-										<a href="page-product.html" class="card-link"></a>
-									</div>
-								</div>
-								<div class="col-6 col-xl-4">
-									<div class="card card--product">
-										<div class="card-photo">
-											<img class="lazy" data-src="images/dest/product-1.png" alt="">
-										</div>
-										<div class="card-meta">
-											<div class="badge text-xxs">−58...+485 °C</div>
-											<div class="title text-xxs w-bold text-uppercase">Roxol-GL</div>
-											<div class="excerpt text-xxs">Roxol-GL – консистентная смазка нового поколения, обладающая электропроводящими свойствами</div>
-										</div>
-										<a href="page-product.html" class="card-link"></a>
-									</div>
-								</div>
+								</div><!-- /.col -->
 							</div><!-- /.row-items -->
-							<div class="pagination">
-								<a class="pagination-button pagination-button--prev pagination-button--disabled" href="#">
-									<svg class="icon icon-arrow"><use xlink:href="images/symbol-defs.svg#icon-arrow"></use></svg>
-								</a>
-								<div class="pagination-inner" >
-									<a class="pagination-item" href="#">1</a>
-									<span class="pagination-item pagination-item--dots">...</span>
-									<a class="pagination-item" href="#">4</a>
-									<span aria-current="page" class="pagination-item pagination-item--current">5</span>
-									<a class="pagination-item" href="#">6</a>
-									<span class="pagination-item pagination-item--dots">...</span>
-									<a class="pagination-item" href="#">9</a>
-								</div>
-								<a class="pagination-button pagination-button--next" href="#">
-									<svg class="icon icon-arrow"><use xlink:href="images/symbol-defs.svg#icon-arrow"></use></svg>
-								</a>
-							</div><!-- /.pagination -->
-						</div><!-- /.content -->
-					</div><!-- /.col-->
+						</div><!-- /.product-reviews -->
+					</div><!-- /.col -->
 					<!-- Main: SEO text -->
 					<div class="main-seo col-lg-10 offset-lg-1">
 						<article>
@@ -539,7 +587,7 @@
 					</div><!-- /.col-->
 				</div><!-- /.row -->
 			</div><!-- /.container -->
-		</div>
+		</div><!-- /.main-body .product -->
 
 	</main>
 
@@ -688,13 +736,15 @@
 
 	<!-- Load CSS -->
 	<link rel="stylesheet" href="css/vendor/bootstrap.css">
+	<link rel="stylesheet" href="css/vendor/slick-carousel.css">
 	<link rel="stylesheet" href="css/modules/page.css">
+	<link rel="stylesheet" href="css/pages/product.css">
 	<link rel="stylesheet" href="css/common/main.css">
 
 	<!-- Load JS -->
 	<script src="js/vendor/jquery.min.js"></script>
 	<script src="js/vendor/lazyload.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
+	<script src="js/vendor/slick.min.js"></script>
 	<script src="js/app.js"></script>
 
 </body>

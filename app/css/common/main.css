@@ -230,10 +230,8 @@ h6 {
 button {
   display: inline-block;
   vertical-align: middle;
-  height: 40px;
-  padding: 0 16px;
-  border-radius: 24px;
   border: 0;
+  border-radius: 24px;
   background-color: transparent;
   color: inherit;
   font-family: inherit;
@@ -250,71 +248,82 @@ button {
 button:hover {
   color: inherit
 }
-.btn .icon,
-button .icon {
-  margin-right: 10px;
+.btn {
+  height: 40px;
+  padding: 0 16px
+}
+.btn .icon {
   font-size: 16px
 }
-.btn-primary,
-button-primary {
+.btn-icon-left {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center
+}
+.btn-icon-left .icon {
+  margin-right: 10px
+}
+.btn-icon-right {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center
+}
+.btn-icon-right .icon {
+  margin-left: 10px
+}
+.btn-primary {
   background-color: #ff6c02;
   color: #fff
 }
-.btn-primary:hover,
-button-primary:hover {
+.btn-primary:hover {
   color: #fff;
   background-color: #25373f
 }
-.btn-dark,
-button-dark {
+.btn-dark {
   background-color: #25373f;
   color: #fff
 }
-.btn-dark:hover,
-button-dark:hover {
+.btn-dark:hover {
   background-color: #ff6c02;
   color: #fff
 }
-.btn-white,
-button-white {
+.btn-white {
   border: 1px solid #eff3f6;
   background-color: #fff;
   color: #1e2021
 }
-.btn-white:hover,
-button-white:hover {
+.btn-white:hover {
   border-color: #ff6c02;
   background-color: #fff;
   color: #ff6c02
 }
-.btn-transparent,
-button-transparent {
+.btn-transparent {
   padding: 0;
   line-height: 1
 }
-.btn-icon-arrow,
-button-icon-arrow {
+.btn-icon-arrow {
   padding-right: 42px;
   background-image: url(../../images/dest/icons/arrow.svg);
   background-repeat: no-repeat;
   background-position: right 16px center;
   background-size: 16px
 }
-.btn-outline,
-button-outline {
+.btn-outline {
   border: 1px solid #e0e6ec
 }
-.btn-outline:hover,
-button-outline:hover {
+.btn-outline:hover {
   border-color: #ff6c02;
   color: #ff6c02
 }
 .btn-catalog,
 .btn-clear,
-.btn-filter,
-button-catalog,
-button-clear,
-button-filter {
+.btn-filter {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -327,14 +336,10 @@ button-filter {
 }
 .btn-catalog > span,
 .btn-clear > span,
-.btn-filter > span,
-button-catalog > span,
-button-clear > span,
-button-filter > span {
+.btn-filter > span {
   font-weight: 600
 }
-.btn-more,
-button-more {
+.btn-more {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -347,8 +352,7 @@ button-more {
   -o-transition: none;
   transition: none
 }
-.btn-more > svg,
-button-more > svg {
+.btn-more > svg {
   vertical-align: baseline;
   fill: #25373f;
   -webkit-transition: fill .35s ease,-webkit-transform .25s ease;
@@ -357,8 +361,7 @@ button-more > svg {
   transition: fill .35s ease,transform .25s ease;
   transition: fill .35s ease,transform .25s ease,-webkit-transform .25s ease
 }
-.btn-more > span,
-button-more > span {
+.btn-more > span {
   display: inline-block;
   vertical-align: top;
   margin-left: 8px;
@@ -366,12 +369,10 @@ button-more > span {
   -o-transition: .35s ease;
   transition: .35s ease
 }
-.btn-more:hover > svg,
-button-more:hover > svg {
+.btn-more:hover > svg {
   fill: #ff6c02
 }
-.btn-more:hover > span,
-button-more:hover > span {
+.btn-more:hover > span {
   color: #ff6c02
 }
 .card {
@@ -437,6 +438,31 @@ button-more:hover > span {
   height: 1px;
   margin: 12px 0;
   background-color: #eff3f6
+}
+.card--review {
+  padding: 16px;
+  border: 1px solid #eff3f6
+}
+.card--review:hover .card-meta .title {
+  color: #ff6c02
+}
+.card-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  margin-bottom: 16px;
+  border-radius: 50%;
+  border: 1px solid #eff3f6;
+  color: #ff6c02;
+  font-size: 24px
 }
 .card-photo {
   overflow: hidden;
@@ -641,6 +667,16 @@ button-more:hover > span {
   -webkit-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
   transform: rotate(180deg)
+}
+table {
+  width: 100%;
+  border-collapse: collapse
+}
+table td,
+table th {
+  vertical-align: top;
+  padding: 8px 24px 8px 0;
+  border-bottom: 1px solid #eff3f6
 }
 .header {
   position: relative;

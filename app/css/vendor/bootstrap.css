@@ -5254,8 +5254,26 @@ html {
     transition: none
   }
 }
-.row-items > [class*=col] {
+.row-items > .col,
+.row-items > [class*=col-] {
   margin-bottom: 40px
+}
+@media (max-width:1199.98px) {
+  .row-items > .col,
+  .row-items > [class*=col-] {
+    margin-bottom: 32px
+  }
+}
+@media (max-width:1199.98px) {
+  .row {
+    margin-left: -16px;
+    margin-right: -16px
+  }
+  .row > .col,
+  .row > [class*=col-] {
+    padding-left: 16px;
+    padding-right: 16px
+  }
 }
 @media (max-width:575.98px) {
   .no-xs-gutters {

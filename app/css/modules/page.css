@@ -297,7 +297,7 @@
 }
 .sidebar .filter-btn .icon {
   position: absolute;
-  top: -1px;
+  top: 3px;
   right: 0;
   margin: 0;
   fill: #25373f;
@@ -313,6 +313,17 @@
 .sidebar .filter-body {
   margin-top: 16px
 }
+.product-descr blockquote,
+.product-descr h1,
+.product-descr h2,
+.product-descr h3,
+.product-descr h4,
+.product-descr h5,
+.product-descr h6,
+.product-descr img,
+.product-descr ol,
+.product-descr p,
+.product-descr ul,
 article blockquote,
 article h1,
 article h2,
@@ -325,6 +336,31 @@ article ol,
 article p,
 article ul {
   margin-bottom: 16px
+}
+.product-descr ul,
+article ul {
+  padding-left: 10px
+}
+.product-descr ul li,
+article ul li {
+  position: relative;
+  padding-left: 24px
+}
+.product-descr ul li:not(:last-child),
+article ul li:not(:last-child) {
+  margin-bottom: 8px
+}
+.product-descr ul li::before,
+article ul li::before {
+  content: '';
+  position: absolute;
+  top: 9px;
+  left: 0;
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-radius: 8px;
+  background-color: #ff6c02
 }
 .main-header {
   margin-bottom: 40px

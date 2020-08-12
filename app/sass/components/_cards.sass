@@ -2,6 +2,7 @@
 
 .card
 	position: relative
+	// Advantages
 	&--advantages
 		.card-photo
 			height: 245px
@@ -12,6 +13,7 @@
 				margin-top: 25px
 				+media-breakpoint-down(lg)
 					margin-top: 16px
+	// News
 	&--news
 		.card-photo
 			height: 136px
@@ -20,6 +22,7 @@
 			.excerpt
 				margin-top: 8px
 				color: $darkgray
+	// Product
 	&--product
 		height: 100%
 		padding: 16px
@@ -50,6 +53,26 @@
 					height: 1px
 					margin: 12px 0
 					background-color: $lightgray
+	// Review
+	&--review
+		padding: 16px
+		border: 1px solid $lightgray
+		&:hover
+			.card-meta
+				.title
+					color: $accent
+	// Base customize
+	&-icon
+		display: flex
+		align-items: center
+		justify-content: center
+		width: 40px
+		height: 40px
+		margin-bottom: 16px
+		border-radius: 50%
+		border: 1px solid $lightgray
+		color: $accent
+		font-size: 24px
 	&-photo
 		overflow: hidden
 		position: relative

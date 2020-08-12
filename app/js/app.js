@@ -131,6 +131,17 @@ jQuery(document).ready(function($) {
 			dots: true,
 		})
 	}
+	/**
+	 * Product slider
+	 */
+	if( $.fn.slick ) {
+		$('.product-slider').slick({
+			// autoplay: true,
+			// autoplaySpeed: 3000,
+			infinite: false,
+			dots: true,
+		})
+	}
 	// $('.heroes-slide').on('beforeChange', function(event, slick, currentSlide, nextSlide){
 	// 	lazyLoadInstance.update();
 	// });

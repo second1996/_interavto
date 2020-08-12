@@ -1,5 +1,23 @@
 @import '../helpers/helpers'
 
-article
+article,
+.product-descr
 	h1, h2, h3, h4, h5, h6, p, img, ul, ol, blockquote
 		margin-bottom: 16px
+	ul
+		padding-left: 10px
+		li
+			position: relative
+			padding-left: 24px
+			&:not(:last-child)
+				margin-bottom: 8px
+			&::before
+				content: ''
+				position: absolute
+				top: 9px
+				left: 0
+				display: block
+				width: 8px
+				height: 8px
+				border-radius: 8px
+				background-color: $accent

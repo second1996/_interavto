@@ -3,10 +3,8 @@
 .btn, button
 	display: inline-block
 	vertical-align: middle
-	height: 40px
-	padding: 0 16px
-	border-radius: 24px
 	border: 0
+	border-radius: 24px
 	background-color: $trsp
 	color: inherit
 	font-family: inherit
@@ -18,9 +16,21 @@
 	transition: .35s ease
 	&:hover
 		color: inherit
+.btn
+	height: 40px
+	padding: 0 16px
 	.icon
-		margin-right: 10px
 		font-size: 16px
+	&-icon-left
+		display: inline-flex
+		align-items: center
+		.icon
+			margin-right: 10px
+	&-icon-right
+		display: inline-flex
+		align-items: center
+		.icon
+			margin-left: 10px
 	&-primary
 		background-color: $accent
 		color: $white

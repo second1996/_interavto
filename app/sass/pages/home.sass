@@ -278,15 +278,11 @@
 				flex-basis: 65%
 			.form-label
 				flex-basis: 35%
-		.form-submit
-			width: 100%
+		.btn
+			width: 70%
 			max-width: 340px
-			margin-top: 40px
-			+media-breakpoint-down(lg)
-				max-width: 70%
-			+media-breakpoint-down(xs)
-				max-width: 65%
-				margin-top: 32px
+			+media-breakpoint-down(xxs)
+				width: 100%
 	&-descr
 		display: flex
 		.dots
@@ -323,6 +319,15 @@
 				height: 200px
 			+media-breakpoint-down(md)
 				width: 100vw
+
+
+/* ==========================================================================
+   SECTION: Advantages
+   ========================================================================== */
+.s-advantages
+	+media-breakpoint-down(sm)
+		.card
+			margin-bottom: 20px
 
 
 /* ==========================================================================

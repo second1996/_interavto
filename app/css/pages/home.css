@@ -449,20 +449,13 @@
     flex-basis: 35%
   }
 }
-.s-cta-form .form-submit {
-  width: 100%;
-  max-width: 340px;
-  margin-top: 40px
+.s-cta-form .btn {
+  width: 70%;
+  max-width: 340px
 }
-@media (max-width:1199.98px) {
-  .s-cta-form .form-submit {
-    max-width: 70%
-  }
-}
-@media (max-width:575.98px) {
-  .s-cta-form .form-submit {
-    max-width: 65%;
-    margin-top: 32px
+@media (max-width:374.98px) {
+  .s-cta-form .btn {
+    width: 100%
   }
 }
 .s-cta-descr {
@@ -527,6 +520,11 @@
 @media (max-width:991.98px) {
   .s-cta-expert .figure {
     width: 100vw
+  }
+}
+@media (max-width:767.98px) {
+  .s-advantages .card {
+    margin-bottom: 20px
   }
 }
 .s-about-header {

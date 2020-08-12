@@ -73,21 +73,6 @@ body {
 body.disable-scroll {
   overflow: hidden
 }
-body .modal-backdrop {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 998;
-  background-color: #25373f
-}
-body .modal-backdrop.fade {
-  opacity: 0
-}
-body .modal-backdrop.show {
-  opacity: .5
-}
 ul {
   list-style: none;
   margin: 0;
@@ -570,6 +555,20 @@ button:hover {
   -ms-flex: 0 0 30%;
   flex: 0 0 30%
 }
+@media (max-width:374.98px) {
+  .form-group {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start
+  }
+  .form-group .form-label {
+    margin-bottom: 8px
+  }
+}
 .form-label {
   margin-bottom: 0;
   cursor: pointer
@@ -606,6 +605,19 @@ button:hover {
 .form-textarea {
   resize: none;
   padding: 8px 16px
+}
+.form-submit {
+  margin-top: 40px
+}
+@media (max-width:991.98px) {
+  .form-submit {
+    margin-top: 32px
+  }
+}
+@media (max-width:575.98px) {
+  .form-submit {
+    width: 100%
+  }
 }
 .form-checkbox {
   position: relative;
@@ -680,6 +692,136 @@ table th {
 }
 table tr > td:not(:last-child) {
   padding-right: 24px
+}
+.modal.fade {
+  -webkit-transition: .3s ease;
+  -o-transition: .3s ease;
+  transition: .3s ease
+}
+.modal.fade .modal-dialog {
+  -webkit-transform: translateX(30px);
+  -ms-transform: translateX(30px);
+  transform: translateX(30px)
+}
+.modal.show .modal-dialog {
+  -webkit-transform: translateX(0);
+  -ms-transform: translateX(0);
+  transform: translateX(0)
+}
+.modal-backdrop {
+  background-color: #25373f
+}
+.modal-dialog {
+  max-width: 360px;
+  height: 100%;
+  margin: 0;
+  margin-left: auto;
+  background-color: #eff3f6
+}
+@media (max-width:575.98px) {
+  .modal-dialog {
+    max-width: 320px
+  }
+}
+@media (max-width:374.98px) {
+  .modal-dialog {
+    max-width: 100%
+  }
+}
+.modal-content {
+  height: 100%;
+  border: 0;
+  background-color: transparent
+}
+.modal-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  padding: 0 24px;
+  border-bottom: 1px solid #dde5e9
+}
+.modal-header .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  line-height: 1
+}
+.modal-header .title .icon {
+  margin-right: 8px
+}
+.modal-header .title > span {
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase
+}
+.modal-header .close {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 100%;
+  cursor: pointer;
+  color: #ff6c02
+}
+.modal-header .close > svg {
+  fill: #25373f;
+  -webkit-transition: fill .3s ease;
+  -o-transition: fill .3s ease;
+  transition: fill .3s ease
+}
+.modal-header .close:hover > svg {
+  fill: #ff6c02
+}
+.modal-body {
+  overflow-y: auto;
+  height: 100%;
+  margin-top: 60px;
+  padding: 24px
+}
+@media (max-width:767.98px) {
+  .modal-body .form-group {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start
+  }
+  .modal-body .form-group .form-label {
+    margin-bottom: 8px
+  }
+}
+.modal-body .form-control {
+  -ms-flex-negative: 1;
+  flex-shrink: 1;
+  margin-left: 10px
+}
+@media (max-width:767.98px) {
+  .modal-body .form-control {
+    margin-left: 0
+  }
+}
+.modal-body .form-submit {
+  margin-top: 32px;
+  margin-left: 104px
+}
+@media (max-width:767.98px) {
+  .modal-body .form-submit {
+    margin-left: 0
+  }
+}
+@media (max-width:575.98px) {
+  .modal-body .form-submit {
+    width: auto
+  }
 }
 .header {
   position: relative;
@@ -1459,7 +1601,8 @@ table tr > td:not(:last-child) {
   text-transform: uppercase
 }
 .m-menu-header .close {
-  padding: 5px 2px 5px 5px
+  padding: 5px 2px 5px 5px;
+  cursor: pointer
 }
 .m-menu-header .close > svg {
   fill: #25373f

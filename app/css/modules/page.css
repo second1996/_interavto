@@ -264,7 +264,8 @@
   text-transform: uppercase
 }
 .sidebar .filter-header .close {
-  padding: 5px 2px 5px 5px
+  padding: 5px 2px 5px 5px;
+  cursor: pointer
 }
 .sidebar .filter-header .close > svg {
   fill: #25373f

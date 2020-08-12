@@ -376,7 +376,8 @@ button:hover {
   color: #ff6c02
 }
 .card {
-  position: relative
+  position: relative;
+  height: 100%
 }
 .card--advantages .card-photo {
   height: 245px
@@ -403,7 +404,6 @@ button:hover {
   color: #76858c
 }
 .card--product {
-  height: 100%;
   padding: 16px;
   border: 1px solid #eff3f6;
   -webkit-transition: border-color .3s ease;
@@ -675,8 +675,11 @@ table {
 table td,
 table th {
   vertical-align: top;
-  padding: 8px 24px 8px 0;
+  padding: 8px 0;
   border-bottom: 1px solid #eff3f6
+}
+table tr > td:not(:last-child) {
+  padding-right: 24px
 }
 .header {
   position: relative;

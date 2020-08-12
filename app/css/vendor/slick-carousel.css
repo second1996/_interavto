@@ -94,12 +94,6 @@
   background: #fff url(../../images/dest/icons/arrow-dark.svg) no-repeat center/16px;
   font-size: 0
 }
-@media (max-width:991.98px) {
-  .slick-arrow {
-    top: auto;
-    bottom: 22px
-  }
-}
 .slick-arrow:hover {
   opacity: .75
 }

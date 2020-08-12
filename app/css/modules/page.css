@@ -381,9 +381,9 @@ article ul li::before {
 }
 @media (max-width:575.98px) {
   .main-products {
-    padding-left: 0;
-    padding-right: 0;
-    margin-left: 2px
+    padding-left: 0!important;
+    padding-right: 0!important;
+    margin-left: 1px
   }
 }
 .main-seo {

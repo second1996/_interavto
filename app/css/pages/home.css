@@ -29,6 +29,12 @@
     height: 100%
   }
 }
+@media (max-width:991.98px) {
+  .heroes-slider .slick-arrow {
+    top: auto;
+    bottom: 22px
+  }
+}
 .heroes-slider .slick-prev {
   left: 32px
 }

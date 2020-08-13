@@ -25,7 +25,7 @@
 				<ul class="links">
 					<li><a href="#">Сотрудничество</a></li>
 					<li><a href="#">Стать дилером</a></li>
-					<li><a href="#">Личный кабинет</a></li>
+					<li><a href="#userProfileModal" data-toggle="modal">Личный кабинет</a></li>
 				</ul>
 			</div>
 		</div>
@@ -678,8 +678,76 @@
 						<ul class="links">
 							<li><a href="#">Сотрудничество</a></li>
 							<li><a href="#">Стать дилером</a></li>
-							<li><a href="#">Личный кабинет</a></li>
+							<li><a href="#userProfileModal" data-toggle="modal">Личный кабинет</a></li>
 						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Modal: User Profile -->
+	<div class="modal modal--profile fade" id="userProfileModal" tabindex="-1" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header d-flex align-items-center justify-content-between">
+					<ul class="nav nav-tabs" role="tablist">
+						<li class="nav-item">
+							<a class="nav-link active text-xxs w-bold text-uppercase" data-toggle="tab" href="#sign-in" role="tab" aria-controls="tab-1" aria-selected="true">Вход</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link text-xxs w-bold text-uppercase" data-toggle="tab" href="#sign-up" role="tab" aria-controls="tab-2" aria-selected="false">Регистрация</a>
+						</li>
+					</ul>
+					<button class="close" data-dismiss="modal" aria-label="Close">
+						<svg aria-hidden="true" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd" clip-rule="evenodd" d="M8.00008 6.58586L11.293 3.29297L12.7072 4.70718L9.41429 8.00008L12.7072 11.293L11.293 12.7072L8.00008 9.41429L4.70718 12.7072L3.29297 11.293L6.58586 8.00008L3.29297 4.70718L4.70718 3.29297L8.00008 6.58586Z" />
+						</svg>
+					</button>
+				</div>
+				<div class="modal-body">
+					<div class="tab-content">
+						<div class="tab-pane fade show active" id="sign-in" role="tabpanel" aria-labelledby="tab-content-1">
+							<form action="#" method="POST" class="form">
+								<div class="form-group">
+									<label for="sign-in-email" class="form-label">E-mail</label>
+									<input type="email" id="sign-in-email" class="form-control" required>
+								</div>
+								<div class="form-group">
+									<label for="sign-in-phone" class="form-label">Пароль</label>
+									<input type="password" id="sign-in-phone" class="form-control" required>
+								</div>
+								<div class="form-link">
+									<a href="#">Забыли пароль?</a>
+								</div>
+								<button type="submit" class="form-submit btn btn-primary">Войти</button>
+							</form>
+						</div>
+						<div class="tab-pane fade" id="sign-up" role="tabpanel" aria-labelledby="tab-content-2">
+							<form action="#" method="POST" class="form">
+								<div class="form-group">
+									<label for="sign-up-email" class="form-label">E-mail</label>
+									<input type="email" id="sign-up-email" class="form-control" required>
+								</div>
+								<div class="form-group">
+									<label for="sign-up-password" class="form-label">Пароль</label>
+									<input type="password" id="sign-up-password" class="form-control" required>
+								</div>
+								<div class="form-group">
+									<label for="sign-up-phone" class="form-label">Телефон</label>
+									<input type="text" id="sign-up-phone" class="form-control" required>
+								</div>
+								<div class="form-group">
+									<label for="sign-up-organization" class="form-label">Организация</label>
+									<input type="text" id="sign-up-organization" class="form-control" required>
+								</div>
+								<div class="form-group">
+									<label for="sign-up-inn-organization" class="form-label">ИНН организации</label>
+									<input type="text" id="sign-up-inn-organization" class="form-control" required>
+								</div>
+								<button type="submit" class="form-submit btn btn-primary">Зарегистрироваться</button>
+							</form>
+						</div>
 					</div>
 				</div>
 			</div>

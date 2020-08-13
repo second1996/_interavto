@@ -10,6 +10,10 @@
 @import 'node_modules/bootstrap/scss/_transitions.scss'
 @import 'node_modules/bootstrap/scss/_modal.scss'
 
+
+/* ==========================================================================
+   Bootstrap Grid
+   ========================================================================== */
 .row-items
 	> .col,
 	> [class*="col-"]
@@ -37,3 +41,37 @@
 			margin: -1px 0 0 -1px
 			padding-right: 0
 			padding-left: 0
+
+
+/* ==========================================================================
+   Bootstrap Nav
+   ========================================================================== */
+.nav-tabs
+	flex-wrap: nowrap
+	justify-content: center
+	border-color: $lightgray
+	+media-breakpoint-down(xs)
+		justify-content: flex-start
+	.nav-item
+		margin: 0 32px
+		+media-breakpoint-down(xs)
+			flex-basis: 92px
+			max-width: 92px
+			margin-left: 0
+			margin-right: 32px
+	.nav-link
+		padding: 0 0 20px 0
+		border-radius: 0
+		border: none
+		border-bottom: 1px solid $trsp
+		color: #76858c
+		font-size: 12px
+		font-weight: 700
+		text-transform: uppercase
+		+media-breakpoint-down(xs)
+			padding-bottom: 16px
+	.nav-item.show .nav-link,
+	.nav-link.active
+		border-color: $accent
+		background-color: $trsp
+		color: $black

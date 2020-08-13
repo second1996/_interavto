@@ -61,8 +61,8 @@ textarea {
   outline: 0
 }
 body {
-  overflow-x: hidden;
   position: relative;
+  overflow-x: hidden;
   min-width: 320px;
   color: #1e2021;
   font-family: "Open Sans",sans-serif;
@@ -72,6 +72,29 @@ body {
 }
 body.disable-scroll {
   overflow: hidden
+}
+body.modal-open {
+  padding-right: 17px
+}
+@media (max-width:991.98px) {
+  body.modal-open {
+    padding-right: 0
+  }
+}
+body .filter-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 998;
+  background-color: #25373f
+}
+body .filter-backdrop.fade {
+  opacity: 0
+}
+body .filter-backdrop.show {
+  opacity: .5
 }
 ul {
   list-style: none;
@@ -569,6 +592,16 @@ button:hover {
     margin-bottom: 8px
   }
 }
+.form-link {
+  margin-top: 16px
+}
+.form-link > a {
+  color: #76858c;
+  font-size: 12px
+}
+.form-link > a:hover {
+  color: #ff6c02
+}
 .form-label {
   margin-bottom: 0;
   cursor: pointer
@@ -693,6 +726,9 @@ table th {
 table tr > td:not(:last-child) {
   padding-right: 24px
 }
+.modal {
+  padding-right: 0!important
+}
 .modal.fade {
   -webkit-transition: .3s ease;
   -o-transition: .3s ease;
@@ -710,6 +746,30 @@ table tr > td:not(:last-child) {
 }
 .modal-backdrop {
   background-color: #25373f
+}
+.modal--profile .modal-header .nav-tabs .nav-item {
+  margin: 0
+}
+.modal--profile .modal-header .nav-tabs .nav-item:not(:last-child) {
+  margin-right: 32px
+}
+.modal--profile .modal-header .nav-tabs .nav-link {
+  padding-bottom: 0;
+  line-height: 48px
+}
+.modal--profile .modal-body .form-link,
+.modal--profile .modal-body .form-submit {
+  width: auto;
+  margin-left: 104px
+}
+@media (max-width:767.98px) {
+  .modal--profile .modal-body .form-link,
+  .modal--profile .modal-body .form-submit {
+    margin-left: 0
+  }
+}
+.modal--profile .modal-body .form-submit {
+  margin-top: 24px
 }
 .modal-dialog {
   max-width: 360px;
@@ -738,7 +798,7 @@ table tr > td:not(:last-child) {
   top: 0;
   left: 0;
   right: 0;
-  height: 60px;
+  height: 48px;
   padding: 0 24px;
   border-bottom: 1px solid #dde5e9
 }
@@ -767,8 +827,7 @@ table tr > td:not(:last-child) {
   -ms-flex-align: center;
   align-items: center;
   height: 100%;
-  cursor: pointer;
-  color: #ff6c02
+  cursor: pointer
 }
 .modal-header .close > svg {
   fill: #25373f;
@@ -1564,7 +1623,7 @@ table tr > td:not(:last-child) {
   left: 0;
   right: 0;
   bottom: 0;
-  z-index: 1099;
+  z-index: 999;
   height: 100%;
   opacity: 0;
   -webkit-transition: .2s ease;
@@ -1601,7 +1660,14 @@ table tr > td:not(:last-child) {
   text-transform: uppercase
 }
 .m-menu-header .close {
-  padding: 5px 2px 5px 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 100%;
+  padding-right: 2px;
   cursor: pointer
 }
 .m-menu-header .close > svg {

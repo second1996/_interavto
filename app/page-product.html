@@ -814,7 +814,7 @@
 									<input type="password" id="sign-in-phone" class="form-control" required>
 								</div>
 								<div class="form-link">
-									<a href="#">Забыли пароль?</a>
+									<a href="#forgotPasswordModal" data-toggle="modal" data-dismiss="modal">Забыли пароль?</a>
 								</div>
 								<button type="submit" class="form-submit btn btn-primary">Войти</button>
 							</form>
@@ -845,6 +845,34 @@
 							</form>
 						</div>
 					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Modal: Forgot password -->
+	<div class="modal modal--profile fade" id="forgotPasswordModal" tabindex="-1" aria-labelledby="forgotPasswordModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header d-flex align-items-center justify-content-between">
+					<div class="title text-xxs w-bold text-uppercase" id="forgotPasswordModalLabel">Восстановление пароля</div>
+					<button class="close" data-dismiss="modal" aria-label="Close">
+						<svg aria-hidden="true" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd" clip-rule="evenodd" d="M8.00008 6.58586L11.293 3.29297L12.7072 4.70718L9.41429 8.00008L12.7072 11.293L11.293 12.7072L8.00008 9.41429L4.70718 12.7072L3.29297 11.293L6.58586 8.00008L3.29297 4.70718L4.70718 3.29297L8.00008 6.58586Z" />
+						</svg>
+					</button>
+				</div>
+				<div class="modal-body">
+					<form action="#" method="POST" class="form">
+						<div class="form-descr">
+							<span>Мы отправим письмо с новым паролем</span>
+						</div>
+						<div class="form-group">
+							<label for="forgot-password-email" class="form-label">E-mail</label>
+							<input type="email" id="forgot-password-email" class="form-control" required>
+						</div>
+						<button type="submit" class="form-submit btn btn-primary">Восстановить пароль</button>
+					</form>
 				</div>
 			</div>
 		</div>

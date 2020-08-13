@@ -246,6 +246,12 @@
 .sidebar .filter-header > .container {
   height: 48px
 }
+@media (max-width:575.98px) {
+  .sidebar .filter-header > .container {
+    padding-left: 16px;
+    padding-right: 16px
+  }
+}
 .sidebar .filter-header .title {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -281,8 +287,13 @@
   .sidebar .filter-list {
     overflow-y: scroll;
     height: 100%;
-    margin-top: 60px;
+    margin-top: 48px;
     padding: 24px 24px 84px
+  }
+}
+@media (max-width:575.98px) {
+  .sidebar .filter-list {
+    padding: 16px 16px 84px
   }
 }
 .sidebar .filter-item:not(:last-child) {

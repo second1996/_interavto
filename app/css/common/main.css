@@ -407,6 +407,14 @@ button:hover {
   height: 136px;
   margin-bottom: 16px
 }
+.card--news .card-photo:hover ~ .card-meta .title > a {
+  color: #ff6c02
+}
+@media (max-width:575.98px) {
+  .card--news .card-photo {
+    height: 120px
+  }
+}
 .card--news .card-meta .excerpt {
   margin-top: 8px;
   color: #76858c
@@ -500,7 +508,8 @@ button:hover {
   transition: color .3s ease
 }
 .card-meta .excerpt {
-  margin-bottom: 0
+  margin-bottom: 0;
+  word-wrap: break-word
 }
 .card-meta .date {
   margin-top: 16px;
@@ -591,6 +600,9 @@ button:hover {
   .form-group .form-label {
     margin-bottom: 8px
   }
+}
+.form-descr {
+  color: #76858c
 }
 .form-link {
   margin-top: 16px
@@ -802,6 +814,11 @@ table tr > td:not(:last-child) {
   padding: 0 24px;
   border-bottom: 1px solid #dde5e9
 }
+@media (max-width:575.98px) {
+  .modal-header {
+    padding: 0 16px
+  }
+}
 .modal-header .title {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -841,8 +858,13 @@ table tr > td:not(:last-child) {
 .modal-body {
   overflow-y: auto;
   height: 100%;
-  margin-top: 60px;
+  margin-top: 48px;
   padding: 24px
+}
+@media (max-width:575.98px) {
+  .modal-body {
+    padding: 16px
+  }
 }
 @media (max-width:767.98px) {
   .modal-body .form-group {

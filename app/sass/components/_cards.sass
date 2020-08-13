@@ -19,6 +19,12 @@
 		.card-photo
 			height: 136px
 			margin-bottom: 16px
+			&:hover
+				~ .card-meta
+					.title > a
+						color: $accent
+			+media-breakpoint-down(xs)
+				height: 120px
 		.card-meta
 			.excerpt
 				margin-top: 8px
@@ -96,6 +102,7 @@
 			transition: color .3s ease
 		.excerpt
 			margin-bottom: 0
+			word-wrap: break-word
 		.date
 			margin-top: 16px
 			color: $darkgray

@@ -13,6 +13,36 @@
 			margin-bottom: 32px
 			.title
 				margin-top: 16px
+	&-heroes
+		margin-bottom: 40px
+		&-wrapper
+			overflow: hidden
+			display: flex
+			justify-content: space-between
+			height: 424px
+			border-radius: 0 240px 240px 0
+			background-color: $lightgray
+		&-meta
+			position: relative
+			margin: 32px 48px
+			.date
+				margin-bottom: 32px
+				color: $darkgray
+			.title
+				overflow: hidden
+				height: 75%
+				line-height: 1.2
+			.dots
+				position: absolute
+				left: 0
+				bottom: 0
+		&-photo
+			flex: 0 0 690px
+			max-width: 690px
+			img
+				width: 100%
+				height: 100%
+				object-fit: cover
 	&-sidebar
 		position: static
 	&-products
@@ -20,7 +50,17 @@
 			padding-left: 0!important
 			padding-right: 0!important
 			margin-left: 1px
-	&-body
+	&-content
+		&-descr
+			margin-bottom: 64px
+			+media-breakpoint-down(md)
+				margin-bottom: 40px
+			.title
+				margin-bottom: 16px
+				font-size: 18px
+			p
+				&:last-of-type
+					margin-bottom: 0
 	&-seo
 		margin-top: 120px
 		+media-breakpoint-down(lg)

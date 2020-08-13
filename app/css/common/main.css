@@ -403,21 +403,36 @@ button:hover {
     margin-top: 16px
   }
 }
-.card--news .card-photo {
-  height: 136px;
-  margin-bottom: 16px
+.card--article {
+  margin-bottom: 8px
 }
-.card--news .card-photo:hover ~ .card-meta .title > a {
+.card--article .card-photo {
+  height: 136px;
+  margin-bottom: 0
+}
+.card--article .card-photo:hover ~ .card-meta .title > a {
   color: #ff6c02
 }
-@media (max-width:575.98px) {
-  .card--news .card-photo {
-    height: 120px
-  }
+.card--article .card-meta .title > a {
+  padding-top: 16px
 }
-.card--news .card-meta .excerpt {
+.card--article .card-meta .excerpt {
   margin-top: 8px;
   color: #76858c
+}
+.card--article-big .card-photo {
+  height: 264px
+}
+@media (max-width:575.98px) {
+  .card--article-big .card-photo {
+    height: auto;
+    min-height: 136px;
+    max-height: 264px
+  }
+  .card--article-big .card-photo img {
+    min-height: 136px;
+    max-height: 264px
+  }
 }
 .card--product {
   padding: 16px;
@@ -506,6 +521,9 @@ button:hover {
   -webkit-transition: color .3s ease;
   -o-transition: color .3s ease;
   transition: color .3s ease
+}
+.card-meta .title > a {
+  display: inline-block
 }
 .card-meta .excerpt {
   margin-bottom: 0;

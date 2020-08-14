@@ -80,6 +80,51 @@
 			.card-meta
 				.title
 					color: $accent
+	// Industry
+	&--industry
+		margin-bottom: 16px
+		text-align: center
+		&:hover
+			.card-photo
+				&::after
+					visibility: visible
+					opacity: 1
+				&-icon
+					color: $darkblue
+			.card-meta
+				.title
+					color: $accent
+		.card-photo
+			height: 192px
+			margin-bottom: 16px
+			border-radius: 96px
+			&::after
+				content: ''
+				visibility: hidden
+				position: absolute
+				top: 0
+				left: 0
+				right: 0
+				bottom: 0
+				background-color: $accent
+				opacity: 0
+				transition: .3s ease
+			&-icon
+				position: absolute
+				top: 50%
+				left: 50%
+				z-index: 1
+				display: flex
+				align-items: center
+				justify-content: center
+				width: 40px
+				height: 40px
+				border-radius: 50%
+				background-color: $white
+				color: $accent
+				font-size: 24px
+				transform: translate(-50%, -50%)
+				transition: color .3s ease
 	// Base customize
 	&-icon
 		display: flex
@@ -94,9 +139,11 @@
 		font-size: 24px
 	&-photo
 		overflow: hidden
+		backface-visibility: hidden
 		position: relative
 		width: 100%
 		margin-bottom: 25px
+		transform: translate3d(0, 0, 0)
 		&.rounded-left
 			img
 				border-radius: 200px 0 0 200px
@@ -136,4 +183,5 @@
 		left: 0
 		right: 0
 		bottom: 0
+		z-index: 2
 		display: block

@@ -79,3 +79,16 @@
 .single-widget .card {
   margin-bottom: 0
 }
+.single-section {
+  margin-top: 80px
+}
+@media (max-width:991.98px) {
+  .single-section {
+    margin-top: 64px
+  }
+}
+@media (max-width:575.98px) {
+  .single-section {
+    margin-top: 48px
+  }
+}

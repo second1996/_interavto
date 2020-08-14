@@ -148,37 +148,37 @@
   -o-object-fit: contain;
   object-fit: contain
 }
-.s-categories .tab-content {
+.s-industry .tab-content {
   margin-top: 64px
 }
 @media (max-width:1199.98px) {
-  .s-categories .tab-content {
+  .s-industry .tab-content {
     margin-top: 32px
   }
 }
-.s-categories .categories-list-item {
+.s-industry .industry-list-item {
   margin-bottom: 24px
 }
-.s-categories .categories-list-link {
+.s-industry .industry-list-link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex
 }
-.s-categories .categories-list-link:hover .image {
+.s-industry .industry-list-link:hover .image {
   border-color: #ff6c02;
   background-color: #ff6c02
 }
-.s-categories .categories-list-link:hover .image .icon {
+.s-industry .industry-list-link:hover .image .icon {
   fill: #fff;
   stroke: #fff
 }
-.s-categories .categories-list-link:hover .title span {
+.s-industry .industry-list-link:hover .title span {
   color: #ff6c02
 }
-.s-categories .categories-list-link:hover .title .icon {
+.s-industry .industry-list-link:hover .title .icon {
   fill: #ff6c02
 }
-.s-categories .categories-list-link .image {
+.s-industry .industry-list-link .image {
   -webkit-box-flex: 0;
   -ms-flex: 0 0 auto;
   flex: 0 0 auto;
@@ -200,7 +200,7 @@
   -o-transition: .35s ease;
   transition: .35s ease
 }
-.s-categories .categories-list-link .image .icon {
+.s-industry .industry-list-link .image .icon {
   fill: #ff6c02;
   stroke: #ff6c02;
   font-size: 24px;
@@ -208,7 +208,7 @@
   -o-transition: .35s ease;
   transition: .35s ease
 }
-.s-categories .categories-list-link .title {
+.s-industry .industry-list-link .title {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -222,7 +222,7 @@
   -o-transition: .35s ease;
   transition: .35s ease
 }
-.s-categories .categories-list-link .title span {
+.s-industry .industry-list-link .title span {
   display: inline-block;
   padding-right: 8px;
   color: #1e2021;
@@ -233,11 +233,11 @@
   transition: .35s ease
 }
 @media (max-width:767.98px) {
-  .s-categories .categories-list-link .title span {
+  .s-industry .industry-list-link .title span {
     font-size: 16px
   }
 }
-.s-categories .categories-list-link .title .icon {
+.s-industry .industry-list-link .title .icon {
   -webkit-box-flex: 0;
   -ms-flex: 0 0 auto;
   flex: 0 0 auto;
@@ -309,10 +309,14 @@
 }
 .s-products-list-item .image {
   overflow: hidden;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
   position: relative;
   width: 80px;
   height: 80px;
-  border-radius: 100%
+  border-radius: 100%;
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0)
 }
 .s-products-list-item .image::before {
   content: '';

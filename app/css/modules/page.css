@@ -358,6 +358,21 @@ article table,
 article ul {
   margin-bottom: 24px
 }
+.product-descr a,
+article a {
+  color: #ff6c02;
+  font-weight: 600
+}
+.product-descr a:hover,
+article a:hover {
+  color: #1e2021
+}
+.product-descr b,
+.product-descr strong,
+article b,
+article strong {
+  font-weight: 600
+}
 .product-descr ul,
 article ul {
   padding-left: 10px
@@ -469,6 +484,30 @@ article mark {
 @media (max-width:991.98px) {
   .main-heroes-meta {
     margin: 18px 0 24px
+  }
+}
+.main-heroes-meta .picture {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  margin-bottom: 48px;
+  border-radius: 50%;
+  background-color: #fff;
+  color: #ff6c02;
+  font-size: 24px
+}
+@media (max-width:991.98px) {
+  .main-heroes-meta .picture {
+    margin-top: 16px;
+    margin-bottom: 12px
   }
 }
 .main-heroes-meta .date {

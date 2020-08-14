@@ -88,14 +88,14 @@
 
 
 /* ==========================================================================
-   SECTION: Categories
+   SECTION: Industry
    ========================================================================== */
-.s-categories
+.s-industry
 	.tab-content
 		margin-top: 64px
 		+media-breakpoint-down(lg)
 			margin-top: 32px
-	.categories-list
+	.industry-list
 		&-item
 			margin-bottom: 24px
 		&-link
@@ -151,6 +151,7 @@
 					font-size: 16px
 					transition: .35s ease
 
+
 /* ==========================================================================
    SECTION: Our Products
    ========================================================================== */
@@ -185,10 +186,12 @@
 			margin-bottom: 48px
 			.image
 				overflow: hidden
+				backface-visibility: hidden
 				position: relative
 				width: 80px
 				height: 80px
 				border-radius: 100%
+				transform: translate3d(0, 0, 0)
 				&::before
 					content: ''
 					position: absolute

@@ -137,6 +137,18 @@ h6 {
   stroke: currentColor;
   fill: currentColor
 }
+.mt-60 {
+  margin-top: 60px
+}
+.mb-60 {
+  margin-bottom: 60px
+}
+.mt-50 {
+  margin-top: 50px
+}
+.mb-50 {
+  margin-bottom: 50px
+}
 .mt-40 {
   margin-top: 40px
 }
@@ -482,6 +494,66 @@ button:hover {
 .card--review:hover .card-meta .title {
   color: #ff6c02
 }
+.card--industry {
+  margin-bottom: 16px;
+  text-align: center
+}
+.card--industry:hover .card-photo::after {
+  visibility: visible;
+  opacity: 1
+}
+.card--industry:hover .card-photo-icon {
+  color: #25373f
+}
+.card--industry:hover .card-meta .title {
+  color: #ff6c02
+}
+.card--industry .card-photo {
+  height: 192px;
+  margin-bottom: 16px;
+  border-radius: 96px
+}
+.card--industry .card-photo::after {
+  content: '';
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ff6c02;
+  opacity: 0;
+  -webkit-transition: .3s ease;
+  -o-transition: .3s ease;
+  transition: .3s ease
+}
+.card--industry .card-photo-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #fff;
+  color: #ff6c02;
+  font-size: 24px;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  -webkit-transition: color .3s ease;
+  -o-transition: color .3s ease;
+  transition: color .3s ease
+}
 .card-icon {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -502,9 +574,13 @@ button:hover {
 }
 .card-photo {
   overflow: hidden;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
   position: relative;
   width: 100%;
-  margin-bottom: 25px
+  margin-bottom: 25px;
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0)
 }
 .card-photo.rounded-left img {
   border-radius: 200px 0 0 200px
@@ -554,6 +630,7 @@ button:hover {
   left: 0;
   right: 0;
   bottom: 0;
+  z-index: 2;
   display: block
 }
 .dots {

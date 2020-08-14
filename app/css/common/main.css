@@ -410,6 +410,11 @@ button:hover {
   height: 136px;
   margin-bottom: 0
 }
+@media (max-width:374.98px) {
+  .card--article .card-photo {
+    height: 120px
+  }
+}
 .card--article .card-photo:hover ~ .card-meta .title > a {
   color: #ff6c02
 }
@@ -743,17 +748,40 @@ button:hover {
   -ms-transform: rotate(180deg);
   transform: rotate(180deg)
 }
+.responsive-table {
+  overflow-x: auto;
+  width: 100%;
+  -webkit-overflow-scrolling: touch
+}
+@media (max-width:575.98px) {
+  .responsive-table table th {
+    min-width: 140px
+  }
+}
+@media (max-width:575.98px) and (max-width:374.98px) {
+  .responsive-table table th {
+    min-width: 120px
+  }
+}
 table {
   width: 100%;
   border-collapse: collapse
 }
+table th {
+  color: #76858c;
+  font-size: 12px;
+  font-weight: 400
+}
 table td,
 table th {
   vertical-align: top;
-  padding: 8px 0;
+  padding: 8px 0
+}
+table td {
   border-bottom: 1px solid #eff3f6
 }
-table tr > td:not(:last-child) {
+table tr > td:not(:last-child),
+table tr > th:not(:last-child) {
   padding-right: 24px
 }
 .modal {

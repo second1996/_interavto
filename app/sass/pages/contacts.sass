@@ -1,0 +1,81 @@
+@import '../helpers/helpers'
+
+.contacts
+	&-wrapper
+		display: flex
+		justify-content: space-between
+	&-info
+		padding-right: 40px
+	&-table
+		margin-top: 32px
+		th, td
+			padding: 16px 0
+			border-bottom: 0
+		th
+			min-width: 180px
+			font-size: 14px
+		&-social
+			display: flex
+			flex-wrap: wrap
+			align-items: center
+			+media-breakpoint-down(md)
+				margin-top: 30px
+			+media-breakpoint-down(sm)
+				margin-top: 16px
+			> a
+				display: flex
+				align-items: center
+				justify-content: center
+				width: 32px
+				height: 32px
+				margin-bottom: 12px
+				border-radius: 50%
+				background-color: $darkblue
+				color: $white
+				font-size: 16px
+				&:not(:last-child)
+					margin-right: 12px
+				&:hover
+					color: $white
+					background-color: $accent
+	&-map
+		flex: 0 0 auto
+		width: 100%
+		max-width: 584px
+		height: 500px
+		border: 1px solid $lightgray
+		filter: grayscale(1)
+		transition: filter .3s ease
+		&:hover
+			filter: grayscale(0)
+		iframe
+			display: block
+			width: 100%
+			height: 100%
+			border: 0
+	&-feedback
+		display: flex
+		margin-top: 50px
+		padding: 48px 40px 56px
+		background-color: $lightgray
+		&-title
+			flex: 0 0 auto
+			max-width: 440px
+		&-form
+			width: 100%
+			.form-group
+				align-items: flex-start
+				justify-content: flex-start
+				&:not(:first-child)
+					margin-top: 16px
+				.form-label
+					flex: 0 0 20%
+					padding-top: 10px
+					padding-right: 24px
+				.form-textarea
+					flex: 0 0 80%
+					max-width: 100%
+					height: 120px
+			.form-submit
+				margin-left: 20%
+				width: 280px

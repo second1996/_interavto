@@ -312,7 +312,7 @@ html {
 }
 @media (min-width:1200px) {
   .container {
-    max-width: 1208px
+    max-width: 1248px
   }
 }
 .container-fluid,
@@ -357,7 +357,7 @@ html {
   .container-sm,
   .container-xl,
   .container-xs {
-    max-width: 1208px
+    max-width: 1248px
   }
 }
 .row {

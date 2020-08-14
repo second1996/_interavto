@@ -528,7 +528,7 @@ button:hover {
   transition: color .3s ease
 }
 .card-meta .title > a {
-  display: inline-block
+  display: block
 }
 .card-meta .excerpt {
   margin-bottom: 0;

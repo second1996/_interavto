@@ -356,7 +356,7 @@ article ol,
 article p,
 article table,
 article ul {
-  margin-bottom: 16px
+  margin-bottom: 24px
 }
 .product-descr ul,
 article ul {
@@ -382,6 +382,38 @@ article ul li::before {
   height: 8px;
   border-radius: 8px;
   background-color: #ff6c02
+}
+.product-descr blockquote,
+article blockquote {
+  padding-left: 16px;
+  border-left: 1px solid #ff6c02;
+  font-weight: 700
+}
+.product-descr blockquote span,
+article blockquote span {
+  display: block;
+  margin-bottom: 8px;
+  color: #ff6c02
+}
+.product-descr blockquote p:last-of-type,
+article blockquote p:last-of-type {
+  margin-bottom: 0
+}
+.product-descr mark,
+article mark {
+  display: inline-block;
+  margin-bottom: 8px;
+  padding: 4px 8px;
+  border-radius: 4px;
+  background-color: #eff3f6;
+  font-size: 18px
+}
+@media (max-width:575.98px) {
+  .product-descr mark,
+  article mark {
+    display: block;
+    font-size: 16px
+  }
 }
 .main-header {
   margin-bottom: 40px

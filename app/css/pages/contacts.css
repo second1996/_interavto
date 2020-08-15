@@ -6,8 +6,21 @@
   -ms-flex-pack: justify;
   justify-content: space-between
 }
+@media (max-width:1199.98px) {
+  .contacts-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column
+  }
+}
 .contacts-info {
   padding-right: 40px
+}
+@media (max-width:1199.98px) {
+  .contacts-info {
+    padding-right: 0
+  }
 }
 .contacts-table {
   margin-top: 32px
@@ -21,6 +34,11 @@
   min-width: 180px;
   font-size: 14px
 }
+@media (max-width:575.98px) {
+  .contacts-table th {
+    min-width: 130px
+  }
+}
 .contacts-table-social {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -30,16 +48,6 @@
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center
-}
-@media (max-width:991.98px) {
-  .contacts-table-social {
-    margin-top: 30px
-  }
-}
-@media (max-width:767.98px) {
-  .contacts-table-social {
-    margin-top: 16px
-  }
 }
 .contacts-table-social > a {
   display: -webkit-box;
@@ -82,6 +90,17 @@
   transition: filter .3s ease;
   transition: filter .3s ease,-webkit-filter .3s ease
 }
+@media (max-width:1199.98px) {
+  .contacts-map {
+    max-width: 100%;
+    margin-top: 24px
+  }
+}
+@media (max-width:767.98px) {
+  .contacts-map {
+    height: 248px
+  }
+}
 .contacts-map:hover {
   -webkit-filter: grayscale(0);
   filter: grayscale(0)
@@ -93,12 +112,31 @@
   border: 0
 }
 .contacts-feedback {
+  position: relative;
+  margin-top: 50px
+}
+@media (max-width:991.98px) {
+  .contacts-feedback {
+    background-color: #eff3f6
+  }
+}
+.contacts-feedback-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 50px;
-  padding: 48px 40px 56px;
+  padding: 48px 40px;
   background-color: #eff3f6
+}
+@media (max-width:991.98px) {
+  .contacts-feedback-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding-left: 0;
+    padding-right: 0;
+    background-color: transparent
+  }
 }
 .contacts-feedback-title {
   -webkit-box-flex: 0;
@@ -106,8 +144,30 @@
   flex: 0 0 auto;
   max-width: 440px
 }
+@media (max-width:1199.98px) {
+  .contacts-feedback-title {
+    max-width: 300px
+  }
+}
+@media (max-width:991.98px) {
+  .contacts-feedback-title {
+    max-width: 440px;
+    margin-bottom: 24px
+  }
+}
 .contacts-feedback-form {
-  width: 100%
+  width: 100%;
+  margin-left: 40px
+}
+@media (max-width:1199.98px) {
+  .contacts-feedback-form {
+    margin-left: 20px
+  }
+}
+@media (max-width:991.98px) {
+  .contacts-feedback-form {
+    margin-left: 0
+  }
 }
 .contacts-feedback-form .form-group {
   -webkit-box-align: start;
@@ -120,12 +180,34 @@
 .contacts-feedback-form .form-group:not(:first-child) {
   margin-top: 16px
 }
+@media (max-width:767.98px) {
+  .contacts-feedback-form .form-group {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap
+  }
+}
+@media (max-width:374.98px) {
+  .contacts-feedback-form .form-group {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row
+  }
+}
 .contacts-feedback-form .form-group .form-label {
   -webkit-box-flex: 0;
   -ms-flex: 0 0 20%;
   flex: 0 0 20%;
   padding-top: 10px;
   padding-right: 24px
+}
+@media (max-width:767.98px) {
+  .contacts-feedback-form .form-group .form-label {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    padding-bottom: 8px
+  }
 }
 .contacts-feedback-form .form-group .form-textarea {
   -webkit-box-flex: 0;
@@ -134,7 +216,31 @@
   max-width: 100%;
   height: 120px
 }
+@media (max-width:767.98px) {
+  .contacts-feedback-form .form-group .form-textarea {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%
+  }
+}
+.contacts-feedback-form .form-group .form-control {
+  max-width: 280px
+}
+@media (max-width:767.98px) {
+  .contacts-feedback-form .form-group .form-control {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%
+  }
+}
 .contacts-feedback-form .form-submit {
   margin-left: 20%;
   width: 280px
+}
+@media (max-width:767.98px) {
+  .contacts-feedback-form .form-submit {
+    width: 100%;
+    margin-left: 0
+  }
 }

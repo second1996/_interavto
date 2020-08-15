@@ -699,7 +699,7 @@ button:hover {
     align-items: flex-start
   }
   .form-group .form-label {
-    margin-bottom: 8px
+    padding-bottom: 8px
   }
 }
 .form-descr {
@@ -1524,6 +1524,9 @@ table tr > th:not(:last-child) {
 }
 .footer-logo > a {
   display: inline-block
+}
+.footer-logo img {
+  max-width: 206px
 }
 .footer-contacts {
   margin-top: 30px

@@ -321,8 +321,72 @@
 					</div><!-- /.tab-pane -->
 					<!-- Мои заказы -->
 					<div class="tab-pane fade" id="tab-profile-orders" role="tabpanel" aria-labelledby="tab-profile-orders">
-						<div class="container">
-							3
+						<div class="profile-orders">
+							<div class="container">
+								<div class="profile-orders-wrapper">
+									<table class="profile-orders-table footable">
+										<thead>
+											<tr>
+												<th>Данные заказа</th>
+												<th data-breakpoints="xxs xs">Номенклатура</th>
+												<th data-breakpoints="xxs xs">Количество</th>
+												<th data-breakpoints="xxs xs">Цена</th>
+												<th data-breakpoints="xxs xs">Сумма</th>
+												<th>Статус</th>
+												<th data-breakpoints="xxs xs sm md">Транспортная<br> компания</th>
+												<th data-breakpoints="xxs xs sm md">Трек-номер</th>
+												<th data-breakpoints="xxs xs sm md">Документы к заказу</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td><span class="invoice">Счет № 23</span><span class="date">07.06.2020</span></td>
+												<td>ИНП-47</td>
+												<td>10</td>
+												<td>1 400</td>
+												<td>14 000</td>
+												<td><span class="status status--send">Отправлен</span></td>
+												<td>Деловые линии</td>
+												<td>20-002548483</td>
+												<td><span class="document"><a href="#">УПД № 21 от 11.02.2020</a></span> <span class="document"><a href="#">Паспорт № 112 от 12.12.2020</a></span></td>
+											</tr>
+											<tr>
+												<td><span class="invoice">Счет № 413</span><span class="date">12.08.2020</span></td>
+												<td>ВНП-81</td>
+												<td>5</td>
+												<td>1 400</td>
+												<td>72 532</td>
+												<td><span class="status status--hold">В ожидании</span></td>
+												<td>Деловые линии</td>
+												<td>20-002548483</td>
+												<td><span class="document"><a href="#">Паспорт № 112 от 12.12.2020</a></span></td>
+											</tr>
+											<tr>
+												<td><span class="invoice">Счет № 398</span><span class="date">03.09.2020</span></td>
+												<td>НП-2</td>
+												<td>50</td>
+												<td>1 500</td>
+												<td>9 322</td>
+												<td><span class="status status--wrong">Отказано</span></td>
+												<td>Деловые линии</td>
+												<td>20-002548483</td>
+												<td><span class="document"><a href="#">УПД № 21 от 11.02.2020</a></span> <span class="document"><a href="#">Паспорт № 112 от 12.12.2020</a></span></td>
+											</tr>
+											<tr>
+												<td><span class="invoice">Счет № 406</span><span class="date">21.09.2020</span></td>
+												<td>ВНИИНП-232</td>
+												<td>20</td>
+												<td>200</td>
+												<td>16 050</td>
+												<td><span class="status status--passive">Безуспешно</span></td>
+												<td>Деловые линии</td>
+												<td>20-002548483</td>
+												<td><span class="document"><a href="#">УПД № 21 от 11.02.2020</a></span></td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
 						</div>
 					</div><!-- /.tab-pane -->
 					<!-- Файлы для скачивания -->
@@ -647,6 +711,7 @@
 
 	<!-- Load CSS -->
 	<link rel="stylesheet" href="css/vendor/bootstrap.css">
+	<link rel="stylesheet" href="css/vendor/footable.css">
 	<link rel="stylesheet" href="css/modules/page.css">
 	<link rel="stylesheet" href="css/pages/profile.css">
 	<link rel="stylesheet" href="css/common/main.css">
@@ -655,6 +720,7 @@
 	<script src="js/vendor/jquery.min.js"></script>
 	<script src="js/vendor/lazyload.min.js"></script>
 	<script src="js/vendor/bootstrap.min.js"></script>
+	<script src="js/vendor/footable.core.min.js"></script>
 	<script src="js/app.js"></script>
 
 </body>

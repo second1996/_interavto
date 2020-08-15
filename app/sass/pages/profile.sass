@@ -50,3 +50,67 @@
 				.form-submit
 					width: 100%
 					max-width: 312px
+	// Profile Orders
+	.profile-orders
+		&-wrapper
+		&-table
+			border-spacing: revert
+			background-color: $lightgray
+			th, td
+				padding: 15px 0
+			thead
+				background-color: $white
+				+media-breakpoint-down(sm)
+					display: none
+				th
+					width: 11.111%
+			tbody
+				tr
+					border-top: 18px solid $white
+					td
+						position: relative
+						border-bottom: 0
+						&:first-child
+							padding-left: 16px
+							+media-breakpoint-down(lg)
+								padding-left: 42px
+						.invoice
+							display: block
+							font-weight: 700
+						.date
+							display: block
+							font-weight: 700
+						.status
+							display: block
+							&--send
+								color: #35b02a
+							&--hold
+								color: #ca9d22
+							&--wrong
+								color: #b62424
+							&--passive
+								color: #7a7a7a
+						.document
+							display: block
+							line-height: 1.2
+							margin-top: 4px
+							&:not(:last-child)
+								margin-bottom: 10px
+							> a
+								text-decoration: underline
+			.footable-detail-row
+				border-top: 18px solid $lightgray
+				td:first-child
+					padding-left: 16px
+				td:last-child
+					padding-right: 16px
+			.footable-details
+				margin-top: -32px
+				tbody
+					> tr
+						border-top: 0
+					th
+						font-size: 14px
+					th, td
+						padding: 0
+						padding-bottom: 16px

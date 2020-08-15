@@ -547,7 +547,7 @@ article mark {
   flex: 0 0 100%;
   max-width: 690px
 }
-@media (max-width:1199.98px) {
+@media (max-width:1277.98px) {
   .main-heroes-photo {
     max-width: 500px
   }
@@ -596,7 +596,7 @@ article mark {
 .main-seo {
   margin-top: 120px
 }
-@media (max-width:1199.98px) {
+@media (max-width:1277.98px) {
   .main-seo {
     margin-top: 80px
   }

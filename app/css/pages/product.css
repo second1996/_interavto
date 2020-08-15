@@ -16,7 +16,7 @@
   justify-content: center;
   height: 400px
 }
-@media (max-width:1199.98px) {
+@media (max-width:1277.98px) {
   .product-slide .photo {
     height: 325px
   }
@@ -50,7 +50,7 @@
   -ms-flex-align: center;
   align-items: center
 }
-@media (max-width:1199.98px) {
+@media (max-width:1277.98px) {
   .product-order {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -97,7 +97,7 @@
   margin-right: 24px;
   height: 128px
 }
-@media (max-width:1199.98px) {
+@media (max-width:1277.98px) {
   .product-order-photo {
     margin-right: 0;
     margin-bottom: 24px

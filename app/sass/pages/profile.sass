@@ -1,0 +1,46 @@
+@import '../helpers/helpers'
+
+.profile
+	.nav-tabs
+		justify-content: flex-start
+		margin-bottom: 40px
+		+media-breakpoint-down(sm)
+			display: block
+			border-bottom: 0
+		.nav-item
+			margin: 0
+			&:not(:last-child)
+				margin-right: 48px
+			+media-breakpoint-down(sm)
+				display: block
+				&:not(:last-child)
+					margin-right: 0
+					margin-bottom: 12px
+				.nav-link
+					display: inline-block
+					padding-bottom: 6px
+	// Profile Info
+	&-info
+		.discount
+			margin-bottom: 40px
+			padding: 16px
+			background-color: $lightgray
+			line-height: 1.4
+			+media-breakpoint-down(sm)
+				margin-bottom: 28px
+			&-system
+				&-table
+					max-width: 400px
+					margin-top: 32px
+					td
+						border-bottom: 1px dashed $darkblue
+	// Profile Personal
+	&-personal
+		&-wrapper
+			padding: 32px 24px
+			background-color: $lightgray
+			.form
+				max-width: 530px
+				.form-submit
+					width: 100%
+					max-width: 312px

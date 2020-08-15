@@ -68,7 +68,7 @@
   -o-transition: color .35s ease;
   transition: color .35s ease
 }
-@media (max-width:1199.98px) {
+@media (max-width:1277.98px) {
   .search-products-list-item .title {
     font-size: 16px
   }

@@ -7,6 +7,11 @@
   justify-content: flex-start;
   margin-bottom: 40px
 }
+@media (max-width:767.98px) {
+  .profile .nav-tabs {
+    margin-bottom: 32px
+  }
+}
 .profile .nav-tabs .nav-item {
   margin: 0
 }
@@ -92,7 +97,12 @@
   width: 11.111%
 }
 .profile .profile-orders-table tbody tr {
-  border-top: 18px solid #fff
+  border-top: 16px solid #fff
+}
+@media (max-width:767.98px) {
+  .profile .profile-orders-table tbody tr:first-child {
+    border-top: 0
+  }
 }
 .profile .profile-orders-table tbody tr td {
   position: relative;
@@ -141,7 +151,7 @@
   text-decoration: underline
 }
 .profile .profile-orders-table .footable-detail-row {
-  border-top: 18px solid #eff3f6
+  border-top: 16px solid #eff3f6
 }
 .profile .profile-orders-table .footable-detail-row td:first-child {
   padding-left: 16px
@@ -150,7 +160,7 @@
   padding-right: 16px
 }
 .profile .profile-orders-table .footable-details {
-  margin-top: -32px
+  margin-top: -30px
 }
 .profile .profile-orders-table .footable-details tbody > tr {
   border-top: 0

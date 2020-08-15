@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
 	<meta charset="utf-8">
-	<title>Личный кабинет</title>
+	<title>Смазочная компания Интеравто</title>
 	<meta name="description" content="Смазочная компания Интеравто производит качественные высокотемпературные пасты, пищевые смазки, покрытия и ингибиторы коррозии для отечественной промышленности.">
 	<meta name="viewport" content="width=device-width">
 	<link rel="icon" href="images/favicon.png">
@@ -184,288 +184,35 @@
 				<div class="breadcrumbs">
 					<ul class="breadcrumbs-list">
 						<li><a href="index.html">Главная</a></li>
-						<li><span>Личный кабинет</span></li>
+						<li><span>Страница</span></li>
 					</ul>
 				</div>
-				<h1 class="title text-xl">Личный кабинет</h1>
+				<h1 class="title text-xl">Страница</h1>
 			</div>
 		</div>
 
 		<div class="main-body">
-			<div class="profile">
-				<div class="container">
-					<ul class="nav nav-tabs" role="tablist">
-						<li class="nav-item">
-							<a class="nav-link active" data-toggle="tab" href="#tab-profile-info" role="tab" aria-controls="tab-profile-info" aria-selected="true">Информация</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" data-toggle="tab" href="#tab-profile-personal" role="tab" aria-controls="tab-profile-personal" aria-selected="false">Личные данные</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" data-toggle="tab" href="#tab-profile-orders" role="tab" aria-controls="tab-profile-orders" aria-selected="false">Мои заказы</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" data-toggle="tab" href="#tab-profile-downloads" role="tab" aria-controls="tab-profile-downloads" aria-selected="false">Файлы для скачивания</a>
-						</li>
-					</ul>
-				</div><!-- /.container -->
-				<div class="tab-content">
-					<!-- Информация -->
-					<div class="tab-pane fade show active" id="tab-profile-info" role="tabpanel" aria-labelledby="tab-profile-info">
-						<div class="profile-info">
-							<div class="container">
-								<div class="discount text-md">Ваша текущая скидка — 3 %</div>
-								<div class="discount-system">
-									<h4 class="text-lg w-regular">Система скидок</h4>
-									<table class="discount-system-table">
-										<thead>
-											<tr>
-												<th>Скидка</th>
-												<th class="text-right">Сумма заказа</th>
-											</tr>
-										</thead>
-										<tbody>
-											<tr>
-												<td>3 %</td>
-												<td class="text-right">от 30 000 ₽ до 50 000 ₽</td>
-											</tr>
-											<tr>
-												<td>5 %</td>
-												<td class="text-right">от 50 000 ₽ до 100 000 ₽</td>
-											</tr>
-											<tr>
-												<td>7 %</td>
-												<td class="text-right">от 100 000 ₽ до 150 000 ₽</td>
-											</tr>
-											<tr>
-												<td>10 %</td>
-												<td class="text-right">от 150 000 ₽ до 300 000 ₽</td>
-											</tr>
-										</tbody>
-									</table>
-								</div>
-							</div>
-						</div>
-					</div><!-- /.tab-pane -->
-					<!-- Личные данные -->
-					<div class="tab-pane fade" id="tab-profile-personal" role="tabpanel" aria-labelledby="tab-profile-personal">
-						<div class="profile-personal">
-							<div class="container">
-								<div class="profile-personal-wrapper">
-									<form action="" method="POST" class="form">
-										<div class="form-group">
-											<label for="personal-email" class="form-label">E-mail</label>
-											<input type="email" id="personal-email" class="form-control" value="sample@mail.ru" required>
-										</div>
-										<div class="form-group">
-											<label for="personal-password" class="form-label">Пароль</label>
-											<input type="password" id="personal-password" class="form-control" value="password" required>
-										</div>
-										<div class="form-group">
-											<label for="personal-phone" class="form-label">Телефон</label>
-											<input type="text" id="personal-phone" class="form-control" value="+7 905 464 45 56" required>
-										</div>
-										<div class="form-group">
-											<label for="personal-organization" class="form-label">Организация</label>
-											<input type="text" id="personal-organization" class="form-control" value="ООО Прогресс" required>
-										</div>
-										<div class="form-group">
-											<label for="personal-person" class="form-label">Контактное лицо</label>
-											<input type="text" id="personal-person" class="form-control" value="Иванов Сергей" required>
-										</div>
-										<div class="form-group">
-											<label for="personal-inn-organization" class="form-label">ИНН организации</label>
-											<input type="text" id="personal-inn-organization" class="form-control" value="341235139145497815" required>
-										</div>
-										<div class="form-group">
-											<label for="personal-law-address" class="form-label">Юридический адрес</label>
-											<input type="text" id="personal-law-address" class="form-control" required>
-										</div>
-										<div class="form-group">
-											<label for="personal-postal-code" class="form-label">Индекс</label>
-											<input type="text" id="personal-postal-code" class="form-control" required>
-										</div>
-										<div class="form-group">
-											<label for="personal-kpp" class="form-label">КПП</label>
-											<input type="text" id="personal-kpp" class="form-control">
-										</div>
-										<div class="form-group">
-											<label for="personal-okpo" class="form-label">ОКПО</label>
-											<input type="text" id="personal-okpo" class="form-control">
-										</div>
-										<div class="form-group">
-											<label for="personal-ogrn" class="form-label">ОГРН</label>
-											<input type="text" id="personal-ogrn" class="form-control">
-										</div>
-										<div class="form-group">
-											<label for="personal-checking" class="form-label">Расчетный счет</label>
-											<input type="text" id="personal-checking" class="form-control" required>
-										</div>
-										<div class="form-group">
-											<label for="personal-bank" class="form-label">Полное наименование банка</label>
-											<input type="text" id="personal-bank" class="form-control" required>
-										</div>
-										<div class="form-group">
-											<label for="personal-correspondent" class="form-label">Корреспондентский счет</label>
-											<input type="text" id="personal-correspondent" class="form-control" required>
-										</div>
-										<div class="form-group">
-											<label for="personal-bik" class="form-label">БИК</label>
-											<input type="text" id="personal-bik" class="form-control">
-										</div>
-										<button class="form-submit btn btn-primary">Сохранить</button>
-									</form>
-								</div>
-							</div>
-						</div>
-					</div><!-- /.tab-pane -->
-					<!-- Мои заказы -->
-					<div class="tab-pane fade" id="tab-profile-orders" role="tabpanel" aria-labelledby="tab-profile-orders">
-						<div class="profile-orders">
-							<div class="container">
-								<div class="profile-orders-wrapper">
-									<table class="profile-orders-table footable">
-										<thead>
-											<tr>
-												<th>Данные заказа</th>
-												<th data-breakpoints="xxs xs">Номенклатура</th>
-												<th data-breakpoints="xxs xs">Количество</th>
-												<th data-breakpoints="xxs xs">Цена</th>
-												<th data-breakpoints="xxs xs">Сумма</th>
-												<th>Статус</th>
-												<th data-breakpoints="xxs xs sm md">Транспортная<br> компания</th>
-												<th data-breakpoints="xxs xs sm md">Трек-номер</th>
-												<th data-breakpoints="xxs xs sm md">Документы к заказу</th>
-											</tr>
-										</thead>
-										<tbody>
-											<tr>
-												<td><span class="invoice">Счет № 23</span><span class="date">07.06.2020</span></td>
-												<td>ИНП-47</td>
-												<td>10</td>
-												<td>1 400</td>
-												<td>14 000</td>
-												<td><span class="status status--send">Отправлен</span></td>
-												<td>Деловые линии</td>
-												<td>20-002548483</td>
-												<td><span class="document"><a href="#">УПД № 21 от 11.02.2020</a></span> <span class="document"><a href="#">Паспорт № 112 от 12.12.2020</a></span></td>
-											</tr>
-											<tr>
-												<td><span class="invoice">Счет № 413</span><span class="date">12.08.2020</span></td>
-												<td>ВНП-81</td>
-												<td>5</td>
-												<td>1 400</td>
-												<td>72 532</td>
-												<td><span class="status status--hold">В ожидании</span></td>
-												<td>Деловые линии</td>
-												<td>20-002548483</td>
-												<td><span class="document"><a href="#">Паспорт № 112 от 12.12.2020</a></span></td>
-											</tr>
-											<tr>
-												<td><span class="invoice">Счет № 398</span><span class="date">03.09.2020</span></td>
-												<td>НП-2</td>
-												<td>50</td>
-												<td>1 500</td>
-												<td>9 322</td>
-												<td><span class="status status--wrong">Отказано</span></td>
-												<td>Деловые линии</td>
-												<td>20-002548483</td>
-												<td><span class="document"><a href="#">УПД № 21 от 11.02.2020</a></span> <span class="document"><a href="#">Паспорт № 112 от 12.12.2020</a></span></td>
-											</tr>
-											<tr>
-												<td><span class="invoice">Счет № 406</span><span class="date">21.09.2020</span></td>
-												<td>ВНИИНП-232</td>
-												<td>20</td>
-												<td>200</td>
-												<td>16 050</td>
-												<td><span class="status status--passive">Безуспешно</span></td>
-												<td>Деловые линии</td>
-												<td>20-002548483</td>
-												<td><span class="document"><a href="#">УПД № 21 от 11.02.2020</a></span></td>
-											</tr>
-										</tbody>
-									</table>
-								</div>
-							</div>
-						</div>
-					</div><!-- /.tab-pane -->
-					<!-- Файлы для скачивания -->
-					<div class="tab-pane fade" id="tab-profile-downloads" role="tabpanel" aria-labelledby="tab-profile-downloads">
-						<div class="profile-downloads">
-							<div class="container">
-								<div class="row row-items">
-									<div class="col-sm-6 col-lg-3">
-										<div class="card card--file">
-											<div class="card-icon">
-												<svg class="icon icon-document"><use xlink:href="images/symbol-defs.svg#icon-document"></use></svg>
-											</div>
-											<div class="card-meta">
-												<div class="title">Прайс-лист твердых смазок </div>
-											</div>
-											<a href="#" class="card-link"></a>
-										</div>
-									</div><!-- /.col -->
-									<div class="col-sm-6 col-lg-3">
-										<div class="card card--file">
-											<div class="card-icon">
-												<svg class="icon icon-document"><use xlink:href="images/symbol-defs.svg#icon-document"></use></svg>
-											</div>
-											<div class="card-meta">
-												<div class="title">ООО «ПРОГРЕСС» Тимакова В. А.</div>
-											</div>
-											<a href="#" class="card-link"></a>
-										</div>
-									</div><!-- /.col -->
-									<div class="col-sm-6 col-lg-3">
-										<div class="card card--file">
-											<div class="card-icon">
-												<svg class="icon icon-document"><use xlink:href="images/symbol-defs.svg#icon-document"></use></svg>
-											</div>
-											<div class="card-meta">
-												<div class="title">Прайс-лист твердых смазок </div>
-											</div>
-											<a href="#" class="card-link"></a>
-										</div>
-									</div><!-- /.col -->
-									<div class="col-sm-6 col-lg-3">
-										<div class="card card--file">
-											<div class="card-icon">
-												<svg class="icon icon-document"><use xlink:href="images/symbol-defs.svg#icon-document"></use></svg>
-											</div>
-											<div class="card-meta">
-												<div class="title">ООО «ПРОГРЕСС» Тимакова В. А.</div>
-											</div>
-											<a href="#" class="card-link"></a>
-										</div>
-									</div><!-- /.col -->
-									<div class="col-sm-6 col-lg-3">
-										<div class="card card--file">
-											<div class="card-icon">
-												<svg class="icon icon-document"><use xlink:href="images/symbol-defs.svg#icon-document"></use></svg>
-											</div>
-											<div class="card-meta">
-												<div class="title">Прайс-лист твердых смазок </div>
-											</div>
-											<a href="#" class="card-link"></a>
-										</div>
-									</div><!-- /.col -->
-									<div class="col-sm-6 col-lg-3">
-										<div class="card card--file">
-											<div class="card-icon">
-												<svg class="icon icon-document"><use xlink:href="images/symbol-defs.svg#icon-document"></use></svg>
-											</div>
-											<div class="card-meta">
-												<div class="title">ООО «ПРОГРЕСС» Тимакова В. А.</div>
-											</div>
-											<a href="#" class="card-link"></a>
-										</div>
-									</div><!-- /.col -->
-								</div><!-- /.row-items -->
-							</div>
-						</div>
-					</div><!-- /.tab-pane -->
-				</div><!-- /.tab-content -->
-			</div><!-- /.profile -->
+			<div class="container">
+				<div class="row">
+					<!-- Main: Content-->
+					<div class="main-content col-12">
+						Body
+					</div><!-- /.main-content -->
+					<!-- Main: SEO text -->
+					<div class="main-seo col-lg-10 offset-lg-1">
+						<article>
+							<h2 class="mb-40 text-xl w-bold">Сео текст</h2>
+							<h3 class="text-lg w-regular">Российское производство масел и смазок из отечественного сырья</h3>
+							<p>Компания «Роксол» предлагает вам купить масла и смазки высокого качества. Наша команда с 2001 года занимается изучением и исследованием рынка отечественной и зарубежной продукции, разработкой, изготовлением, внедрением и продажей масел и смазок. Все входящие в состав компоненты и готовый продукт подвергаются постоянному контролю качества.</p>
+							<p>Компания «Роксол» предлагает вам купить масла и смазки высокого качества. Наша команда с 2001 года занимается изучением и исследованием рынка отечественной и зарубежной продукции, разработкой, изготовлением, внедрением и продажей масел и смазок. Все входящие в состав компоненты и готовый продукт подвергаются постоянному контролю качества.</p>
+							<p>Основной сферой деятельности нашей организации является производство смазочных материалов и комплексное обеспечение предприятий автомобильной, металлообрабатывающей, металлургической, машиностроительной, целлюлозно-бумажной, пищевой, теплоэнергетической, нефтегазовой и других отраслей промышленности, а также строительного и агропромышленного сектора.</p>
+							<p>Основной сферой деятельности нашей организации является производство смазочных материалов и комплексное обеспечение предприятий автомобильной, металлообрабатывающей, металлургической, машиностроительной, целлюлозно-бумажной, пищевой, теплоэнергетической, нефтегазовой и других отраслей промышленности, а также строительного и агропромышленного сектора.</p>
+							<p>Мы создаем высокотехнологичные и качественные продукты для отечественной промышленности, адаптируем их к новым и постоянно растущим требованиям рынка. Компания «Роксол» реализует масла и смазки оптом и в розницу. Связаться с нами можно по электронной почте, в режиме онлайн-сообщений, позвонив нашим менеджерам или оставив заявку на обратный звонок. Купить смазку вы можете с доставкой по России и странам СНГ.</p>
+							<p>Мы создаем высокотехнологичные и качественные продукты для отечественной промышленности, адаптируем их к новым и постоянно растущим требованиям рынка. Компания «Роксол» реализует масла и смазки оптом и в розницу. Связаться с нами можно по электронной почте, в режиме онлайн-сообщений, позвонив нашим менеджерам или оставив заявку на обратный звонок. Купить смазку вы можете с доставкой по России и странам СНГ.</p>
+						</article>
+					</div><!-- /.main-seo -->
+				</div><!-- /.row -->
+			</div><!-- /.container -->
 		</div><!-- /.main-body -->
 
 	</main>
@@ -711,17 +458,13 @@
 
 	<!-- Load CSS -->
 	<link rel="stylesheet" href="css/vendor/bootstrap.css">
-	<link rel="stylesheet" href="css/vendor/footable.css">
 	<link rel="stylesheet" href="css/modules/page.css">
-	<link rel="stylesheet" href="css/pages/profile.css">
 	<link rel="stylesheet" href="css/common/main.css">
 
 	<!-- Load JS -->
 	<script src="js/vendor/jquery.min.js"></script>
 	<script src="js/vendor/lazyload.min.js"></script>
 	<script src="js/vendor/bootstrap.min.js"></script>
-	<script src="js/vendor/footable.core.min.js"></script>
-	<script src="js/pages/user-profile.js"></script>
 	<script src="js/app.js"></script>
 
 </body>

@@ -7,6 +7,8 @@
 		white-space: nowrap
 		justify-content: flex-start
 		margin-bottom: 40px
+		+media-breakpoint-down(sm)
+			margin-bottom: 32px
 		.nav-item
 			margin: 0
 			&:not(:last-child)
@@ -66,7 +68,10 @@
 					width: 11.111%
 			tbody
 				tr
-					border-top: 18px solid $white
+					border-top: 16px solid $white
+					+media-breakpoint-down(sm)
+						&:first-child
+							border-top: 0
 					td
 						position: relative
 						border-bottom: 0
@@ -99,13 +104,13 @@
 							> a
 								text-decoration: underline
 			.footable-detail-row
-				border-top: 18px solid $lightgray
+				border-top: 16px solid $lightgray
 				td:first-child
 					padding-left: 16px
 				td:last-child
 					padding-right: 16px
 			.footable-details
-				margin-top: -32px
+				margin-top: -30px
 				tbody
 					> tr
 						border-top: 0

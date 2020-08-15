@@ -820,7 +820,8 @@ table > tbody > tr > td > span.footable-toggle.last-column {
   top: 50%;
   left: 14px;
   margin-top: -8px;
-  margin-left: 0
+  margin-left: 0;
+  cursor: pointer
 }
 .footable-toggle.fooicon-minus::before,
 .footable-toggle.fooicon-plus::before {

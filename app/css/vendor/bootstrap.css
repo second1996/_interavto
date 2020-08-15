@@ -5526,7 +5526,9 @@ html {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  border-color: #eff3f6
+  border: 0;
+  -webkit-box-shadow: inset 0 -1px 0 0 #eff3f6;
+  box-shadow: inset 0 -1px 0 0 #eff3f6
 }
 @media (max-width:575.98px) {
   .nav-tabs {
@@ -5540,9 +5542,6 @@ html {
 }
 @media (max-width:575.98px) {
   .nav-tabs .nav-item {
-    -ms-flex-preferred-size: 92px;
-    flex-basis: 92px;
-    max-width: 92px;
     margin-left: 0;
     margin-right: 32px
   }
@@ -5556,6 +5555,10 @@ html {
   font-size: 12px;
   font-weight: 700;
   text-transform: uppercase
+}
+.nav-tabs .nav-link:focus,
+.nav-tabs .nav-link:hover {
+  border-color: #beceda
 }
 @media (max-width:575.98px) {
   .nav-tabs .nav-link {

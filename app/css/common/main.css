@@ -688,7 +688,7 @@ button:hover {
   -ms-flex: 0 0 30%;
   flex: 0 0 30%
 }
-@media (max-width:374.98px) {
+@media (max-width:767.98px) {
   .form-group {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -890,8 +890,32 @@ table tr > th:not(:last-child) {
   margin-right: 32px
 }
 .modal--profile .modal-header .nav-tabs .nav-link {
+  position: relative;
   padding-bottom: 0;
-  line-height: 48px
+  line-height: 47px;
+  border-bottom: 0
+}
+.modal--profile .modal-header .nav-tabs .nav-link::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background-color: transparent;
+  opacity: 0;
+  -webkit-transition: .3s ease;
+  -o-transition: .3s ease;
+  transition: .3s ease
+}
+.modal--profile .modal-header .nav-tabs .nav-link:hover::after {
+  opacity: 1;
+  background-color: #beceda
+}
+.modal--profile .modal-header .nav-tabs .nav-item.show .nav-link::after,
+.modal--profile .modal-header .nav-tabs .nav-link.active::after {
+  background-color: #ff6c02;
+  opacity: 1
 }
 .modal--profile .modal-body .form-link,
 .modal--profile .modal-body .form-submit {

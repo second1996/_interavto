@@ -20,8 +20,28 @@
 					&:not(:last-child)
 						margin-right: 32px
 				.nav-link
+					position: relative
 					padding-bottom: 0
-					line-height: 48px
+					line-height: 47px
+					border-bottom: 0
+					&::after
+						content: ''
+						position: absolute
+						top: 100%
+						left: 0
+						right: 0
+						height: 1px
+						background-color: $trsp
+						opacity: 0
+						transition: .3s ease
+					&:hover
+						&::after
+							opacity: 1
+							background-color: darken($lightgray, 15%)
+				.nav-item.show .nav-link::after,
+				.nav-link.active::after
+					background-color: $accent
+					opacity: 1
 		.modal-body
 			.form
 				&-link,

@@ -91,6 +91,10 @@
    SECTION: Industry
    ========================================================================== */
 .s-industry
+	.nav-item
+		+media-breakpoint-down(xs)
+			flex-basis: 92px
+			max-width: 92px
 	.tab-content
 		margin-top: 64px
 		+media-breakpoint-down(lg)
@@ -248,11 +252,13 @@
 			margin-top: 20px
 		+media-breakpoint-down(sm)
 			margin-top: 60px
-		+media-breakpoint-down(xs)
-			.form-control
-				flex-basis: 65%
-			.form-label
-				flex-basis: 35%
+			.form-group
+				flex-direction: row
+				align-items: center
+		+media-breakpoint-down(xxs)
+			.form-group
+				flex-direction: column
+				align-items: flex-start
 		.btn
 			width: 70%
 			max-width: 340px

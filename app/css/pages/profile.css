@@ -1,14 +1,11 @@
 .profile .nav-tabs {
+  overflow-x: auto;
+  width: 100%;
+  white-space: nowrap;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: flex-start;
   margin-bottom: 40px
-}
-@media (max-width:767.98px) {
-  .profile .nav-tabs {
-    display: block;
-    border-bottom: 0
-  }
 }
 .profile .nav-tabs .nav-item {
   margin: 0
@@ -17,16 +14,8 @@
   margin-right: 48px
 }
 @media (max-width:767.98px) {
-  .profile .nav-tabs .nav-item {
-    display: block
-  }
   .profile .nav-tabs .nav-item:not(:last-child) {
-    margin-right: 0;
-    margin-bottom: 12px
-  }
-  .profile .nav-tabs .nav-item .nav-link {
-    display: inline-block;
-    padding-bottom: 6px
+    margin-right: 32px
   }
 }
 .profile-info .discount {
@@ -44,15 +33,40 @@
   max-width: 400px;
   margin-top: 32px
 }
+@media (max-width:767.98px) {
+  .profile-info .discount-system-table {
+    max-width: 100%
+  }
+}
 .profile-info .discount-system-table td {
-  border-bottom: 1px dashed #25373f
+  border-bottom: 1px dashed rgba(37,55,63,.5)
+}
+@media (max-width:767.98px) {
+  .profile-personal {
+    background-color: #eff3f6
+  }
 }
 .profile-personal-wrapper {
   padding: 32px 24px;
   background-color: #eff3f6
 }
+@media (max-width:767.98px) {
+  .profile-personal-wrapper {
+    padding-left: 0;
+    padding-right: 0;
+    background-color: transparent
+  }
+}
 .profile-personal-wrapper .form {
   max-width: 530px
+}
+@media (max-width:767.98px) {
+  .profile-personal-wrapper .form .form-control {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%
+  }
 }
 .profile-personal-wrapper .form .form-submit {
   width: 100%;

@@ -49,14 +49,13 @@
 .nav-tabs
 	flex-wrap: nowrap
 	justify-content: center
-	border-color: $lightgray
+	border: 0
+	box-shadow: inset 0 -1px 0 0 $lightgray
 	+media-breakpoint-down(xs)
 		justify-content: flex-start
 	.nav-item
 		margin: 0 32px
 		+media-breakpoint-down(xs)
-			flex-basis: 92px
-			max-width: 92px
 			margin-left: 0
 			margin-right: 32px
 	.nav-link
@@ -68,6 +67,9 @@
 		font-size: 12px
 		font-weight: 700
 		text-transform: uppercase
+		&:focus,
+		&:hover
+			border-color: darken($lightgray, 15%)
 		+media-breakpoint-down(xs)
 			padding-bottom: 16px
 	.nav-item.show .nav-link,

@@ -2,23 +2,17 @@
 
 .profile
 	.nav-tabs
+		overflow-x: auto
+		width: 100%
+		white-space: nowrap
 		justify-content: flex-start
 		margin-bottom: 40px
-		+media-breakpoint-down(sm)
-			display: block
-			border-bottom: 0
 		.nav-item
 			margin: 0
 			&:not(:last-child)
 				margin-right: 48px
-			+media-breakpoint-down(sm)
-				display: block
-				&:not(:last-child)
-					margin-right: 0
-					margin-bottom: 12px
-				.nav-link
-					display: inline-block
-					padding-bottom: 6px
+				+media-breakpoint-down(sm)
+					margin-right: 32px
 	// Profile Info
 	&-info
 		.discount
@@ -32,15 +26,27 @@
 				&-table
 					max-width: 400px
 					margin-top: 32px
+					+media-breakpoint-down(sm)
+						max-width: 100%
 					td
-						border-bottom: 1px dashed $darkblue
+						border-bottom: 1px dashed rgba($darkblue, 0.5)
 	// Profile Personal
 	&-personal
+		+media-breakpoint-down(sm)
+			background-color: $lightgray
 		&-wrapper
 			padding: 32px 24px
 			background-color: $lightgray
+			+media-breakpoint-down(sm)
+				padding-left: 0
+				padding-right: 0
+				background-color: $trsp
 			.form
 				max-width: 530px
+				.form-control
+					+media-breakpoint-down(sm)
+						flex: 0 0 100%
+						max-width: 100%
 				.form-submit
 					width: 100%
 					max-width: 312px

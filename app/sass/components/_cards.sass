@@ -80,6 +80,22 @@
 			.card-meta
 				.title
 					color: $accent
+	// PDF
+	&--pdf
+		display: flex
+		.card-photo
+			flex: 0 0 auto
+			width: 120px
+			height: 160px
+			margin-bottom: 0
+			background-color: $lightblue
+			+media-breakpoint-down(xs)
+				width: 90px
+				height: 120px
+		.card-meta
+			margin-left: 16px
+			.title
+				margin-bottom: 12px
 	// Industry
 	&--industry
 		margin-bottom: 16px

@@ -494,6 +494,32 @@ button:hover {
 .card--file:hover .card-meta .title {
   color: #ff6c02
 }
+.card--pdf {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex
+}
+.card--pdf .card-photo {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  width: 120px;
+  height: 160px;
+  margin-bottom: 0;
+  background-color: #becfd7
+}
+@media (max-width:575.98px) {
+  .card--pdf .card-photo {
+    width: 90px;
+    height: 120px
+  }
+}
+.card--pdf .card-meta {
+  margin-left: 16px
+}
+.card--pdf .card-meta .title {
+  margin-bottom: 12px
+}
 .card--industry {
   margin-bottom: 16px;
   text-align: center

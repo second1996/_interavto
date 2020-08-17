@@ -22,8 +22,8 @@
   font-size: 12px
 }
 .breadcrumbs-list > li > a {
-  font-size: 12px;
-  color: #76858c
+  color: #76858c;
+  font-size: 12px
 }
 .breadcrumbs-list > li > a:hover {
   color: #ff6c02

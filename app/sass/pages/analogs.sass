@@ -1,5 +1,8 @@
 @import '../helpers/helpers'
 
+/* ==========================================================================
+   Analogs Page
+   ========================================================================== */
 .analogs
 	&-header
 		margin-bottom: 32px
@@ -100,3 +103,155 @@
 				color: $accent
 			.icon
 				transform: rotate(90deg)
+
+
+/* ==========================================================================
+   Analogs Single page
+   ========================================================================== */
+// Compare
+.compare
+	+media-breakpoint-down(md)
+		background-color: $trsp
+	+media-breakpoint-down(sm)
+		border-radius: 0 0 300px 300px
+		background-color: $lightgray
+	&-wrapper
+		padding: 25px 80px 25px 25px
+		height: auto
+		+media-breakpoint-down(lg)
+			padding: 25px 25px 110px
+			border-radius: 0 0 48% 48%
+		+media-breakpoint-down(md)
+			border-radius: 0 0 300px 300px
+			background-color: $lightgray
+		+media-breakpoint-down(sm)
+			padding: 25px 0 120px
+			border-radius: 0
+			background-color: $trsp
+	&-inner
+		display: flex
+		justify-content: space-between
+		width: 100%
+		+media-breakpoint-down(lg)
+			flex-wrap: wrap
+			justify-content: center
+	&-product
+		max-width: 240px
+		align-self: center
+		+media-breakpoint-down(lg)
+			align-self: start
+			margin: 32px 16px 0
+		+media-breakpoint-down(sm)
+			flex: 0 0 50%
+			max-width: 50%
+			margin: 24px 0 0
+		&-photo
+			overflow: hidden
+			backface-visibility: hidden
+			width: 240px
+			height: 240px
+			margin: 0 auto
+			border-radius: 50%
+			background-color: $white
+			transform: translate3d(0, 0, 0)
+			+media-breakpoint-down(sm)
+				width: 140px
+				height: 140px
+			+media-breakpoint-down(xs)
+				width: 100px
+				height: 100px
+			+media-breakpoint-down(xxs)
+				width: 80px
+				height: 80px
+			> img
+				width: 100%
+				height: 100%
+				padding: 16px
+				object-fit: contain
+		&-title
+			margin-top: 10px
+			font-weight: 700
+			text-align: center
+			+media-breakpoint-down(sm)
+				max-width: 60%
+				margin-left: auto
+				margin-right: auto
+			+media-breakpoint-down(sm)
+				max-width: 90%
+	&-table
+		width: 100%
+		max-width: 100%
+		margin-left: 56px
+		margin-right: 16px
+		+media-breakpoint-down(lg)
+			margin-left: 0
+			margin-right: 0
+		&-header
+			display: flex
+			.specific
+				flex: 0 0 36%
+				padding-right: 22px
+				color: $darkgray
+				+media-breakpoint-down(sm)
+					display: none
+			.product
+				flex: 0 0 31%
+				padding-left: 22px
+				padding-bottom: 24px
+				border-left: 1px solid #dde5e9
+				font-size: 12px
+				font-weight: 700
+				+media-breakpoint-down(sm)
+					flex: 0 0 50%
+					padding-left: 0
+					padding-bottom: 16px
+					border-left: 0
+					border-bottom: 1px solid #dde5e9
+		&-item
+			display: flex
+			+media-breakpoint-down(sm)
+				flex-wrap: wrap
+				padding-bottom: 12px
+				border-bottom: 1px solid #dde5e9
+			&:last-child
+				.specific,
+				.feature
+					padding-bottom: 24px
+					+media-breakpoint-down(sm)
+						padding-bottom: 0
+			.specific
+				flex: 0 0 36%
+				padding-top: 16px
+				padding-right: 22px
+				line-height: 1.4
+				+media-breakpoint-down(sm)
+					flex: 0 0 100%
+					padding-top: 10px
+					padding-right: 0
+					color: $darkgray
+					font-size: 12px
+			.feature
+				flex: 0 0 31%
+				padding-top: 16px
+				padding-left: 22px
+				padding-right: 22px
+				border-left: 1px solid #dde5e9
+				line-height: 1.4
+				+media-breakpoint-down(sm)
+					flex: 0 0 50%
+					padding-top: 8px
+					padding-left: 0
+					border-left: 0
+// Description
+.analog-descr
+	margin-top: 70px
+	&-section
+		padding-top: 24px
+		padding-bottom: 32px
+		border-top: 1px solid $lightgray
+		+media-breakpoint-down(md)
+			padding-bottom: 18px
+	.title
+		margin-bottom: 24px
+		+media-breakpoint-down(sm)
+			margin-bottom: 16px

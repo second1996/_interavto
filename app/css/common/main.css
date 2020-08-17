@@ -1549,9 +1549,9 @@ table tr > th:not(:last-child) {
     z-index: 10;
     bottom: 20px;
     height: 20px;
-    background: -webkit-gradient(linear,left bottom,left top,from(white),to(rgba(255,255,255,.25)));
-    background: -o-linear-gradient(bottom,#fff 0,rgba(255,255,255,.25) 100%);
-    background: linear-gradient(to top,#fff 0,rgba(255,255,255,.25) 100%)
+    background-image: -webkit-gradient(linear,left bottom,left top,from(white),to(rgba(255,255,255,.25)));
+    background-image: -o-linear-gradient(bottom,#fff 0,rgba(255,255,255,.25) 100%);
+    background-image: linear-gradient(to top,#fff 0,rgba(255,255,255,.25) 100%)
   }
 }
 .header-search.is-active {

@@ -1,0 +1,102 @@
+@import '../helpers/helpers'
+
+.analogs
+	&-header
+		margin-bottom: 32px
+		padding-bottom: 16px
+		border-bottom: 1px solid $lightgray
+		+media-breakpoint-down(sm)
+			display: none
+		&-title
+			color: $darkgray
+	&-body
+		+media-breakpoint-down(sm)
+			padding-top: 16px
+			border-top: 1px solid $lightgray
+	&-item
+		margin-bottom: 32px
+		padding-bottom: 32px
+		border-bottom: 1px solid $lightgray
+	&-brand
+		display: flex
+		flex-direction: column
+		justify-content: space-between
+		height: 264px
+		margin-right: 24px
+		padding: 24px 24px 16px
+		border-radius: 0 342px 342px 0
+		background-color: $lightgray
+		+media-breakpoint-down(md)
+			margin-right: 0
+		+media-breakpoint-down(sm)
+			height: 170px
+			margin-bottom: 24px
+		.brand
+			&-header
+				display: flex
+				align-items: center
+			&-logo
+				overflow: hidden
+				backface-visibility: hidden
+				display: flex
+				align-items: center
+				justify-content: center
+				flex: 0 0 auto
+				width: 88px
+				height: 88px
+				border-radius: 50%
+				background-color: $white
+				transform: translate3d(0, 0, 0)
+				img
+					padding: 8px
+			&-name
+				margin-left: 16px
+				font-size: 24px
+				line-height: 1.3
+			&-analogs
+				color: $darkgray
+	&-materials
+		display: flex
+		flex-direction: column
+		.materials
+			&-item
+				position: relative
+				font-size: 12px
+				font-weight: 700
+				&:not(:last-child)
+					margin-bottom: 14px
+				&:hover
+					.btn
+						visibility: visible
+						opacity: 1
+				&.hidden
+					display: none
+				.btn
+					visibility: hidden
+					position: absolute
+					top: -11px
+					right: 0
+					opacity: 0
+					transition: .2s ease
+					+media-breakpoint-down(sm)
+						display: none
+					&::before
+						content: ''
+						position: absolute
+						top: 0
+						right: 100%
+						z-index: 1
+						width: 45px
+						height: 100%
+						background-image: linear-gradient(to left, rgba($white, 1) 0%, rgba($white, 0) 100%)
+		.show-more
+			height: 100%
+			margin-top: 16px
+			padding-left: 0
+			padding-right: 0
+			color: $darkgray
+			line-height: 1
+			&:hover
+				color: $accent
+			.icon
+				transform: rotate(90deg)

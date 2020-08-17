@@ -255,3 +255,55 @@
 		margin-bottom: 24px
 		+media-breakpoint-down(sm)
 			margin-bottom: 16px
+// Actions (Buttons)
+.analog-actions
+	display: flex
+	flex-wrap: wrap
+	padding-top: 60px
+	border-top: 1px solid $lightgray
+	+media-breakpoint-down(sm)
+		flex-direction: column
+		padding-top: 0
+		border-top: 0
+	&-btn
+		margin-top: 16px
+		&:not(:last-child)
+			margin-right: 22px
+		+media-breakpoint-down(sm)
+			&:not(:last-child)
+				margin-right: 0
+			.btn
+				width: 100%
+				justify-content: center
+		&--order
+			+media-breakpoint-down(sm)
+				.btn
+					.icon
+						display: none
+		&--request
+			margin-left: auto
+			+media-breakpoint-down(md)
+				margin-left: 0
+			.btn
+				border: 0
+				padding-left: 0
+				padding-right: 0
+				color: $accent
+				&:hover
+					color: $black
+
+
+/* ==========================================================================
+   Print media queries
+   ========================================================================== */
+@media print
+	.header,
+	.footer,
+	.breadcrumbs,
+	.analog-actions
+		display: none
+	.main-header
+		margin-top: 30px
+		margin-bottom: 10px
+	.compare-wrapper
+		padding-bottom: 0

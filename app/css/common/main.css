@@ -314,7 +314,7 @@ button:hover {
   color: #fff
 }
 .btn-white {
-  border: 1px solid #eff3f6;
+  border: 1px solid #e0e6ec;
   background-color: #fff;
   color: #1e2021
 }
@@ -333,13 +333,6 @@ button:hover {
   background-repeat: no-repeat;
   background-position: right 16px center;
   background-size: 16px
-}
-.btn-outline {
-  border: 1px solid #e0e6ec
-}
-.btn-outline:hover {
-  border-color: #ff6c02;
-  color: #ff6c02
 }
 .btn-catalog,
 .btn-clear,

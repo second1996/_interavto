@@ -120,11 +120,11 @@ a:hover {
   color: #0056b3;
   text-decoration: underline
 }
-a:not([href]) {
+a:not([href]):not([class]) {
   color: inherit;
   text-decoration: none
 }
-a:not([href]):hover {
+a:not([href]):not([class]):hover {
   color: inherit;
   text-decoration: none
 }
@@ -288,33 +288,7 @@ html {
   -webkit-box-sizing: inherit;
   box-sizing: inherit
 }
-.container {
-  width: 100%;
-  padding-right: 20px;
-  padding-left: 20px;
-  margin-right: auto;
-  margin-left: auto
-}
-@media (min-width:576px) {
-  .container {
-    max-width: 540px
-  }
-}
-@media (min-width:768px) {
-  .container {
-    max-width: 720px
-  }
-}
-@media (min-width:992px) {
-  .container {
-    max-width: 960px
-  }
-}
-@media (min-width:1278px) {
-  .container {
-    max-width: 1248px
-  }
-}
+.container,
 .container-fluid,
 .container-lg,
 .container-md,
@@ -473,7 +447,6 @@ html {
   -webkit-box-flex: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
-  min-width: 0;
   max-width: 100%
 }
 .row-cols-1 > * {
@@ -706,7 +679,6 @@ html {
     -webkit-box-flex: 1;
     -ms-flex-positive: 1;
     flex-grow: 1;
-    min-width: 0;
     max-width: 100%
   }
   .row-cols-xs-1 > * {
@@ -943,7 +915,6 @@ html {
     -webkit-box-flex: 1;
     -ms-flex-positive: 1;
     flex-grow: 1;
-    min-width: 0;
     max-width: 100%
   }
   .row-cols-sm-1 > * {
@@ -1180,7 +1151,6 @@ html {
     -webkit-box-flex: 1;
     -ms-flex-positive: 1;
     flex-grow: 1;
-    min-width: 0;
     max-width: 100%
   }
   .row-cols-md-1 > * {
@@ -1417,7 +1387,6 @@ html {
     -webkit-box-flex: 1;
     -ms-flex-positive: 1;
     flex-grow: 1;
-    min-width: 0;
     max-width: 100%
   }
   .row-cols-lg-1 > * {
@@ -1654,7 +1623,6 @@ html {
     -webkit-box-flex: 1;
     -ms-flex-positive: 1;
     flex-grow: 1;
-    min-width: 0;
     max-width: 100%
   }
   .row-cols-xl-1 > * {
@@ -5201,13 +5169,15 @@ html {
   color: #fff;
   background-color: #007bff
 }
-.nav-fill .nav-item {
+.nav-fill .nav-item,
+.nav-fill > .nav-link {
   -webkit-box-flex: 1;
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
   text-align: center
 }
-.nav-justified .nav-item {
+.nav-justified .nav-item,
+.nav-justified > .nav-link {
   -ms-flex-preferred-size: 0;
   flex-basis: 0;
   -webkit-box-flex: 1;

@@ -3,16 +3,24 @@
 .form
 	&-group
 		display: flex
+		flex-wrap: wrap
 		align-items: center
 		justify-content: space-between
 		&:not(:first-child)
 			margin-top: 24px
-		&-note
+		&-note,
+		&-error
 			flex: 0 0 70%
 			max-width: 340px
 			margin: 16px 0 16px auto
 			font-size: 12px
 			line-height: 1.4
+		&-error
+			margin-top: 6px
+			margin-bottom: 0
+			color: red
+			~ .form-group-note
+				margin-top: 6px
 		.form-control,
 		.form-textarea,
 		.form-select,

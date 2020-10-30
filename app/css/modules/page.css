@@ -664,3 +664,33 @@ article mark {
 .main .error-page-btn {
   margin-top: 35px
 }
+.main ul.sitemap:not(:last-of-type) {
+  margin-bottom: 30px
+}
+.main ul.sitemap h2 {
+  font-weight: 700
+}
+.main ul.sitemap h3 {
+  font-weight: 600
+}
+.main ul.sitemap ul > li {
+  margin-left: 20px;
+  margin-top: 20px
+}
+.main ul.sitemap ul > li > ul > li {
+  position: relative;
+  margin-top: 6px;
+  margin-left: 20px;
+  padding-left: 24px
+}
+.main ul.sitemap ul > li > ul > li::before {
+  content: '';
+  position: absolute;
+  top: 9px;
+  left: 0;
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-radius: 8px;
+  background-color: #ff6c02
+}

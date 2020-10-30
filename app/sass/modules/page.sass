@@ -141,3 +141,31 @@
 					font-size: 100px
 		&-btn
 			margin-top: 35px
+
+	// Sitemap customize
+	ul.sitemap
+		&:not(:last-of-type)
+			margin-bottom: 30px
+		h2
+			font-weight: 700
+		h3
+			font-weight: 600
+		ul
+			> li
+				margin-left: 20px
+				margin-top: 20px
+			> li > ul > li,
+				position: relative
+				margin-top: 6px
+				margin-left: 20px
+				padding-left: 24px
+				&::before
+					content: ''
+					position: absolute
+					top: 9px
+					left: 0
+					display: block
+					width: 8px
+					height: 8px
+					border-radius: 8px
+					background-color: $accent

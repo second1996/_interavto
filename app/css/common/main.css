@@ -900,6 +900,10 @@ button:hover {
   border-radius: 2px;
   background-color: #fff
 }
+.form-checkbox > label > a {
+  position: relative;
+  z-index: 2
+}
 .link-arrow::after {
   content: '';
   display: inline-block;

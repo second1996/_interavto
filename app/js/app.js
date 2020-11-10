@@ -94,9 +94,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
 // jQuery
 jQuery(document).ready(function($) {
-
-	$('.modal--success').modal('show')
-
 	/**
 	 * Preloader
 	 */

@@ -265,18 +265,6 @@
 									<input type="email" id="feedback-email" class="form-control" required>
 								</div>
 								<button type="submit" class="form-submit btn btn-primary">Отправить</button>
-
-								<div class="popup-alert popup-alert--success">
-									<p>Форма успешно отправлена.<br> Спасибо!</p>
-								</div>
-								<script>
-									var submitForm = document.querySelector('.contacts-feedback-form .form-submit'),
-											popup = document.querySelector('.popup-alert');
-									submitForm.addEventListener('click', function (el) {
-										popup.classList.add('is-active')
-									})
-								</script>
-
 							</form>
 						</div>
 					</div><!-- /.contacts-feedback-wrapper -->

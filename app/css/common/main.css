@@ -972,6 +972,75 @@ table tr > th:not(:last-child) {
 .modal-backdrop {
   background-color: #25373f
 }
+.modal--error ~ .modal-backdrop,
+.modal--success ~ .modal-backdrop {
+  opacity: 0
+}
+.modal--error .modal-dialog,
+.modal--success .modal-dialog {
+  margin-right: auto;
+  background-color: transparent
+}
+.modal--error .modal-content,
+.modal--success .modal-content {
+  height: auto;
+  -webkit-box-shadow: 0 0 25px 10px rgba(37,55,63,.1);
+  box-shadow: 0 0 25px 10px rgba(37,55,63,.1)
+}
+.modal--error .modal-header,
+.modal--success .modal-header {
+  position: static;
+  height: 52px;
+  border-bottom: 0;
+  background-color: #5ec547
+}
+.modal--error .modal-header .title,
+.modal--success .modal-header .title {
+  color: #fff
+}
+.modal--error .modal-header .close,
+.modal--success .modal-header .close {
+  width: 15px;
+  height: 15px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center
+}
+.modal--error .modal-header .close > svg,
+.modal--success .modal-header .close > svg {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  fill: #fff
+}
+.modal--error .modal-header .close:hover,
+.modal--success .modal-header .close:hover {
+  background-color: #fff
+}
+.modal--error .modal-header .close:hover > svg,
+.modal--success .modal-header .close:hover > svg {
+  fill: #25373f
+}
+.modal--error .modal-body,
+.modal--success .modal-body {
+  margin-top: 0;
+  background-color: #fff;
+  border-radius: 0 0 4px 4px
+}
+.modal--error .modal-body p,
+.modal--error .modal-body span,
+.modal--success .modal-body p,
+.modal--success .modal-body span {
+  display: block;
+  margin-bottom: 0;
+  line-height: 1.4
+}
+.modal--success .modal-header {
+  background-color: #5ec547
+}
+.modal--error .modal-header {
+  background-color: #e26969
+}
 .modal--profile .modal-header .nav-tabs .nav-item {
   margin: 0
 }

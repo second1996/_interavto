@@ -11,6 +11,50 @@
 			transform: translateX(0)
 	&-backdrop
 		background-color: $darkblue
+	// Success modal popup
+	&--success,
+	&--error
+		~ .modal-backdrop
+			// background-color: $white
+			opacity: 0
+		.modal-dialog
+			margin-right: auto
+			background-color: $trsp
+		.modal-content
+			height: auto
+			box-shadow: 0 0 25px 10px rgba($darkblue, 0.1)
+		.modal-header
+			position: static
+			height: 52px
+			border-bottom: 0
+			background-color: #5ec547
+			.title
+				color: $white
+			.close
+				width: 15px
+				height: 15px
+				justify-content: center
+				> svg
+					flex: 0 0 auto
+					fill: $white
+				&:hover
+					background-color: $white
+					> svg
+						fill: $darkblue
+		.modal-body
+			margin-top: 0
+			background-color: $white
+			border-radius: 0 0 4px 4px
+			span, p
+				display: block
+				margin-bottom: 0
+				line-height: 1.4
+	&--success
+		.modal-header
+			background-color: #5ec547
+	&--error
+		.modal-header
+			background-color: #e26969
 	// User Profile modal customize
 	&--profile
 		.modal-header

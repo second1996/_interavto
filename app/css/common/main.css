@@ -972,60 +972,57 @@ table tr > th:not(:last-child) {
 .modal-backdrop {
   background-color: #25373f
 }
-.modal--error ~ .modal-backdrop,
-.modal--success ~ .modal-backdrop {
-  opacity: 0
-}
 .modal--error .modal-dialog,
 .modal--success .modal-dialog {
+  max-width: 320px;
   margin-right: auto;
   background-color: transparent
+}
+@media (max-width:374.98px) {
+  .modal--error .modal-dialog,
+  .modal--success .modal-dialog {
+    max-width: 280px
+  }
 }
 .modal--error .modal-content,
 .modal--success .modal-content {
   height: auto;
-  -webkit-box-shadow: 0 0 25px 10px rgba(37,55,63,.1);
-  box-shadow: 0 0 25px 10px rgba(37,55,63,.1)
+  border-radius: 16px;
+  -webkit-box-shadow: 0 10px 28px rgba(176,190,197,.82),0 4px 6px rgba(176,190,197,.32);
+  box-shadow: 0 10px 28px rgba(176,190,197,.82),0 4px 6px rgba(176,190,197,.32);
+  background-color: #eff3f6
 }
 .modal--error .modal-header,
 .modal--success .modal-header {
   position: static;
   height: 52px;
-  border-bottom: 0;
-  background-color: #5ec547
-}
-.modal--error .modal-header .title,
-.modal--success .modal-header .title {
-  color: #fff
-}
-.modal--error .modal-header .close,
-.modal--success .modal-header .close {
-  width: 15px;
-  height: 15px;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center
-}
-.modal--error .modal-header .close > svg,
-.modal--success .modal-header .close > svg {
-  -webkit-box-flex: 0;
-  -ms-flex: 0 0 auto;
-  flex: 0 0 auto;
-  fill: #fff
-}
-.modal--error .modal-header .close:hover,
-.modal--success .modal-header .close:hover {
-  background-color: #fff
-}
-.modal--error .modal-header .close:hover > svg,
-.modal--success .modal-header .close:hover > svg {
-  fill: #25373f
+  border-bottom: 0
 }
 .modal--error .modal-body,
 .modal--success .modal-body {
+  text-align: center;
   margin-top: 0;
-  background-color: #fff;
-  border-radius: 0 0 4px 4px
+  padding: 0 24px 32px
+}
+.modal--error .modal-body svg,
+.modal--success .modal-body svg {
+  width: 100px;
+  height: 100px
+}
+@media (max-width:767.98px) {
+  .modal--error .modal-body svg,
+  .modal--success .modal-body svg {
+    width: 75px;
+    height: 75px
+  }
+}
+.modal--error .modal-body .title,
+.modal--success .modal-body .title {
+  margin-top: 10px
+}
+.modal--error .modal-body .descr,
+.modal--success .modal-body .descr {
+  margin-top: 10px
 }
 .modal--error .modal-body p,
 .modal--error .modal-body span,
@@ -1034,12 +1031,6 @@ table tr > th:not(:last-child) {
   display: block;
   margin-bottom: 0;
   line-height: 1.4
-}
-.modal--success .modal-header {
-  background-color: #5ec547
-}
-.modal--error .modal-header {
-  background-color: #e26969
 }
 .modal--profile .modal-header .nav-tabs .nav-item {
   margin: 0
